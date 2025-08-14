@@ -15,13 +15,13 @@
     common = import ./common.nix;
 
     configs = builtins.filter
-      (name: ((builtins.readDir ./.).${name} == "directory") && !(builtins.elem name [ "homeServer" ]))
-      (builtins.attrNames (builtins.readDir ./.));
+      (name: ((builtins.readDir ./configs).${name} == "directory") && !(builtins.elem name [ "homeServer" ]))
+      (builtins.attrNames (builtins.readDir ./configs));
 
     mkConfig = configname:
       let
         parts = trivnixLib.resolveDir {
-          dirPath = "/${configname}";
+          dirPath = "/configs/${configname}";
           mode = "imports";
         };
       in
