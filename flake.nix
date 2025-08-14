@@ -29,10 +29,12 @@
           users = parts.users common.user;
           prefs = parts.prefs common.host;
         };
-  in builtins.listToAttrs
-    (map (configname: {
-      name = configname;
-      value = mkConfig configname;
-    })
-    configs);
+  in {
+    configs = builtins.listToAttrs
+      (map (configname: {
+        name = configname;
+        value = mkConfig configname;
+      })
+      configs);
+  };
 }
