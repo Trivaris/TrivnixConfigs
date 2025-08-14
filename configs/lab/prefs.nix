@@ -13,26 +13,6 @@ common:
     ];
   };
 
-  vaultwarden = {
-    enable = true;
-    domain = "vault.trivaris.org";
-  };
-
-  nextcloud = {
-    enable = true;
-    domain = "cloud.trivaris.org";
-  };
-
-  codeServer = {
-    enable = true;
-    domain = "code.trivaris.org";
-  };
-
-  suwayomi = {
-    enable = true;
-    domain = "manga.trivaris.org";
-  };
-
   sunshine = {
     enable = true;
     domain = "sunshine.trivaris.org";
