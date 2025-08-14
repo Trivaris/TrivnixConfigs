@@ -15,7 +15,7 @@
     common = import ./common.nix;
 
     configs = builtins.filter
-      (name: (builtins.readDir ./.).${name} == "directory")
+      (name: ((builtins.readDir ./.).${name} == "directory") && !(builtins.elem name [ "homeServer" ]))
       (builtins.attrNames (builtins.readDir ./.));
 
     mkConfig = configname:
