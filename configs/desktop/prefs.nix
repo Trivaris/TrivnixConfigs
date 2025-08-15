@@ -7,7 +7,7 @@ common:
   gdm.enable = true;
   steam.enable = true;
   sunshine = {
-    enableService = true;
+    enable = true;
     domain = "sunshine.trivaris.org";
   };
 

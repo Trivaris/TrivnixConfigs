@@ -13,12 +13,6 @@ common:
     ];
   };
 
-  sunshine = {
-    enable = true;
-    domain = "sunshine.trivaris.org";
-    hostMac = "08:bf:b8:42:59:7c";
-  };
-
   minecraftServer = {
     enable = false;
     domain = "minecraft.trivaris.org";
