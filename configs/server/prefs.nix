@@ -3,7 +3,7 @@ common:
   openssh.enable = true;
 
   reverseProxy = {
-    enable = true;
+    enable = false;
     email = "cloudflare@tripple.lurdane.de";
     zone = "trivaris.org";
     ddnsTime = "04:15";
