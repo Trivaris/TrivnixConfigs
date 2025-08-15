@@ -8,7 +8,8 @@ common:
   steam.enable = true;
   sunshine = {
     enable = true;
-    domain = "sunshine.trivaris.org";
+    reverseProxy.enable = false;
+    reverseProxy.domain = "sunshine.trivaris.org";
   };
 
   inherit (common) stylix;
