@@ -11,22 +11,34 @@ common:
 
   vaultwarden = {
     enable = true;
-    reverseProxy.domain = "vault.trivaris.org";
+    reverseProxy = {
+      enable = true;
+      domain = "vault.trivaris.org";
+    };
   };
 
   nextcloud = {
     enable = true;
-    reverseProxy.domain = "cloud.trivaris.org";
+    reverseProxy = {
+      enable = true;
+      domain = "cloud.trivaris.org";
+    };
   };
 
   codeServer = {
     enable = true;
-    reverseProxy.domain = "code.trivaris.org";
+    reverseProxy = {
+      enable = true;
+      domain = "code.trivaris.org";
+    };
   };
 
   suwayomi = {
     enable = true;
-    reverseProxy.domain = "manga.trivaris.org";
+    reverseProxy = {
+      enable = true;
+      domain = "manga.trivaris.org";
+    };
   };
 
   inherit (common) stylix;

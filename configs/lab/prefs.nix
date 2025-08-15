@@ -15,8 +15,11 @@ common:
 
   minecraftServer = {
     enable = false;
-    domain = "minecraft.trivaris.org";
     modpack = "rising-legends";
+    reverseProxy = {
+      enable = true;
+      domain = "minecraft.trivaris.org";
+    };
   };
 
   inherit (common) stylix;
