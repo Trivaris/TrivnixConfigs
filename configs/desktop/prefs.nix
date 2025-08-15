@@ -8,7 +8,6 @@ common:
   steam.enable = true;
   sunshine = {
     enable = true;
-    reverseProxy.enable = false;
     reverseProxy.domain = "sunshine.trivaris.org";
   };
 
