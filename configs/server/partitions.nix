@@ -1,7 +1,8 @@
+{ lib, ... }:
 {
   disko.devices.disk.main = {
     type = "disk";
-    device = "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_102062030";
+    device = lib.mkDefault "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_102062030";
 
     content = {
       type = "table";

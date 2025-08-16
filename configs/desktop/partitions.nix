@@ -1,7 +1,8 @@
+{ lib, ... }:
 {
   disko.devices.disk.nixos = {
     type = "disk";
-    device = "/dev/disk/by-id/nvme-eui.002538424141181a";
+    device = lib.mkDefault "/dev/disk/by-id/nvme-eui.002538424141181a";
     content.type = "gpt";
 
     content.partitions = {
