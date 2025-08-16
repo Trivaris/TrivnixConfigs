@@ -1,6 +1,7 @@
 { config, lib, modulesPath, hostInfos, ... }:
 {
   imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
     (modulesPath + "/profiles/qemu-guest.nix")
   ];
 
@@ -17,10 +18,8 @@
   hardware.cpu.amd.updateMicrocode   = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
   boot.loader.grub = {
-    enable = true;
-    efiSupport = false;
-    devices = [ "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_102062030" ];
-    extraConfig = "serial; terminal_output serial";
+    efiSupport = true;
+    efiInstallAsRemovable = true;
   };
 
   networking.hostName = hostInfos.name;
@@ -29,7 +28,6 @@
   networking.networkmanager.enable = false;
 
   services.qemuGuest.enable = true;
-  services.fstrim.enable = true;
 
   nixpkgs.hostPlatform = lib.mkDefault hostInfos.architecture;
   system.stateVersion = hostInfos.stateVersion;

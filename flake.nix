@@ -36,5 +36,7 @@
         value = mkConfig configname;
       })
       configs);
+
+      pubKeys = map (keyFile: builtins.readFile keyFile) (trivnixLib.resolveDir { dirPath = "/pubKeys"; mode = "paths"; includeNonNix = true; });
   };
 }
