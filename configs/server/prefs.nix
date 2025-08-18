@@ -6,6 +6,7 @@ common:
     enable = false;
     email = "cloudflare@tripple.lurdane.de";
     zone = "trivaris.org";
+    enableDDClient = true;
     ddnsTime = "04:15";
   };
 
