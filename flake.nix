@@ -22,20 +22,17 @@
       let
         parts = trivnixLib.resolveDir {
           dirPath = ./configs/${configname};
-          mode = "imports";
-          dropNixExtension = true;
+          flags = [ "onlyNixFiles" "stripNixSuffix" "mapImports" ];
         };
         pubKeys = trivnixLib.resolveDir {
           dirPath = ./configs/${configname}/pubKeys;
-          mode = "imports";
-          includeNonNix = true;
-          depth = 3;  
+          flags = [ "mapImports" ];
         };
       in
         parts // {
+          inherit pubKeys;
           users = parts.users common.user;
           prefs = parts.prefs common.host;
-          inherit pubKeys;
         };
   in {
     configs = builtins.listToAttrs (map (configname: {

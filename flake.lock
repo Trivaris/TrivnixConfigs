@@ -29,11 +29,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1755380549,
-        "narHash": "sha256-dBtDr4UkAnqC7ucmPvB+z79ulcLFkSI8ioAihsAV3Zk=",
+        "lastModified": 1755478139,
+        "narHash": "sha256-GrYvt1/NnTO2k8yeLu6W+17e1UQY3axIDYUQwhbTx3o=",
         "owner": "trivaris",
         "repo": "trivnix-lib",
-        "rev": "db4e4c3fe8214ac7d6f1bc66d86d0dbe13093645",
+        "rev": "a0ac95f1d3f030da300c09101cbe33daaad0346b",
         "type": "github"
       },
       "original": {
