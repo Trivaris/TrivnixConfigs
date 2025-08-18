@@ -20,6 +20,7 @@
   boot.loader.grub = {
     efiSupport = true;
     efiInstallAsRemovable = true;
+    devices = [ "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_102062030" ];
   };
 
   networking.hostName = hostInfos.name;
