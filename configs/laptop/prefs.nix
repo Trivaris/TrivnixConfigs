@@ -5,6 +5,7 @@ common:
   printing.enable = true;
   gdm.enable = true;
   steam.enable = true;
+  wireguard.enable = true;
 
   language = {
     keyMap = "de";

@@ -6,6 +6,8 @@ common:
   printing.enable = true;
   gdm.enable = true;
   steam.enable = true;
+  wireguard.enable = true;
+  
   sunshine = {
     enable = true;
     reverseProxy.domain = "sunshine.trivaris.org";
