@@ -39,5 +39,10 @@
       name = configname;
       value = mkConfig configname;
     }) configs);
+
+    commonInfos = {
+      homeWireguardInterface = builtins.attrName "wg1";
+      homeGatewayMac = "e8:df:70:7f:01:f3";
+    };
   };
 }
