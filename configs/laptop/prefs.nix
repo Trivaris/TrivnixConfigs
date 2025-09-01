@@ -1,9 +1,7 @@
 common:
 {
   bluetooth.enable = true;
-  kde.enable = true;
   printing.enable = true;
-  gdm.enable = true;
   steam.enable = true;
   wireguard.enable = true;
 
@@ -11,5 +9,5 @@ common:
     keyMap = "de";
   };
 
-  inherit (common) stylix;
+  inherit (common) stylix displayManager desktopEnvironment;
 }
