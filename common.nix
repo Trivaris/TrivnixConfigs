@@ -62,7 +62,6 @@
 
     pkgsConfig = {
       allowUnfree = true;
-      allowUnfreePredicate = _: true;
       android_sdk.accept_license = true;
       permittedInsecurePackages = [ "libsoup-2.74.3" ];
     };
