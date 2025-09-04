@@ -21,5 +21,5 @@ common: {
     };
   };
 
-  inherit (common) stylix pkgsConfig;
+  inherit (common) stylix;
 }

@@ -13,6 +13,5 @@ common: {
     displayManager
     desktopEnvironment
     terminalEmulator
-    pkgsConfig
     ;
 }

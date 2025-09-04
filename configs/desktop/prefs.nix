@@ -16,6 +16,5 @@ common: {
     stylix
     displayManager
     terminalEmulator
-    pkgsConfig
     ;
 }
