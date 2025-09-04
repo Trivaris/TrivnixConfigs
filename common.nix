@@ -50,7 +50,7 @@
     displayManager = "gdm";
     desktopEnvironment = "kde";
     terminalEmulator = "alacritty";
-    
+
     stylix = {
       colorscheme = "rose-pine-moon";
 
@@ -58,6 +58,13 @@
       cursorName = "BreezeX-RosePine-Linux";
 
       nerdfont = "code-new-roman";
+    };
+
+    pkgsConfig = {
+      allowUnfree = true;
+      allowUnfreePredicate = _: true;
+      android_sdk.accept_license = true;
+      permittedInsecurePackages = [ "libsoup-2.74.3" ];
     };
   };
 }

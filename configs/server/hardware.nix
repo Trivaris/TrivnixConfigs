@@ -1,4 +1,10 @@
-{ config, lib, modulesPath, hostInfos, ... }:
+{
+  config,
+  lib,
+  modulesPath,
+  hostInfos,
+  ...
+}:
 {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
@@ -6,16 +12,20 @@
   ];
 
   boot.initrd.availableKernelModules = [
-    "ahci" "xhci_pci"
-    "virtio_pci" "virtio_scsi" "virtio_blk"
-    "sd_mod" "sr_mod"
+    "ahci"
+    "xhci_pci"
+    "virtio_pci"
+    "virtio_scsi"
+    "virtio_blk"
+    "sd_mod"
+    "sr_mod"
   ];
 
   boot.kernelParams = [ "console=ttyS0,115200n8" ];
   boot.extraModulePackages = [ ];
 
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-  hardware.cpu.amd.updateMicrocode   = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
   boot.loader.grub = {
     efiSupport = true;

@@ -10,39 +10,50 @@
     };
   };
 
-  outputs = { self, trivnix-lib, ... }: let
-    trivnixLib = trivnix-lib.lib.for self;
-    common = import ./common.nix;
+  outputs =
+    { self, trivnix-lib, ... }:
+    let
+      trivnixLib = trivnix-lib.lib.for self;
+      common = import ./common.nix;
 
-    configs = builtins.filter
-      (name: ((builtins.readDir ./configs).${name} == "directory"))
-      (builtins.attrNames (builtins.readDir ./configs));
+      configs = builtins.filter (name: ((builtins.readDir ./configs).${name} == "directory")) (
+        builtins.attrNames (builtins.readDir ./configs)
+      );
 
-    mkConfig = configname:
-      let
-        parts = trivnixLib.resolveDir {
-          dirPath = ./configs/${configname};
-          flags = [ "onlyNixFiles" "stripNixSuffix" "mapImports" ];
-        };
-        pubKeys = trivnixLib.resolveDir {
-          dirPath = ./configs/${configname}/pubKeys;
-          flags = [ "mapImports" ];
-        };
-      in
-        parts // {
+      mkConfig =
+        configname:
+        let
+          parts = trivnixLib.resolveDir {
+            dirPath = ./configs/${configname};
+            flags = [
+              "onlyNixFiles"
+              "stripNixSuffix"
+              "mapImports"
+            ];
+          };
+          pubKeys = trivnixLib.resolveDir {
+            dirPath = ./configs/${configname}/pubKeys;
+            flags = [ "mapImports" ];
+          };
+        in
+        parts
+        // {
           inherit pubKeys;
           users = parts.users common.user;
           prefs = parts.prefs common.host;
         };
-  in {
-    configs = builtins.listToAttrs (map (configname: {
-      name = configname;
-      value = mkConfig configname;
-    }) configs);
+    in
+    {
+      configs = builtins.listToAttrs (
+        map (configname: {
+          name = configname;
+          value = mkConfig configname;
+        }) configs
+      );
 
-    commonInfos = {
-      homeWireguardInterface = "wg1";
-      homeGatewayMac = "e8:df:70:7f:01:f3";
+      commonInfos = {
+        homeWireguardInterface = "wg1";
+        homeGatewayMac = "e8:df:70:7f:01:f3";
+      };
     };
-  };
 }

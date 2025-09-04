@@ -1,5 +1,4 @@
-common:
-{
+common: {
   bluetooth.enable = true;
   printing.enable = true;
   steam.enable = true;
@@ -9,5 +8,11 @@ common:
     keyMap = "de";
   };
 
-  inherit (common) stylix displayManager desktopEnvironment terminalEmulator;
+  inherit (common)
+    stylix
+    displayManager
+    desktopEnvironment
+    terminalEmulator
+    pkgsConfig
+    ;
 }

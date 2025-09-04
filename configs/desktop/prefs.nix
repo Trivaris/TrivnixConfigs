@@ -1,11 +1,10 @@
-common:
-{
+common: {
   bluetooth.enable = true;
   openssh.enable = true;
   printing.enable = true;
   steam.enable = true;
   wireguard.enable = true;
-  
+
   # desktopEnvironment = "hyprland";
 
   sunshine = {
@@ -13,5 +12,10 @@ common:
     reverseProxy.domain = "sunshine.trivaris.org";
   };
 
-  inherit (common) stylix displayManager terminalEmulator;
+  inherit (common)
+    stylix
+    displayManager
+    terminalEmulator
+    pkgsConfig
+    ;
 }
