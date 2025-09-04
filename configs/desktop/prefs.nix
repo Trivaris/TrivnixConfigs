@@ -15,5 +15,6 @@ common: {
   inherit (common)
     stylix
     displayManager
+    desktopEnvironment
     ;
 }
