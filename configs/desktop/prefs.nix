@@ -15,6 +15,5 @@ common: {
   inherit (common)
     stylix
     displayManager
-    terminalEmulator
     ;
 }

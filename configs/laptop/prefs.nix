@@ -12,6 +12,5 @@ common: {
     stylix
     displayManager
     desktopEnvironment
-    terminalEmulator
     ;
 }

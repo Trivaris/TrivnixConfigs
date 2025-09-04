@@ -1,5 +1,7 @@
 {
   user = {
+    terminalEmulator = "alacritty";
+
     librewolf = {
       betterfox = true;
       clearOnShutdown = true;
@@ -49,7 +51,6 @@
   host = {
     displayManager = "gdm";
     desktopEnvironment = "kde";
-    terminalEmulator = "alacritty";
 
     stylix = {
       colorscheme = "rose-pine-moon";
