@@ -14,7 +14,7 @@ common: {
 
   minecraftServer = {
     enable = false;
-    modpack = "rising-legends";
+    modpack = "risingLegends";
     reverseProxy = {
       enable = true;
       domain = "minecraft.trivaris.org";

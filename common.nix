@@ -36,7 +36,7 @@
       "spotify"
       "thunderbird"
       "vesktop"
-      "moonlight-qt"
+      "moonlightQT"
     ];
 
     cli = [
