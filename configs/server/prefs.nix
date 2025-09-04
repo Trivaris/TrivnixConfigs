@@ -1,4 +1,5 @@
 common: {
+  inherit (common) stylix;
   openssh.enable = true;
 
   reverseProxy = {
@@ -38,6 +39,4 @@ common: {
       domain = "manga.trivaris.org";
     };
   };
-
-  inherit (common) stylix;
 }

@@ -1,16 +1,9 @@
 common: {
+  inherit (common) displayManager desktopEnvironment stylix;
   bluetooth.enable = true;
   printing.enable = true;
   steam.enable = true;
   wireguard.enable = true;
-
-  language = {
-    keyMap = "de";
-  };
-
-  inherit (common)
-    stylix
-    displayManager
-    desktopEnvironment
-    ;
+  kdeConnect.enable = true;
+  language.keyMap = "de";
 }

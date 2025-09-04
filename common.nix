@@ -2,6 +2,7 @@
   user = {
     terminalEmulator = "alacritty";
     shell = "fish";
+    browsers = [ "librewolf" ];
 
     librewolf = {
       betterfox = true;
@@ -55,10 +56,8 @@
 
     stylix = {
       colorscheme = "rose-pine-moon";
-
       cursorPackage = "rose-pine-cursor";
       cursorName = "BreezeX-RosePine-Linux";
-
       nerdfont = "code-new-roman";
     };
   };

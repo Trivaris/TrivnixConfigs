@@ -1,17 +1,20 @@
 common: {
   trivaris = {
-    infos = {
-      hashedPassword = "$y$j9T$ZYnirABSLjZi.mfiKE.Si0$Fe67Vw2MHKtZybsHVGf0rNqcnN67LgLdsCbM8q6ln/B";
-    };
-
+    infos.hashedPassword = "$y$j9T$ZYnirABSLjZi.mfiKE.Si0$Fe67Vw2MHKtZybsHVGf0rNqcnN67LgLdsCbM8q6ln/B";
     prefs = {
+      inherit (common)
+        browsers
+        librewolf
+        gui
+        cli
+        terminalEmulator
+        shell
+        ;
+
       email.enable = true;
       lutris.enable = true;
       vscodium.enableLsp = true;
-
       git.email = "github@tripple.lurdane.de";
-
-      inherit (common) librewolf gui cli terminalEmulator shell;
     };
   };
 }
