@@ -41,6 +41,7 @@
           inherit pubKeys;
           users = parts.users common.user;
           prefs = parts.prefs common.host;
+          pkgsConfig = parts.pkgsConfig common;
         };
     in
     {

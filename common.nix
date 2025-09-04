@@ -59,11 +59,11 @@
 
       nerdfont = "code-new-roman";
     };
+  };
 
-    pkgsConfig = {
-      allowUnfree = true;
-      android_sdk.accept_license = true;
-      permittedInsecurePackages = [ "libsoup-2.74.3" ];
-    };
+  pkgsConfig = {
+    allowUnfree = true;
+    android_sdk.accept_license = true;
+    permittedInsecurePackages = [ "libsoup-2.74.3" ];
   };
 }
