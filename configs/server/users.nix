@@ -9,7 +9,7 @@ common: {
       
       git.email = "github@tripple.lurdane.de";
 
-      extendedCli = [
+      cli = [
         "fzf"
         "eza"
         "btop"

@@ -28,7 +28,7 @@
       ];
     };
 
-    desktopApps = [
+    gui = [
       "librewolf"
       "vscodium"
       "bitwarden"
@@ -39,7 +39,7 @@
       "moonlight-qt"
     ];
 
-    extendedCli = [
+    cli = [
       "bat"
       "btop"
       "eza"
