@@ -5,7 +5,8 @@ common: {
     };
 
     prefs = {
-      fish.enable = true;
+      inherit (common) shell;
+      
       git.email = "github@tripple.lurdane.de";
 
       extendedCli = [

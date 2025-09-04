@@ -1,6 +1,7 @@
 {
   user = {
     terminalEmulator = "alacritty";
+    shell = "fish";
 
     librewolf = {
       betterfox = true;

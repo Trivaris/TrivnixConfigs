@@ -12,7 +12,7 @@ common: {
 
       git.email = "github@tripple.lurdane.de";
 
-      inherit (common) librewolf desktopApps extendedCli terminalEmulator;
+      inherit (common) librewolf desktopApps extendedCli terminalEmulator shell;
     };
   };
 }
