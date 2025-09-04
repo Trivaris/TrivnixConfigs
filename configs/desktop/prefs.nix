@@ -6,10 +6,12 @@ common:
   steam.enable = true;
   wireguard.enable = true;
   
+  desktopEnvironment = "hyprland";
+
   sunshine = {
     enable = true;
     reverseProxy.domain = "sunshine.trivaris.org";
   };
 
-  inherit (common) stylix displayManager desktopEnvironment;
+  inherit (common) stylix displayManager;
 }
