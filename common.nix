@@ -28,7 +28,6 @@
     desktopApps = [
       "librewolf"
       "vscodium"
-      "alacritty"
       "bitwarden"
       "signal"
       "spotify"
@@ -50,6 +49,7 @@
   host = {
     displayManager = "gdm";
     desktopEnvironment = "kde";
+    terminalEmulator = "alacritty";
     
     stylix = {
       colorscheme = "rose-pine-moon";

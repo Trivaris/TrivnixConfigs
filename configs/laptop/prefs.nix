@@ -9,5 +9,5 @@ common:
     keyMap = "de";
   };
 
-  inherit (common) stylix displayManager desktopEnvironment;
+  inherit (common) stylix displayManager desktopEnvironment terminalEmulator;
 }
