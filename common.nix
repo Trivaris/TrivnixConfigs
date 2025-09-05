@@ -3,14 +3,7 @@
     terminalEmulator = "alacritty";
     shell = "fish";
     browsers = [ "librewolf" ];
-    appLauncher.name = "rofi";
-
-    stylix = {
-      colorscheme = "rose-pine-moon";
-      cursorPackage = "rose-pine-cursor";
-      cursorName = "BreezeX-RosePine-Linux";
-      nerdfont = "code-new-roman";
-    };
+    appLauncher = "rofi";
 
     librewolf = {
       betterfox = true;
@@ -60,6 +53,13 @@
   host = {
     displayManager = "gdm";
     desktopEnvironment = "kde";
+  
+    stylix = {
+      colorscheme = "rose-pine-moon";
+      cursorPackage = "rose-pine-cursor";
+      cursorName = "BreezeX-RosePine-Linux";
+      nerdfont = "code-new-roman";
+    };
   };
 
   pkgsConfig = {
