@@ -4,6 +4,7 @@ common: {
     prefs = {
       inherit (common)
         browsers
+        appLauncher
         librewolf
         gui
         cli
