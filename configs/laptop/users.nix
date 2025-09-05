@@ -10,6 +10,7 @@ common: {
         cli
         terminalEmulator
         shell
+        stylix
         ;
 
       email.enable = true;

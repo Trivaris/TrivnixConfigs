@@ -5,6 +5,13 @@
     browsers = [ "librewolf" ];
     appLauncher.name = "rofi";
 
+    stylix = {
+      colorscheme = "rose-pine-moon";
+      cursorPackage = "rose-pine-cursor";
+      cursorName = "BreezeX-RosePine-Linux";
+      nerdfont = "code-new-roman";
+    };
+
     librewolf = {
       betterfox = true;
       clearOnShutdown = true;
@@ -53,13 +60,6 @@
   host = {
     displayManager = "gdm";
     desktopEnvironment = "kde";
-
-    stylix = {
-      colorscheme = "rose-pine-moon";
-      cursorPackage = "rose-pine-cursor";
-      cursorName = "BreezeX-RosePine-Linux";
-      nerdfont = "code-new-roman";
-    };
   };
 
   pkgsConfig = {

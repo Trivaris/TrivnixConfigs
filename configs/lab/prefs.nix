@@ -1,5 +1,4 @@
 common: {
-  inherit (common) stylix;
   openssh.enable = true;
 
   reverseProxy = {

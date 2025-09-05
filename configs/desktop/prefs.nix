@@ -1,5 +1,5 @@
 common: {
-  inherit (common) displayManager stylix;
+  inherit (common) displayManager;
   bluetooth.enable = true;
   openssh.enable = true;
   printing.enable = true;

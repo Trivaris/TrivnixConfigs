@@ -1,5 +1,5 @@
 common: {
-  inherit (common) displayManager desktopEnvironment stylix;
+  inherit (common) displayManager desktopEnvironment;
   bluetooth.enable = true;
   printing.enable = true;
   steam.enable = true;
