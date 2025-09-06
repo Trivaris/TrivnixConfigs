@@ -1,5 +1,5 @@
 common: {
-  inherit (common) displayManager stylix;
+  inherit (common) stylix;
   bluetooth.enable = true;
   openssh.enable = true;
   printing.enable = true;
@@ -7,7 +7,9 @@ common: {
   wireguard.enable = true;
   kdeConnect.enable = true;
   desktopEnvironment = "hyprland";
-
+  displayManager = "autoLogin";
+  autoLoginUser = "trivaris";
+  
   hyprland.monitor = [
     "HDMI-A-1,1920x1080@60,0x840,1"
     "DP-2,2560x1440@74.97,1920x480,1"

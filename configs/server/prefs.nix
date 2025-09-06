@@ -39,4 +39,12 @@ common: {
       domain = "manga.trivaris.org";
     };
   };
+
+  forgejo = {
+    enable = true;
+    reverseProxy = {
+      enable = true;
+      domain = "git.trivaris.org";
+    };
+  };
 }
