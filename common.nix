@@ -9,24 +9,25 @@
       betterfox = true;
       clearOnShutdown = true;
       allowedCookies = [
-        "https://github.com"
-        "https://asuracomic.net"
-        "https://www.kenmei.co"
-        "https://www.youtube.com"
-        "https://www.livechart.me"
-        "https://anilist.co"
-        "https://www.cloudflare.com"
-        "https://auth.mangadex.org"
-        "https://www.reddit.com"
-        "https://www.google.com"
-        "https://vault.trivaris.org"
-        "https://accounts.google.com"
-        "https://mangadex.org"
+        "https://www.instagram.com/"
         "https://chatgpt.com/"
         "https://www.notion.so"
         "https://web.whatsapp.com/"
+        "https://www.kenmei.co"
+        "https://mangadex.org"
+        "https://auth.mangadex.org"
+        "https://www.youtube.com"
+        "https://www.livechart.me"
+
+        "https://github.com"
+        "https://asuracomic.net"
+        "https://www.reddit.com"
+        "https://www.google.com"
+        "https://accounts.google.com"
         "https://f95zone.to/"
-        "https://www.instagram.com/"
+
+        "https://vault.trivaris.org"
+        "https://git.trivaris.org"
       ];
     };
 
