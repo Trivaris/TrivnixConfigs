@@ -7,8 +7,8 @@ common: {
   wireguard.enable = true;
   kdeConnect.enable = true;
   desktopEnvironment = "hyprland";
-  displayManager = "autoLogin";
-  autoLoginUser = "trivaris";
+  displayManager = "autologin";
+  autologin.user = "trivaris";
   
   hyprland.monitor = [
     "HDMI-A-1,1920x1080@60,0x840,1"
