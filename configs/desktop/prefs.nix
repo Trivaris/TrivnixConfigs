@@ -6,7 +6,7 @@ common: {
   steam.enable = true;
   wireguard.enable = true;
   kdeConnect.enable = true;
-  desktopEnvironment = "hyprland";
+  desktopEnvironment.name = "hyprland";
   displayManager = "autologin";
   autologin.user = "trivaris";
   

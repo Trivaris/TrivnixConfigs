@@ -52,9 +52,6 @@
   };
 
   host = {
-    displayManager = "gdm";
-    desktopEnvironment = "kde";
-  
     stylix = {
       colorscheme = "rose-pine-moon";
       cursorPackage = "rose-pine-cursor";
