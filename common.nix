@@ -53,6 +53,7 @@
 
   host = {
     stylix = {
+      darkmode = true;
       colorscheme = "rose-pine-moon";
       cursorPackage = "rose-pine-cursor";
       cursorName = "BreezeX-RosePine-Linux";
