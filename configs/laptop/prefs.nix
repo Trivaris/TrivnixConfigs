@@ -7,5 +7,5 @@ common: {
   kdeConnect.enable = true;
   language.keyMap = "de";
   displayManager = "gdm";
-  desktopEnvironment.name = "kde";
+  desktopEnvironment = "kde";
 }

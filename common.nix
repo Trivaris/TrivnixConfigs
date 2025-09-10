@@ -3,7 +3,7 @@
     terminalEmulator = "alacritty";
     shell = "fish";
     browsers = [ "librewolf" ];
-    appLauncher.name = "rofi";
+    appLauncher = "rofi";
 
     librewolf = {
       betterfox = true;
