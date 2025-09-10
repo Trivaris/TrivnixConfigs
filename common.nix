@@ -54,7 +54,8 @@
   host = {
     stylix = {
       darkmode = true;
-      colorscheme = "rose-pine-moon";
+      
+      colorscheme = "everforest-dark-soft";
       cursorPackage = "rose-pine-cursor";
       cursorName = "BreezeX-RosePine-Linux";
       nerdfont = "code-new-roman";
