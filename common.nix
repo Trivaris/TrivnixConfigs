@@ -45,6 +45,7 @@
       "bat"
       "btop"
       "eza"
+      "fastfetch"
       "fzf"
       "nvim"
       "zoxide"
