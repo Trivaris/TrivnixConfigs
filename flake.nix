@@ -39,8 +39,14 @@
         parts
         // {
           inherit pubKeys;
-          users = parts.users common.user;
-          prefs = parts.prefs common.host;
+          users = parts.users {
+            inherit trivnixLib;
+            common = common.user;
+          };
+          prefs = parts.prefs {
+            inherit trivnixLib;
+            common = common.host;
+          };
           pkgsConfig = parts.pkgsConfig common;
         };
     in

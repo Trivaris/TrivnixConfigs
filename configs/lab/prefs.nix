@@ -1,4 +1,5 @@
-common: {
+{ common, ... }:
+{
   inherit (common) stylix;
   openssh.enable = true;
 
@@ -16,6 +17,7 @@ common: {
   minecraftServer = {
     enable = false;
     modpack = "risingLegends";
+    serverIcon = ../../resources/icons/minecraftServer.png;
     reverseProxy = {
       enable = true;
       domain = "minecraft.trivaris.org";

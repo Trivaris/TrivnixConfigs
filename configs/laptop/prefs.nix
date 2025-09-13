@@ -1,5 +1,6 @@
-common: {
-  inherit (common)stylix;
+{ common, ... }:
+{
+  inherit (common) stylix;
   bluetooth.enable = true;
   printing.enable = true;
   steam.enable = true;
@@ -7,5 +8,4 @@ common: {
   kdeConnect.enable = true;
   language.keyMap = "de";
   displayManager = "gdm";
-  desktopEnvironment = "kde";
 }
