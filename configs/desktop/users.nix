@@ -18,7 +18,7 @@
       vscodium.enableLsp = true;
       git.email = "github@tripple.lurdane.de";
       desktopEnvironment = "hyprland";
-      hyprland.wallpapers = [ (trivnixLib.mkStorePath "resources/wallpapers/frieren.png") ];
+      hyprland.wallpapers = [ (trivnixLib.mkStorePath "resources/wallpapers/nix2.png") ];
     };
   };
 }

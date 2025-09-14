@@ -6,7 +6,7 @@
       inherit (common) shell;
       git.email = "github@tripple.lurdane.de";
 
-      cli = [
+      cli.enabled = [
         "fzf"
         "eza"
         "btop"

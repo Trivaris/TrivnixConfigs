@@ -2,6 +2,7 @@
 {
   inherit (common) stylix;
   openssh.enable = true;
+  autoUpgrade.enable = true;
 
   reverseProxy = {
     enable = true;

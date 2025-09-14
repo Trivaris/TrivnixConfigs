@@ -41,7 +41,7 @@
       "moonlightQT"
     ];
 
-    cli = [
+    cli.enabled = [
       "bat"
       "btop"
       "eza"
@@ -55,7 +55,7 @@
   host = {
     stylix = {
       darkmode = true;
-      colorscheme = "everforest-dark-soft";
+      colorscheme = "catppuccin-frappe";
       cursorPackage = "rose-pine-cursor";
       cursorName = "BreezeX-RosePine-Linux";
       nerdfont = "code-new-roman";
