@@ -34,6 +34,14 @@
     };
   };
 
+  emailServer = {
+    enable = true;
+    reverseProxy = {
+      enable = true;
+      domain = "mail.trivaris.org";
+    };
+  };
+
   suwayomi = {
     enable = true;
     reverseProxy = {
