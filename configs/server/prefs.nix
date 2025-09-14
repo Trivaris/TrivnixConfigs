@@ -34,10 +34,10 @@
     };
   };
 
-  emailServer = {
+  mailserver = {
     enable = true;
     reverseProxy = {
-      enable = true;
+      enable = false;
       domain = "mail.trivaris.org";
     };
   };
