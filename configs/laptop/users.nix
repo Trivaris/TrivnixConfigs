@@ -13,6 +13,7 @@
         shell
         ;
 
+      enableRandomStuff = true;
       email.enable = true;
       lutris.enable = true;
       vscodium.enableLsp = true;
