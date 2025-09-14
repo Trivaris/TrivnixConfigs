@@ -11,9 +11,9 @@
   };
 
   outputs =
-    { self, trivnix-lib, ... }:
+    { self, ... }@inputs:
     let
-      trivnixLib = trivnix-lib.lib.for self;
+      trivnixLib = inputs.trivnixLib.lib.for self;
       common = import ./common.nix;
 
       configs = builtins.filter (name: ((builtins.readDir ./configs).${name} == "directory")) (
