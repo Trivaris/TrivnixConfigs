@@ -36,6 +36,9 @@
 
   mailserver = {
     enable = true;
+    enableIpV6 = true;
+    ipV6Address = "2a01:4f8:c012:5e87::1";
+    ipV6Interface = "enp1s0";
     reverseProxy = {
       enable = false;
       domain = "mail.trivaris.org";
