@@ -20,6 +20,7 @@
         "https://www.livechart.me"
 
         "https://github.com"
+        "https://gitlab.com"
         "https://asuracomic.net"
         "https://www.reddit.com"
         "https://www.google.com"
