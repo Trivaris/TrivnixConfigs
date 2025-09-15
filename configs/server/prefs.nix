@@ -10,27 +10,11 @@
     zone = "trivaris.org";
   };
 
-  vaultwarden = {
+  forgejo = {
     enable = true;
     reverseProxy = {
       enable = true;
-      domain = "vault.trivaris.org";
-    };
-  };
-
-  nextcloud = {
-    enable = true;
-    reverseProxy = {
-      enable = true;
-      domain = "cloud.trivaris.org";
-    };
-  };
-
-  codeServer = {
-    enable = true;
-    reverseProxy = {
-      enable = true;
-      domain = "code.trivaris.org";
+      domain = "git.trivaris.org";
     };
   };
 
@@ -39,25 +23,15 @@
     enableIpV6 = true;
     ipV6Address = "2a01:4f8:c012:5e87::1";
     ipV6Interface = "enp1s0";
-    reverseProxy = {
-      enable = false;
-      domain = "mail.trivaris.org";
-    };
+    baseDomain = "trivaris.org";
+    domain = "mail.trivaris.org";
   };
 
-  suwayomi = {
+  vaultwarden = {
     enable = true;
     reverseProxy = {
       enable = true;
-      domain = "manga.trivaris.org";
-    };
-  };
-
-  forgejo = {
-    enable = true;
-    reverseProxy = {
-      enable = true;
-      domain = "git.trivaris.org";
+      domain = "vault.trivaris.org";
     };
   };
 }
