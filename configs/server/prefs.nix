@@ -25,6 +25,7 @@
     ipV6Interface = "enp1s0";
     baseDomain = "trivaris.org";
     domain = "mail.trivaris.org";
+    providerName = "Trivaris Mail";
   };
 
   vaultwarden = {
