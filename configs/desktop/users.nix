@@ -14,15 +14,16 @@
         ;
 
       enableRandomStuff = true;
-      email = {
-        enable = true;
-        excludeMailboxes = [ "personal" ];
-      };
       lutris.enable = true;
       vscodium.enableLsp = true;
       git.email = "github@tripple.lurdane.de";
       desktopEnvironment = "hyprland";
       hyprland.wallpapers = [ (trivnixLib.mkStorePath "resources/wallpapers/nix2.png") ];
+
+      email = {
+        enable = true;
+        exclude = [ "personal" ];
+      };
     };
   };
 }
