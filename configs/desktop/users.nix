@@ -20,6 +20,11 @@
       desktopEnvironment = "hyprland";
       hyprland.wallpapers = [ (trivnixLib.mkStorePath "resources/wallpapers/nix2.png") ];
 
+      jetbrainsIDEs = [
+        "rust-rover"
+        "idea-ultimate"
+      ];
+
       email = {
         enable = true;
         exclude = [ "personal" ];

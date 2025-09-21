@@ -14,7 +14,7 @@
   #     "minecraft.trivaris.org"
   #   ];
   # };
-  # 
+  #
   # minecraftServer = {
   #   enable = false;
   #   modpack = "risingLegends";
