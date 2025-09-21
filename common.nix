@@ -6,7 +6,7 @@
     appLauncher = "rofi";
 
     git = {
-      email = "git@tripple.lurdane.de";
+      email = "git@trivaris.org";
       enableSigning = true;
     };
 
