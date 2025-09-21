@@ -11,12 +11,12 @@
         cli
         terminalEmulator
         shell
+        git
         ;
 
       enableRandomStuff = true;
       lutris.enable = true;
       vscodium.enableLsp = true;
-      git.email = "github@tripple.lurdane.de";
       desktopEnvironment = "hyprland";
       hyprland.wallpapers = [ (trivnixLib.mkStorePath "resources/wallpapers/nix2.png") ];
 

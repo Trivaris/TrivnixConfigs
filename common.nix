@@ -5,6 +5,11 @@
     browsers = [ "librewolf" ];
     appLauncher = "rofi";
 
+    git = {
+      email = "github@tripple.lurdane.de";
+      enableSigning = true;
+    };
+
     librewolf = {
       betterfox = true;
       clearOnShutdown = true;
