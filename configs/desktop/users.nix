@@ -27,7 +27,7 @@
 
       email = {
         enable = true;
-        exclude = [ "personal" ];
+        exclude = [  ];
       };
     };
   };
