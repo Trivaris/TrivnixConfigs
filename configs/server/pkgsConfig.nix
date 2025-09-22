@@ -1,1 +1,1 @@
-common: common.pkgsConfig
+{ common, ... }: common.pkgsConfig

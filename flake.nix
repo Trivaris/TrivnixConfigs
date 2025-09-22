@@ -1,23 +1,23 @@
 {
-  description = "A very basic flake";
+  description = "Trivnix Prefs and Configurations";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-
-    trivnixLib = {
-      url = "github:Trivaris/TrivnixLib";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-  };
+  inputs.trivnixLib.url = "github:Trivaris/TrivnixLib";
 
   outputs =
     { self, ... }@inputs:
     let
+      inherit (builtins)
+        filter
+        readDir
+        attrNames
+        listToAttrs
+        ;
+
       trivnixLib = inputs.trivnixLib.lib.for self;
       common = import ./common.nix;
 
-      configs = builtins.filter (name: ((builtins.readDir ./configs).${name} == "directory")) (
-        builtins.attrNames (builtins.readDir ./configs)
+      configs = filter (name: ((readDir ./configs).${name} == "directory")) (
+        attrNames (readDir ./configs)
       );
 
       mkConfig =
@@ -31,27 +31,16 @@
               "mapImports"
             ];
           };
-          pubKeys = trivnixLib.resolveDir {
-            dirPath = ./configs/${configname}/pubKeys;
-            flags = [ "mapImports" ];
-          };
         in
-        parts
-        // {
-          inherit pubKeys;
-          users = parts.users {
-            inherit trivnixLib;
-            common = common.user;
-          };
-          prefs = parts.prefs {
-            inherit trivnixLib;
-            common = common.host;
-          };
-          pkgsConfig = parts.pkgsConfig common;
-        };
+        listToAttrs (
+          map (name: {
+            inherit name;
+            value = parts.${name} { inherit common trivnixLib; };
+          }) (attrNames parts)
+        );
     in
     {
-      configs = builtins.listToAttrs (
+      configs = listToAttrs (
         map (configname: {
           name = configname;
           value = mkConfig configname;

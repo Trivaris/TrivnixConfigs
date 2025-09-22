@@ -1,3 +1,4 @@
+{ ... }:
 {
   name = "trivserver";
   stateVersion = "25.05";
