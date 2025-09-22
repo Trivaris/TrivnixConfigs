@@ -4,7 +4,7 @@
   inputs.trivnixLib.url = "github:Trivaris/TrivnixLib";
 
   outputs =
-    { self, ... }@inputs:
+    { self, trivnixLib, ... }:
     let
       inherit (builtins)
         filter
@@ -13,7 +13,7 @@
         listToAttrs
         ;
 
-      trivnixLib = inputs.trivnixLib.lib.for self;
+      lib = trivnixLib.lib.for self;
       common = import ./common.nix;
 
       configs = filter (name: ((readDir ./configs).${name} == "directory")) (
@@ -23,7 +23,7 @@
       mkConfig =
         configname:
         let
-          parts = trivnixLib.resolveDir {
+          parts = lib.resolveDir {
             dirPath = ./configs/${configname};
             flags = [
               "onlyNixFiles"
@@ -35,7 +35,7 @@
         listToAttrs (
           map (name: {
             inherit name;
-            value = parts.${name} { inherit common trivnixLib; };
+            value = parts.${name} { inherit common lib; };
           }) (attrNames parts)
         );
     in

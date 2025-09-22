@@ -1,4 +1,4 @@
-{ common, trivnixLib, ... }:
+{ common, lib, ... }:
 {
   trivaris = {
     infos.hashedPassword = "$y$j9T$ZYnirABSLjZi.mfiKE.Si0$Fe67Vw2MHKtZybsHVGf0rNqcnN67LgLdsCbM8q6ln/B";
@@ -19,7 +19,7 @@
       lutris.enable = true;
       vscodium.enableLsp = true;
       desktopEnvironment = "hyprland";
-      hyprland.wallpapers = [ (trivnixLib.mkStorePath "resources/wallpapers/frieren.png") ];
+      hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
     };
   };
 }

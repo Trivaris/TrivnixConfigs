@@ -1,5 +1,5 @@
 {
-  user = {
+  home = {
     terminalEmulator = "alacritty";
     shell = "fish";
     browsers = [ "librewolf" ];
