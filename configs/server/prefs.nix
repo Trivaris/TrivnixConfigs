@@ -26,6 +26,17 @@
     baseDomain = "trivaris.org";
     domain = "mail.trivaris.org";
     providerName = "Trivaris Mail";
+    loginAccounts = {
+      "mail" = {
+        name = "mail@trivaris.org";
+        hashedPassword = "$2b$05$qwVfEJK/f/foRGT0wKuDTOsFjK5Fnj7in2wS54.zFDF1G.yOVTDAC";
+
+        aliases = [
+          "@mail.trivaris.org"
+          "@trivaris.org"
+        ];
+      };
+    };
   };
 
   vaultwarden = {
