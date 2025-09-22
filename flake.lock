@@ -19,26 +19,26 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "trivnix-lib": "trivnix-lib"
+        "trivnixLib": "trivnixLib"
       }
     },
-    "trivnix-lib": {
+    "trivnixLib": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1755478139,
-        "narHash": "sha256-GrYvt1/NnTO2k8yeLu6W+17e1UQY3axIDYUQwhbTx3o=",
-        "owner": "trivaris",
-        "repo": "trivnix-lib",
-        "rev": "a0ac95f1d3f030da300c09101cbe33daaad0346b",
+        "lastModified": 1757561529,
+        "narHash": "sha256-sZqdC9hnnp81mQp/a1k+zN6z1opqVqUqvUoOzCnWICg=",
+        "owner": "Trivaris",
+        "repo": "TrivnixLib",
+        "rev": "dd7779cbdb95cfa237d05540475a7d8deeb598e3",
         "type": "github"
       },
       "original": {
-        "owner": "trivaris",
-        "repo": "trivnix-lib",
+        "owner": "Trivaris",
+        "repo": "TrivnixLib",
         "type": "github"
       }
     }
