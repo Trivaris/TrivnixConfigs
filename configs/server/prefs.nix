@@ -27,9 +27,9 @@
     domain = "mail.trivaris.org";
     providerName = "Trivaris Mail";
     loginAccounts = {
-      "mail" = {
+      "mail@trivaris.org" = {
         name = "mail@trivaris.org";
-        hashedPassword = "$2b$05$qwVfEJK/f/foRGT0wKuDTOsFjK5Fnj7in2wS54.zFDF1G.yOVTDAC";
+        hashedPassword = "$2b$05$7p74qoLRa2R09CJwkkL8MeKqM3oOfC4rgb0R.K1jQlO2TWpj9E3Fe";
 
         aliases = [
           "@mail.trivaris.org"
