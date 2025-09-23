@@ -38,6 +38,24 @@
 
     serviceGroups = [
       {
+        Information = [
+          {
+            "CPU Usage" = {
+              type = "glances";
+              url = "http://127.0.0.1:61208";
+              metric = "cpu";
+            };
+          }
+          {
+            "Network Usage" = {
+              type = "glances";
+              url = "http://127.0.0.1:61208";
+              metric = "network:enp1s0";
+            };
+          }
+        ];
+      }
+      {
         Services = [
           {
             forgejo = {
@@ -55,20 +73,6 @@
     ];
 
     widgets = [
-      {
-        "CPU Usage" = {
-          type = "glances";
-          url = "http://127.0.0.1:61208";
-          metric = "cpu";
-        };
-      }
-      {
-        "Network Usage" = {
-          type = "glances";
-          url = "http://127.0.0.1:61208";
-          metric = "network:enp1s0";
-        };
-      }
       {
         openmeteo = {
           label = "Hamburg";
