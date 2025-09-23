@@ -3,6 +3,7 @@
   inherit (common.host) stylix;
   openssh.enable = true;
   autoUpgrade.enable = true;
+  glances.enable = true;
 
   reverseProxy = {
     enable = true;
@@ -35,18 +36,65 @@
       domain = "home.trivaris.org";
     };
 
+    services = [
+      {
+        Services = [
+          {
+            forgejo = {
+              description = "Personal Git Forge";
+              href = "https://git.trivaris.org";
+            };
+
+            vaultwarden = {
+              description = "Personal Password Manager";
+              href = "https://vault.trivaris.org";
+            };
+          }
+        ];
+      }
+    ];
+
     widgets = [
       {
-        resources = {
-          cpu = true;
-          disk = "/";
-          memory = true;
+        "CPU Usage" = {
+          type = "glances";
+          url = "http://127.0.0.1:61208";
+          metric = "cpu";
+        };
+      }
+      {
+        "Network Usage" = {
+          type = "glances";
+          url = "http://127.0.0.1:61208";
+          metric = "network:enp1s0";
+        };
+      }
+      {
+        openmeteo = {
+          label = "Hamburg";
+          latitude = "53.583076";
+          longitude = "10.082634";
+          timezone = "Europe/Berlin";
+          units = "metric";
+          cache = "5";
+        };
+      }
+      {
+        datetime = {
+          locale = "de";
+          format = {
+            dateStyle = "long";
+            timeStyle = "long";
+          };
         };
       }
       {
         search = {
-          provider = "duckduckgo";
+          provider = "brave";
+          showSearchSuggestions = "true";
+          suggestionUrl = "https://search.brave.com/api/suggest?q=";
           target = "_blank";
+
         };
       }
     ];
