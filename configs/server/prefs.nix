@@ -28,14 +28,6 @@
     };
   };
 
-  sabnzbd = {
-    enable = true;
-    reverseProxy = {
-      enable = true;
-      domain = "usenet.trivaris.org";
-    };
-  };
-
   homepage = {
     enable = true;
     reverseProxy = {
