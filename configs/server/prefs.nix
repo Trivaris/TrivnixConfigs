@@ -18,6 +18,22 @@
     };
   };
 
+  vaultwarden = {
+    enable = true;
+    reverseProxy = {
+      enable = true;
+      domain = "vault.trivaris.org";
+    };
+  };
+
+  homepage = {
+    enable = true;
+    reverseProxy = {
+      enable = true;
+      domain = "home.trivaris.org";
+    };
+  };
+
   mailserver = {
     enable = true;
     enableIpV6 = true;
@@ -33,14 +49,6 @@
         "@mail.trivaris.org"
         "@trivaris.org"
       ];
-    };
-  };
-
-  vaultwarden = {
-    enable = true;
-    reverseProxy = {
-      enable = true;
-      domain = "vault.trivaris.org";
     };
   };
 }
