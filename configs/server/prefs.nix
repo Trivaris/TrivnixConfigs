@@ -12,6 +12,7 @@
 
   forgejo = {
     enable = true;
+    sendMails = true;
     reverseProxy = {
       enable = true;
       domain = "git.trivaris.org";
@@ -20,6 +21,7 @@
 
   vaultwarden = {
     enable = true;
+    sendMails = true;
     reverseProxy = {
       enable = true;
       domain = "vault.trivaris.org";
