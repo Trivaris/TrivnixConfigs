@@ -36,7 +36,7 @@
       domain = "home.trivaris.org";
     };
 
-    services = [
+    serviceGroups = [
       {
         Services = [
           {
