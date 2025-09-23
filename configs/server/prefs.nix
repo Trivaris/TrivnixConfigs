@@ -32,6 +32,22 @@
       enable = true;
       domain = "home.trivaris.org";
     };
+
+    widgets = [
+      {
+        resources = {
+          cpu = true;
+          disk = "/";
+          memory = true;
+        };
+      }
+      {
+        search = {
+          provider = "duckduckgo";
+          target = "_blank";
+        };
+      }
+    ];
   };
 
   mailserver = {
