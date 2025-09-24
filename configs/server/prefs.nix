@@ -38,20 +38,56 @@
 
     serviceGroups = [
       {
-        "CPU Usage" = {
-          type = "glances";
-          url = "http://127.0.0.1:61208";
-          metric = "cpu";
-          version = "4";
-        };
-      }
-      {
-        "Network Usage" = {
-          type = "glances";
-          url = "http://127.0.0.1:61208";
-          metric = "network:enp1s0";
-          version = "4";
-        };
+        Glances =
+          let
+            port = 61208;
+          in
+          [
+            {
+              Info = {
+                widget = {
+                  type = "glances";
+                  url = "http://localhost:${port}";
+                  metric = "info";
+                  chart = false;
+                  version = 4;
+                };
+              };
+            }
+            {
+              "CPU Temp" = {
+                widget = {
+                  type = "glances";
+                  url = "http://localhost:${port}";
+                  metric = "sensor:Package id 0";
+                  chart = false;
+                  version = 4;
+                };
+              };
+            }
+            {
+              Processes = {
+                widget = {
+                  type = "glances";
+                  url = "http://localhost:${port}";
+                  metric = "process";
+                  chart = false;
+                  version = 4;
+                };
+              };
+            }
+            {
+              Network = {
+                widget = {
+                  type = "glances";
+                  url = "http://localhost:${port}";
+                  metric = "network:enp2s0";
+                  chart = false;
+                  version = 4;
+                };
+              };
+            }
+          ];
       }
       {
         Services = [
