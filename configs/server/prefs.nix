@@ -33,27 +33,25 @@
     enable = true;
     reverseProxy = {
       enable = true;
-      domain = "home.trivaris.org";
+      domain = "dash.trivaris.org";
     };
 
     serviceGroups = [
       {
-        Information = [
-          {
-            "CPU Usage" = {
-              type = "glances";
-              url = "http://127.0.0.1:61208";
-              metric = "cpu";
-            };
-          }
-          {
-            "Network Usage" = {
-              type = "glances";
-              url = "http://127.0.0.1:61208";
-              metric = "network:enp1s0";
-            };
-          }
-        ];
+        "CPU Usage" = {
+          type = "glances";
+          url = "http://127.0.0.1:61208";
+          metric = "cpu";
+          version = "4";
+        };
+      }
+      {
+        "Network Usage" = {
+          type = "glances";
+          url = "http://127.0.0.1:61208";
+          metric = "network:enp1s0";
+          version = "4";
+        };
       }
       {
         Services = [
@@ -62,7 +60,8 @@
               description = "Personal Git Forge";
               href = "https://git.trivaris.org";
             };
-
+          }
+          {
             vaultwarden = {
               description = "Personal Password Manager";
               href = "https://vault.trivaris.org";
