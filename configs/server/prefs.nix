@@ -40,7 +40,7 @@
       {
         Glances =
           let
-            port = 61208;
+            port = "61208";
           in
           [
             {
