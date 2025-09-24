@@ -26,11 +26,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1757561529,
-        "narHash": "sha256-sZqdC9hnnp81mQp/a1k+zN6z1opqVqUqvUoOzCnWICg=",
+        "lastModified": 1758672981,
+        "narHash": "sha256-MhX22FalkEWqA05u81/NUYt3PpRk8YJ9ssfnHsNo2Ac=",
         "owner": "Trivaris",
         "repo": "TrivnixLib",
-        "rev": "dd7779cbdb95cfa237d05540475a7d8deeb598e3",
+        "rev": "a061bd5c94f9e6c926d27777167fe9c44407e79d",
         "type": "github"
       },
       "original": {
