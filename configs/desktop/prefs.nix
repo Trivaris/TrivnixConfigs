@@ -7,5 +7,6 @@
   steam.enable = true;
   wireguard.enable = true;
   kdeConnect.enable = true;
+  displayManager = "autologin";
   mainUser = "trivaris";
 }
