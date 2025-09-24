@@ -1,4 +1,4 @@
-{ common, ... }:
+{ common, lib, ... }:
 {
   inherit (common.host) stylix;
   openssh.enable = true;
@@ -31,9 +31,33 @@
 
   homepage = {
     enable = true;
+
     reverseProxy = {
       enable = true;
       domain = "dash.trivaris.org";
+    };
+
+    settings = {
+      favicon = lib.mkStorePath "resources/icons/nixowos.svg";
+      color = "gray";
+
+      layout = [
+        {
+          Glances = {
+            header = false;
+            style = "row";
+            columns = 4;
+          };
+        }
+      ];
+
+      background = {
+        image = lib.mkStorePath "resources/wallpapers/nix3.png";
+        blur = "sm";
+        saturate = 100;
+        brightness = 100;
+        opacity = 50;
+      };
     };
 
     serviceGroups = [
@@ -78,15 +102,17 @@
       {
         Services = [
           {
-            forgejo = {
+            Forgejo = {
               description = "Personal Git Forge";
               href = "https://git.trivaris.org";
+              icon = "gitea.svg";
             };
           }
           {
-            vaultwarden = {
+            Vaultwarden = {
               description = "Personal Password Manager";
               href = "https://vault.trivaris.org";
+              icon = "vaultwarden.svg";
             };
           }
         ];
