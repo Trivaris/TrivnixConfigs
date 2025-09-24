@@ -49,18 +49,6 @@
                   type = "glances";
                   url = "http://localhost:${port}";
                   metric = "info";
-                  chart = false;
-                  version = 4;
-                };
-              };
-            }
-            {
-              "CPU Temp" = {
-                widget = {
-                  type = "glances";
-                  url = "http://localhost:${port}";
-                  metric = "sensor:Package id 0";
-                  chart = false;
                   version = 4;
                 };
               };
@@ -71,18 +59,16 @@
                   type = "glances";
                   url = "http://localhost:${port}";
                   metric = "process";
-                  chart = false;
                   version = 4;
                 };
               };
             }
             {
-              Network = {
+              Disk = {
                 widget = {
                   type = "glances";
                   url = "http://localhost:${port}";
-                  metric = "network:enp2s0";
-                  chart = false;
+                  metric = "disk:sda3";
                   version = 4;
                 };
               };
