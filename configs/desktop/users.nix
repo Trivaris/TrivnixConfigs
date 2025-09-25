@@ -15,7 +15,6 @@
         ;
 
       enableRandomStuff = true;
-      lutris.enable = true;
       vscodium.enableLsp = true;
       desktopEnvironment = "hyprland";
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/nix2.png") ];

@@ -16,7 +16,6 @@
 
       enableRandomStuff = true;
       email.enable = true;
-      lutris.enable = true;
       vscodium.enableLsp = true;
       desktopEnvironment = "hyprland";
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];

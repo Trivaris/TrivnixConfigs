@@ -1,6 +1,6 @@
 {
   home = {
-    terminalEmulator = "alacritty";
+    terminalEmulator = "kitty";
     shell = "fish";
     browsers = [ "librewolf" ];
     appLauncher = "rofi";
@@ -49,6 +49,7 @@
       "thunderbird"
       "vesktop"
       "moonlightQT"
+      "lutris"
     ];
 
     cli.enabled = [
@@ -59,6 +60,7 @@
       "fzf"
       "nvim"
       "zoxide"
+      "spotify"
     ];
   };
 
