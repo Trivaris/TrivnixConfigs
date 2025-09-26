@@ -40,28 +40,6 @@
         "https://git.trivaris.org"
       ];
     };
-
-    gui = [
-      "vscodium"
-      "bitwarden"
-      "signal"
-      "spotify"
-      "thunderbird"
-      "vesktop"
-      "moonlightQT"
-      "lutris"
-    ];
-
-    cli.enabled = [
-      "bat"
-      "btop"
-      "eza"
-      "fastfetch"
-      "fzf"
-      "nvim"
-      "zoxide"
-      "spotify"
-    ];
   };
 
   host = {

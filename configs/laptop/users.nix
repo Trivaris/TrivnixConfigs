@@ -7,8 +7,6 @@
         browsers
         appLauncher
         librewolf
-        gui
-        cli
         terminalEmulator
         shell
         git
