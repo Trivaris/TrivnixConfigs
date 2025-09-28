@@ -11,6 +11,15 @@
     zone = "trivaris.org";
   };
 
+  collabora = {
+    enable = true;
+    nextcloudFQDNS = [ "cloud.joneit.net" ];
+    reverseProxy = {
+      enable = true;
+      domain = "collabora.trivaris.org";
+    };
+  };
+
   forgejo = {
     enable = true;
     sendMails = true;
