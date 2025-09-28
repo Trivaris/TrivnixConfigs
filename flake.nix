@@ -13,7 +13,7 @@
         listToAttrs
         ;
 
-      lib = trivnixLib.lib.for self;
+      lib = trivnixLib.lib.for { selfArg = self; };
       common = import ./common.nix;
 
       configs = filter (name: ((readDir ./configs).${name} == "directory")) (
