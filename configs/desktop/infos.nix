@@ -5,7 +5,7 @@
   hardwareKey = true;
   ip = "192.168.178.70";
   architecture = "x86_64-linux";
-  hashedRootPassword = "$y$j9T$ZYnirABSLjZi.mfiKE.Si0$Fe67Vw2MHKtZybsHVGf0rNqcnN67LgLdsCbM8q6ln/B";
+  hashedRootPassword = "$y$j9T$R.NIp2RpQQOwy48wQU19n1$wHb/Nub4Bt1yCtrMEWe3iLSBx1WvfnncRq95AqFBKh3";
 
   monitor = [
     "HDMI-A-1,1920x1080@60,0x840,1"

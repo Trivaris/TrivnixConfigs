@@ -5,6 +5,6 @@
   hardwareKey = true;
   ip = "192.168.178.90";
   architecture = "x86_64-linux";
-  hashedRootPassword = "$y$j9T$ZYnirABSLjZi.mfiKE.Si0$Fe67Vw2MHKtZybsHVGf0rNqcnN67LgLdsCbM8q6ln/B";
+  hashedRootPassword = "$y$j9T$8F3.B8RZQR714UuB45yEH.$9hYpLjzuz5I85nIZ/8d2n58i8Q3qXhiESOWV.3wSPD0";
   monitor = [ "eDP-1,1920x1080@60,0x0,1" ];
 }
