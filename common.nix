@@ -14,6 +14,45 @@
       };
     };
 
+    misc = {
+      otherPrograms = [
+        "spicetify"
+        "btop"
+        "spotify-player"
+        "vesktop"
+      ];
+
+      otherPackages = {
+        _general = [
+          "android-tools"
+          "rsclock"
+          "pipes-rs"
+          "rmatrix"
+          "rbonsai"
+          "adbAutoPlayer"
+          "me3"
+          "hardinfo2"
+          "protonvpn-gui"
+          "vlc"
+          "wayland-utils"
+          "wl-clipboard-rs"
+          "ksud"
+          "bitwarden-desktop"
+          "chatgpt-cli"
+          "lutris"
+          "moonlight-qt"
+          "signal-desktop-bin"
+        ];
+
+        kdePackages = [
+          "kcalc"
+          "dolphin"
+          "ark"
+          "gwenview"
+        ];
+      };
+    };
+
     librewolf = {
       betterfox = true;
       clearOnShutdown = true;

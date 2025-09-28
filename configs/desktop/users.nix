@@ -10,9 +10,9 @@
         terminalEmulator
         shell
         git
+        misc
         ;
 
-      enableRandomStuff = true;
       vscodium.enableLsp = true;
       desktopEnvironment = "hyprland";
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/nix2.png") ];

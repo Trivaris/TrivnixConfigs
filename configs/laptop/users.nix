@@ -10,9 +10,9 @@
         terminalEmulator
         shell
         git
+        misc
         ;
 
-      enableRandomStuff = true;
       email.enable = true;
       vscodium.enableLsp = true;
       desktopEnvironment = "hyprland";
