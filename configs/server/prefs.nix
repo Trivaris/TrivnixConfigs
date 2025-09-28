@@ -13,7 +13,7 @@
 
   collabora = {
     enable = true;
-    nextcloudFQDNS = [ "cloud.joneit.net" ];
+    nextcloudFQDNs = [ "cloud.joneit.net" ];
     reverseProxy = {
       enable = true;
       domain = "collabora.trivaris.org";
