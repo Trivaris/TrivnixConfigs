@@ -6,6 +6,7 @@
     appLauncher = "rofi";
 
     adbAutoPlayer = {
+      enable = true;
       settings = builtins.fromTOML (builtins.readFile ./resources/externalConfigs/adbAutoPlayer/config.toml);
       games.afkJourney = builtins.fromTOML (builtins.readFile ./resources/externalConfigs/adbAutoPlayer/AfkJourney.toml);
     };
