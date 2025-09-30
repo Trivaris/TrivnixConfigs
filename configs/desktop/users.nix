@@ -5,6 +5,7 @@
     prefs = {
       inherit (common.home)
         browsers
+        adbAutoPlayer
         appLauncher
         librewolf
         terminalEmulator

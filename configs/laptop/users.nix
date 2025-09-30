@@ -6,6 +6,7 @@
       inherit (common.home)
         browsers
         appLauncher
+        adbAutoPlayer
         librewolf
         terminalEmulator
         shell

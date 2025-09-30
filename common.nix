@@ -5,6 +5,11 @@
     browsers = [ "librewolf" ];
     appLauncher = "rofi";
 
+    adbAutoPlayer = {
+      settings = builtins.fromTOML (builtins.readFile ./resources/externalConfigs/adbAutoPlayer/config.toml);
+      games.afkJourney = builtins.fromTOML (builtins.readFile ./resources/externalConfigs/adbAutoPlayer/AfkJourney.toml);
+    };
+
     git = {
       email = "git@trivaris.org";
       enableSigning = true;
@@ -29,7 +34,6 @@
           "pipes-rs"
           "rmatrix"
           "rbonsai"
-          "adbAutoPlayer"
           "me3"
           "hardinfo2"
           "protonvpn-gui"
