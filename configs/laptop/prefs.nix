@@ -1,6 +1,7 @@
 { common, ... }:
 {
   inherit (common.host) stylix;
+  ignoreLidShut = true;
   bluetooth.enable = true;
   printing.enable = true;
   steam.enable = true;
