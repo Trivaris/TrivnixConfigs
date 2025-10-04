@@ -9,5 +9,6 @@
   steam.enable = true;
   wireguard.enable = true;
   kdeConnect.enable = true;
+  thunderbird.enable = true;
   language.keyMap = "de";
 }
