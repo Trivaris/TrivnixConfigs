@@ -25,6 +25,7 @@
     };
 
     vscode = {
+      enable = true;
       enableLsp = true;
       otherExtensions = {
         golang = [ "go" ];
