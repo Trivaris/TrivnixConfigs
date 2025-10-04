@@ -8,6 +8,5 @@
   printing.enable = true;
   steam.enable = true;
   wireguard.enable = true;
-  thunderbird.enable = true;
   kdeConnect.enable = true;
 }

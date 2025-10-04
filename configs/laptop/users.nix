@@ -15,8 +15,9 @@
         vscode
         ;
 
-      email.enable = true;
+      thunderbird.enable = true;
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
+      email.enable = true;
       desktopEnvironment = "hyprland";
     };
   };
