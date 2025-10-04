@@ -7,8 +7,12 @@
 
     adbAutoPlayer = {
       enable = true;
-      settings = builtins.fromTOML (builtins.readFile ./resources/externalConfigs/adbAutoPlayer/config.toml);
-      games.afkJourney = builtins.fromTOML (builtins.readFile ./resources/externalConfigs/adbAutoPlayer/AfkJourney.toml);
+      settings = builtins.fromTOML (
+        builtins.readFile ./resources/externalConfigs/adbAutoPlayer/config.toml
+      );
+      games.afkJourney = builtins.fromTOML (
+        builtins.readFile ./resources/externalConfigs/adbAutoPlayer/AfkJourney.toml
+      );
     };
 
     git = {
@@ -17,6 +21,16 @@
       urlAliases = {
         "git@github.com:Trivaris/" = "triv:";
         "git@github.com:" = "github:";
+      };
+    };
+
+    vscode = {
+      enableLsp = true;
+      otherExtensions = {
+        golang = [ "go" ];
+        svelte = [ "svelte-vscode" ];
+        dbaeumer = [ "vscode-eslint" ];
+        esbenp = [ "prettier-vscode" ];
       };
     };
 

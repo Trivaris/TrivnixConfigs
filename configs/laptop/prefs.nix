@@ -1,6 +1,7 @@
 { common, ... }:
 {
   inherit (common.host) stylix;
+  displayManager = "gdm";
   ignoreLidShut = true;
   bluetooth.enable = true;
   openssh.enable = true;
@@ -9,5 +10,4 @@
   wireguard.enable = true;
   kdeConnect.enable = true;
   language.keyMap = "de";
-  displayManager = "gdm";
 }
