@@ -4,6 +4,7 @@
   displayManager = "gdm";
   ignoreLidShut = true;
   bluetooth.enable = true;
+  nmApplet.enable = true;
   openssh.enable = true;
   printing.enable = true;
   steam.enable = true;

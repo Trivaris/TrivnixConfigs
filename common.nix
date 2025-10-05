@@ -87,6 +87,9 @@
         "https://www.youtube.com"
         "https://www.livechart.me"
 
+        "https://www.tucan.tu-darmstadt.de"
+        "https://www.turbo.ai"
+
         "https://github.com"
         "https://gitlab.com"
         "https://asuracomic.net"

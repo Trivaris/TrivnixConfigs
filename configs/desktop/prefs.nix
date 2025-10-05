@@ -4,6 +4,7 @@
   displayManager = "autologin";
   mainUser = "trivaris";
   bluetooth.enable = true;
+  nmApplet.enable = true;
   openssh.enable = true;
   printing.enable = true;
   steam.enable = true;
