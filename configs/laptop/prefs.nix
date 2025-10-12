@@ -11,4 +11,5 @@
   wireguard.enable = true;
   kdeConnect.enable = true;
   language.keyMap = "de";
+  gdm.enableFingerprintLogin = true;
 }
