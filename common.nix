@@ -77,21 +77,23 @@
       betterfox = true;
       clearOnShutdown = true;
       allowedCookies = [
-        "https://www.instagram.com/"
-        "https://chatgpt.com/"
+        "https://www.instagram.com"
+        "https://chatgpt.com"
         "https://www.notion.so"
-        "https://web.whatsapp.com/"
+        "https://web.whatsapp.com"
         "https://www.kenmei.co"
         "https://mangadex.org"
         "https://auth.mangadex.org"
         "https://www.youtube.com"
         "https://www.livechart.me"
+        "https://kenmei.pages.dev"
 
         "https://www.tucan.tu-darmstadt.de"
         "https://login.tu-darmstadt.de"
         "https://moodle.tu-darmstadt.de"
         "https://moodle.informatik.tu-darmstadt.de"
-        
+        "https://tu-darmstadt.de"
+
         "https://github.com"
         "https://gitlab.com"
         "https://asuracomic.net"
