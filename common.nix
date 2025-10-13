@@ -88,11 +88,13 @@
         "https://www.livechart.me"
         "https://kenmei.pages.dev"
 
+        "https://tucan.tu-darmstadt.de"
         "https://www.tucan.tu-darmstadt.de"
         "https://login.tu-darmstadt.de"
         "https://moodle.tu-darmstadt.de"
         "https://moodle.informatik.tu-darmstadt.de"
         "https://tu-darmstadt.de"
+        "https://www.tu-darmstadt.de"
         "https://idm.tu-darmstadt.de"
         "https://login.hrz.tu-darmstadt.de"
 
