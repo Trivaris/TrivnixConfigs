@@ -93,6 +93,8 @@
         "https://moodle.tu-darmstadt.de"
         "https://moodle.informatik.tu-darmstadt.de"
         "https://tu-darmstadt.de"
+        "https://idm.tu-darmstadt.de"
+        "https://login.hrz.tu-darmstadt.de"
 
         "https://github.com"
         "https://gitlab.com"
