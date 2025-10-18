@@ -4,6 +4,7 @@
   openssh.enable = true;
   autoUpgrade.enable = true;
   glances.enable = true;
+  wireguard.enable = true;
 
   reverseProxy = {
     enable = true;
