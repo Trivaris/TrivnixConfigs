@@ -3,7 +3,7 @@
   name = "trivdesktop";
   stateVersion = "25.05";
   hardwareKey = true;
-  ip = "192.168.178.70";
+  ip = "192.168.178.2";
   architecture = "x86_64-linux";
   hashedRootPassword = "$y$j9T$R.NIp2RpQQOwy48wQU19n1$wHb/Nub4Bt1yCtrMEWe3iLSBx1WvfnncRq95AqFBKh3";
 
