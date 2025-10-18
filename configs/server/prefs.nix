@@ -4,7 +4,10 @@
   openssh.enable = true;
   autoUpgrade.enable = true;
   glances.enable = true;
-  wireguard.enable = true;
+  wireguard = {
+    enable = true;
+    publicKey = "cYpfc1NtE4G6R6JqMl1Cz6xSy+bU+D9HkDUICgE4Fko="; 
+  };
 
   reverseProxy = {
     enable = true;
