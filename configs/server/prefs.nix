@@ -5,18 +5,15 @@
   autoUpgrade.enable = true;
   glances.enable = true;
 
+  ipsec = {
+    enable = true;
+    domain = "vpn.trivaris.org";
+  };
+
   reverseProxy = {
     enable = true;
     email = "cloudflare@tripple.lurdane.de";
     zone = "trivaris.org";
-  };
-
-  ipsec = {
-    enable = true;
-    reverseProxy = {
-      enable = false;
-      domain = "vpn.trivaris.org";
-    };
   };
 
   cfddns = {
