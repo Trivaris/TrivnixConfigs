@@ -4,15 +4,19 @@
   openssh.enable = true;
   autoUpgrade.enable = true;
   glances.enable = true;
-  wireguard = {
-    enable = true;
-    publicKey = "cYpfc1NtE4G6R6JqMl1Cz6xSy+bU+D9HkDUICgE4Fko="; 
-  };
 
   reverseProxy = {
     enable = true;
     email = "cloudflare@tripple.lurdane.de";
     zone = "trivaris.org";
+  };
+
+  ipsec = {
+    enable = true;
+    reverseProxy = {
+      enable = false;
+      domain = "vpn.trivaris.org";
+    };
   };
 
   cfddns = {
