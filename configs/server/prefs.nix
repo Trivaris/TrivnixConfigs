@@ -15,6 +15,14 @@
     zone = "trivaris.org";
   };
 
+  cfddns = {
+    enable = true;
+    reverseProxy = {
+      enable = true;
+      domain = "cfddns.trivaris.org";
+    };
+  };
+
   collabora = {
     enable = true;
     nextcloudFQDNs = [ "cloud.joneit.net" ];
