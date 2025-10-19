@@ -11,6 +11,7 @@
     cert = lib.mkStorePath "resources/ipsecCerts/server-cert.pem";
     caCert = lib.mkStorePath "resources/ipsecCerts/ca-cert.pem";
     extraClientCerts.fritzbox = lib.mkStorePath "resources/ipsecCerts/fritzbox-cert.pem";
+    fullchain = lib.mkStorePath "resources/ipsecCerts/server.fullchain.pem";
   };
 
   reverseProxy = {
