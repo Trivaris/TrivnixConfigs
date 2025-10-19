@@ -9,11 +9,11 @@
   printing.enable = true;
   steam.enable = true;
   kdeConnect.enable = true;
-  ipsec = {
+  ipsecClient = {
     enable = true;
-    asClient = true;
     domain = "vpn.trivaris.org";
-    clientCert = lib.mkStorePath "resources/ipsecCerts/other-cert.pem";
-    clientId = "other";
+    id = "other";
+    cert = lib.mkStorePath "resources/ipsecCerts/other-cert.pem";
+    caCert = lib.mkStorePath "resources/ipsecCerts/ca-cert.pem";
   };
 }

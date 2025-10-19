@@ -5,12 +5,12 @@
   autoUpgrade.enable = true;
   glances.enable = true;
 
-  ipsec = {
+  ipsecServer = {
     enable = true;
     domain = "vpn.trivaris.org";
-    extraClientCerts = {
-      fritzbox = lib.mkStorePath "resources/ipsecCerts/fritzbox-cert.pem";
-    };
+    cert = lib.mkStorePath "resources/ipsecCerts/server-cert.pem";
+    caCert = lib.mkStorePath "resources/ipsecCerts/ca-cert.pem";
+    extraClientCerts.fritzbox = lib.mkStorePath "resources/ipsecCerts/fritzbox-cert.pem";
   };
 
   reverseProxy = {

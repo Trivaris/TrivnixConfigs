@@ -11,11 +11,11 @@
   steam.enable = true;
   kdeConnect.enable = true;
   language.keyMap = "de";
-  ipsec = {
+  ipsecClient = {
     enable = true;
-    asClient = true;
     domain = "vpn.trivaris.org";
-    clientCert = lib.mkStorePath "resources/ipsecCerts/laptop-cert.pem";
-    clientId = "laptop";
+    id = "laptop";
+    cert = lib.mkStorePath "resources/ipsecCerts/laptop-cert.pem";
+    caCert = lib.mkStorePath "resources/ipsecCerts/ca-cert.pem";
   };
 }
