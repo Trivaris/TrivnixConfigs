@@ -8,6 +8,9 @@
   ipsec = {
     enable = true;
     domain = "vpn.trivaris.org";
+    extraCerts = {
+      fritzbox = lib.mkStorePath "resources/ipsecCerts/fritzbox-cert.pem";
+    };
   };
 
   reverseProxy = {
