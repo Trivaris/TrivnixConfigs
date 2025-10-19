@@ -1,4 +1,4 @@
-{ common, ... }:
+{ common, lib, ... }:
 {
   inherit (common.host) stylix;
   displayManager = "gdm";
@@ -11,4 +11,11 @@
   steam.enable = true;
   kdeConnect.enable = true;
   language.keyMap = "de";
+  ipsec = {
+    enable = true;
+    asClient = true;
+    domain = "vpn.trivaris.org";
+    clientCert = lib.mkStorePath "resources/ipsecCerts/laptop-cert.pem";
+    clientId = "laptop";
+  };
 }

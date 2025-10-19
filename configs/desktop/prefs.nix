@@ -1,4 +1,4 @@
-{ common, ... }:
+{ common, lib, ... }:
 {
   inherit (common.host) stylix;
   displayManager = "autologin";
@@ -9,4 +9,11 @@
   printing.enable = true;
   steam.enable = true;
   kdeConnect.enable = true;
+  ipsec = {
+    enable = true;
+    asClient = true;
+    domain = "vpn.trivaris.org";
+    clientCert = lib.mkStorePath "resources/ipsecCerts/other-cert.pem";
+    clientId = "other";
+  };
 }
