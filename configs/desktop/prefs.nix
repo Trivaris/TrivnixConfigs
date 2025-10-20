@@ -9,6 +9,12 @@
   printing.enable = true;
   steam.enable = true;
   kdeConnect.enable = true;
+
+  grub = {
+    enable = true;
+    splash = lib.mkStorePath "resources/icons/nixowos.png";
+  };
+
   ipsecClient = {
     enable = true;
     domain = "vpn.trivaris.org";
