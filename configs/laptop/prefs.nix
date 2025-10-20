@@ -11,11 +11,7 @@
   steam.enable = true;
   kdeConnect.enable = true;
   language.keyMap = "de";
-
-  grub = {
-    enable = true;
-    splash = lib.mkStorePath "resources/icons/nixowos.png";
-  };
+  grub.enable = true;
 
   ipsecClient = {
     enable = true;
