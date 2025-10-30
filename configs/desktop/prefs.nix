@@ -5,11 +5,14 @@
   mainUser = "trivaris";
   bluetooth.enable = true;
   nmApplet.enable = true;
-  openssh.enable = true;
   printing.enable = true;
   steam.enable = true;
   kdeConnect.enable = true;
-  grub.enable = true;
+
+  openssh = {
+    enable = true;
+    ports = [ 23232 ];
+  };
 
   ipsecClient = {
     enable = true;

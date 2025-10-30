@@ -6,12 +6,11 @@
   enableFingerPrintAuth = true;
   bluetooth.enable = true;
   nmApplet.enable = true;
-  openssh.enable = true;
   printing.enable = true;
   steam.enable = true;
   kdeConnect.enable = true;
   language.keyMap = "de";
-  grub.enable = true;
+  openssh.enable = true;
 
   ipsecClient = {
     enable = true;
