@@ -30,7 +30,6 @@
         "btop"
         "spotify-player"
         "vesktop"
-        "vscode"
       ];
 
       otherPackages = {
@@ -52,6 +51,7 @@
           "lutris"
           "moonlight-qt"
           "signal-desktop-bin"
+          "vscode"
         ];
 
         kdePackages = [
