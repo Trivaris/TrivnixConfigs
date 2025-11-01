@@ -12,7 +12,6 @@
         misc
         shell
         terminalEmulator
-        vscode
         ;
 
       desktopEnvironment = "hyprland";

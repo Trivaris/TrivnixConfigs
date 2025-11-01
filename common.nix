@@ -24,17 +24,6 @@
       };
     };
 
-    vscode = {
-      enable = true;
-      enableLsp = true;
-      otherExtensions = {
-        golang = [ "go" ];
-        svelte = [ "svelte-vscode" ];
-        dbaeumer = [ "vscode-eslint" ];
-        esbenp = [ "prettier-vscode" ];
-      };
-    };
-
     misc = {
       otherPrograms = [
         "spicetify"
