@@ -30,6 +30,7 @@
         "btop"
         "spotify-player"
         "vesktop"
+        "vscode"
       ];
 
       otherPackages = {
