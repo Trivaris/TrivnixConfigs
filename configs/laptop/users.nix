@@ -15,7 +15,6 @@
         ;
 
       desktopEnvironment = "hyprland";
-      enableDevStuffs = true;
       waybar.weatherLocation = "darmstadt";
       thunderbird.enable = true;
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];

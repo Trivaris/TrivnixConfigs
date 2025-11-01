@@ -15,7 +15,6 @@
         ;
 
       desktopEnvironment = "hyprland";
-      enableDevStuffs = true;
       thunderbird.enable = true;
       waybar.weatherLocation = "darmstadt";
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/nix2.png") ];
