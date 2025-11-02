@@ -1,44 +1,6 @@
 {
   "nodes": {
-    "nixpkgs": {
-      "locked": {
-        "lastModified": 1755027561,
-        "narHash": "sha256-IVft239Bc8p8Dtvf7UAACMG5P3ZV+3/aO28gXpGtMXI=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "005433b926e16227259a1843015b5b2b7f7d1fc3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "root": {
-      "inputs": {
-        "trivnixLib": "trivnixLib"
-      }
-    },
-    "trivnixLib": {
-      "inputs": {
-        "nixpkgs": "nixpkgs"
-      },
-      "locked": {
-        "lastModified": 1758672981,
-        "narHash": "sha256-MhX22FalkEWqA05u81/NUYt3PpRk8YJ9ssfnHsNo2Ac=",
-        "owner": "Trivaris",
-        "repo": "TrivnixLib",
-        "rev": "a061bd5c94f9e6c926d27777167fe9c44407e79d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Trivaris",
-        "repo": "TrivnixLib",
-        "type": "github"
-      }
-    }
+    "root": {}
   },
   "root": "root",
   "version": 7

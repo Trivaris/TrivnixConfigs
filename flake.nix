@@ -1,51 +1,34 @@
 {
   description = "Trivnix Prefs and Configurations";
 
-  inputs.trivnixLib.url = "github:Trivaris/TrivnixLib";
-
   outputs =
-    { self, trivnixLib, ... }:
+    { self }:
     let
-      inherit (builtins)
-        filter
-        readDir
-        attrNames
-        listToAttrs
-        ;
-
-      lib = trivnixLib.lib.for { selfArg = self; };
+      lib.mkFlakePath = path: self + (toString "/${path}");
       common = import ./common.nix;
+      configs = mapToImports (builtins.readDir ./configs) ./configs;
 
-      configs = filter (name: ((readDir ./configs).${name} == "directory")) (
-        attrNames (readDir ./configs)
-      );
+      mapToImports =
+        attrs: path:
+        builtins.mapAttrs (
+          name: value:
+          let
+            nextPath = "${path}/${name}";
+          in
+          if value == "directory" then mapToImports (builtins.readDir nextPath) nextPath else import nextPath
+        ) attrs;
 
-      mkConfig =
-        configname:
-        let
-          parts = lib.resolveDir {
-            dirPath = ./configs/${configname};
-            flags = [
-              "onlyNixFiles"
-              "stripNixSuffix"
-              "mapImports"
-            ];
-          };
-        in
-        listToAttrs (
+      importParts =
+        parts:
+        builtins.listToAttrs (
           map (name: {
-            inherit name;
+            name = builtins.replaceStrings [ ".nix" ] [ "" ] name;
             value = parts.${name} { inherit common lib; };
-          }) (attrNames parts)
+          }) (builtins.attrNames parts)
         );
     in
     {
-      configs = listToAttrs (
-        map (configname: {
-          name = configname;
-          value = mkConfig configname;
-        }) configs
-      );
+      configs = builtins.mapAttrs (_: parts: importParts parts) configs;
 
       commonInfos = {
         homeWireguardInterface = "wg1";
