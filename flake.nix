@@ -4,7 +4,7 @@
   outputs =
     { self }:
     let
-      lib.mkFlakePath = path: self + (toString "/${path}");
+      lib.mkStorePath = path: self + (toString "/${path}");
       common = import ./common.nix;
       configs = mapToImports (builtins.readDir ./configs) ./configs;
 
