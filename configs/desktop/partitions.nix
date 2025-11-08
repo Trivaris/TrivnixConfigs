@@ -1,8 +1,8 @@
 { ... }:
 { lib, ... }:
 {
-  disko.devices = {
-    disk.nixos = {
+  disko.devices.disk = {
+    nixos = {
       type = "disk";
       device = lib.mkDefault "/dev/disk/by-id/nvme-eui.002538424141181a";
       content.type = "gpt";
@@ -41,19 +41,6 @@
           };
         };
       };
-    };
-
-    filesystem.windows = {
-      device = "/dev/disk/by-uuid/EC922CF2922CC346";
-      fsType = "ntfs-3g";
-      mountPoint = "/mnt/windows";
-      options = [
-        "rw"
-        "nofail"
-        "uid=1000"
-        "gid=100"
-        "umask=000"
-      ];
     };
   };
 }

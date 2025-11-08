@@ -18,7 +18,6 @@
   boot = {
     kernelModules = [ "kvm-amd" ];
     extraModulePackages = [ ];
-    supportedFileSystems.ntfs = true;
 
     loader = {
       systemd-boot.enable = true;
@@ -26,6 +25,7 @@
     };
 
     initrd = {
+      supportedFilesystems.ntfs = true;
       kernelModules = [ ];
       availableKernelModules = [
         "nvme"
@@ -62,5 +62,17 @@
       KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
       KERNEL=="event*", SUBSYSTEM=="input", GROUP="input", MODE="0660"
     '';
+  };
+
+  fileSystems."/mnt/windows" = {
+    device = "/dev/disk/by-id/nvme-eui.000000000000000100a07521311ee292-part2";
+    fsType = "ntfs-3g";
+    options = [
+      "nofail"
+      "uid=1000"
+      "gid=100"
+      "umask=007"
+      "dmask=007"
+    ];
   };
 }
