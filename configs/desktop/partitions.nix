@@ -1,44 +1,59 @@
 { ... }:
 { lib, ... }:
 {
-  disko.devices.disk.nixos = {
-    type = "disk";
-    device = lib.mkDefault "/dev/disk/by-id/nvme-eui.002538424141181a";
-    content.type = "gpt";
+  disko.devices = {
+    disk.nixos = {
+      type = "disk";
+      device = lib.mkDefault "/dev/disk/by-id/nvme-eui.002538424141181a";
+      content.type = "gpt";
 
-    content.partitions = {
-      boot = {
-        size = "512M";
-        type = "EF00";
-        content = {
-          type = "filesystem";
-          format = "vfat";
-          mountpoint = "/boot";
-          extraArgs = [ "-F32" ];
-          mountOptions = [
-            "fmask=0077"
-            "dmask=0077"
-          ];
+      content.partitions = {
+        boot = {
+          size = "512M";
+          type = "EF00";
+          content = {
+            type = "filesystem";
+            format = "vfat";
+            mountpoint = "/boot";
+            extraArgs = [ "-F32" ];
+            mountOptions = [
+              "fmask=0077"
+              "dmask=0077"
+            ];
+          };
+        };
+
+        swap = {
+          size = "16G";
+          content = {
+            type = "swap";
+            randomEncryption = true;
+            priority = 100;
+          };
+        };
+
+        root = {
+          size = "100%";
+          content = {
+            type = "filesystem";
+            format = "ext4";
+            mountpoint = "/";
+          };
         };
       };
+    };
 
-      swap = {
-        size = "16G";
-        content = {
-          type = "swap";
-          randomEncryption = true;
-          priority = 100;
-        };
-      };
-
-      root = {
-        size = "100%";
-        content = {
-          type = "filesystem";
-          format = "ext4";
-          mountpoint = "/";
-        };
-      };
+    filesystem.windows = {
+      device = "/dev/disk/by-uuid/EC922CF2922CC346";
+      fsType = "ntfs-3g";
+      mountPoint = "/mnt/windows";
+      options = [
+        "rw"
+        "nofail"
+        "uid=1000"
+        "gid=100"
+        "umask=000"
+      ];
     };
   };
 }
