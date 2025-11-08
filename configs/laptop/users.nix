@@ -18,6 +18,7 @@
       thunderbird.enable = true;
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
       email.enable = true;
+      cli.enable = true;
     };
   };
 }

@@ -4,7 +4,6 @@
   displayManager = "gdm";
   ignoreLidShut = true;
   enableFingerPrintAuth = true;
-  cli.enable = true;
   bluetooth.enable = true;
   nmApplet.enable = true;
   printing.enable = true;
