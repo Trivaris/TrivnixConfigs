@@ -17,14 +17,9 @@
       thunderbird.enable = true;
       waybar.weatherLocation = "darmstadt";
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/nix2.png") ];
+      jetbrainsIDEs = [ "idea-ultimate" ];
       email.enable = true;
       cli.enable = true;
-
-      jetbrainsIDEs = [
-        "rust-rover"
-        "idea-ultimate"
-      ];
-
     };
   };
 }
