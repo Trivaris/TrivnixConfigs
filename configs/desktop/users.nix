@@ -6,7 +6,6 @@
       inherit (common.home)
         adbAutoPlayer
         appLauncher
-        browsers
         git
         librewolf
         misc

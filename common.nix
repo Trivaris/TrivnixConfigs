@@ -2,7 +2,6 @@
   home = {
     terminalEmulator = "kitty";
     shell = "fish";
-    browsers = [ "librewolf" ];
     appLauncher = "rofi";
 
     adbAutoPlayer = {
@@ -64,8 +63,7 @@
     };
 
     librewolf = {
-      betterfox = true;
-      clearOnShutdown = true;
+      enable = true;
       allowedCookies = [
         "https://www.instagram.com"
         "https://chatgpt.com"
