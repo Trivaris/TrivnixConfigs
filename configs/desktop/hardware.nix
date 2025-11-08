@@ -10,7 +10,7 @@
 {
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
-  environment.systemPackages = [ pkgs.ntfs-3g ];
+  environment.systemPackages = [ pkgs.ntfs3g ];
   nixpkgs.hostPlatform = lib.mkDefault hostInfos.architecture;
   system.stateVersion = hostInfos.stateVersion;
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
