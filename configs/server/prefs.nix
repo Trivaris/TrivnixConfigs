@@ -4,6 +4,7 @@
   openssh.enable = true;
   autoUpgrade.enable = true;
   glances.enable = true;
+  cli.enable = true;
 
   ipsecServer = {
     enable = true;
