@@ -16,9 +16,10 @@
       desktopEnvironment = "hyprland";
       waybar.weatherLocation = "darmstadt";
       thunderbird.enable = true;
-      hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
+      prismlauncher.enable = true;
       email.enable = true;
       cli.enable = true;
+      hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
     };
   };
 }
