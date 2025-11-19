@@ -24,6 +24,14 @@
     enable = true;
     reverseProxy = {
       enable = true;
+      domain = "actual.trivaris.org";
+    };
+  };
+
+  cfddns = {
+    enable = true;
+    reverseProxy = {
+      enable = true;
       domain = "cfddns.trivaris.org";
     };
   };
