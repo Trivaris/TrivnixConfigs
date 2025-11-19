@@ -20,7 +20,7 @@
     zone = "trivaris.org";
   };
 
-  cfddns = {
+  actual = {
     enable = true;
     reverseProxy = {
       enable = true;
