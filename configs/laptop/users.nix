@@ -20,6 +20,7 @@
       email.enable = true;
       cli.enable = true;
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
+      jetbrainsIDEs = [ "idea-ultimate" ];
     };
   };
 }
