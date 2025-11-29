@@ -8,7 +8,6 @@
         appLauncher
         git
         librewolf
-        misc
         shell
         terminalEmulator
         ;
@@ -21,6 +20,12 @@
       cli.enable = true;
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
       jetbrainsIDEs = [ "idea-ultimate" ];
+      misc = common.home.misc ++ [
+        "iverilog"
+        "gtkwave"
+        "yosys"
+        "graphviz"
+      ];
     };
   };
 }
