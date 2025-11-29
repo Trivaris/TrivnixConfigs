@@ -20,12 +20,18 @@
       cli.enable = true;
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
       jetbrainsIDEs = [ "idea-ultimate" ];
-      misc = common.home.misc ++ [
-        "iverilog"
-        "gtkwave"
-        "yosys"
-        "graphviz"
-      ];
+      misc = {
+        otherPrograms = common.home.misc.otherPrograms ++ [ "java" ];
+        otherPackages._general = common.home.misc.otherPackages._general ++ [
+          "iverilog"
+          "gtkwave"
+          "yosys"
+          "graphviz"
+          "gradle_8"
+          "glib"
+          "google-java-format"
+        ];
+      };
     };
   };
 }
