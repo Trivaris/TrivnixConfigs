@@ -20,11 +20,11 @@
     zone = "trivaris.org";
   };
 
-  actual = {
+  tandoor = {
     enable = true;
     reverseProxy = {
       enable = true;
-      domain = "actual.trivaris.org";
+      domain = "tandoor.trivaris.org";
     };
   };
 
