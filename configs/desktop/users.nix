@@ -7,7 +7,6 @@
         appLauncher
         git
         librewolf
-        misc
         shell
         terminalEmulator
         ;
