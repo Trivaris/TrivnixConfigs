@@ -7,6 +7,7 @@
         appLauncher
         git
         librewolf
+        misc
         shell
         terminalEmulator
         ;
@@ -19,29 +20,6 @@
       cli.enable = true;
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
       jetbrainsIDEs = [ "idea-ultimate" ];
-      misc = {
-        otherPrograms = common.home.misc.otherPrograms ++ [ "java" ];
-        otherPackages._general = common.home.misc.otherPackages._general ++ [
-          # System Verilog
-          "iverilog"
-          "gtkwave"
-          "yosys"
-          "graphviz"
-          
-          # Java
-          "gradle_8"
-          "glib"
-          "google-java-format"
-          
-          # Rust
-          "cargo"
-          "rustc"
-          "rustfmt"
-          "clippy"
-          "rust-analyzer"
-          "gcc"
-        ];
-      };
     };
   };
 }

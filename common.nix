@@ -29,6 +29,7 @@
         "btop"
         "spotify-player"
         "vesktop"
+        "java"
       ];
 
       otherPackages = {
@@ -51,6 +52,25 @@
           "moonlight-qt"
           "signal-desktop-bin"
           "vscode"
+
+          # System Verilog
+          "iverilog"
+          "gtkwave"
+          "yosys"
+          "graphviz"
+          
+          # Java
+          "gradle_8"
+          "glib"
+          "google-java-format"
+          
+          # Rust
+          "cargo"
+          "rustc"
+          "rustfmt"
+          "clippy"
+          "rust-analyzer"
+          "gcc"
         ];
 
         kdePackages = [
