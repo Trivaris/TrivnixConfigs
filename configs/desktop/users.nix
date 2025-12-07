@@ -18,7 +18,7 @@
       cli.enable = true;
       waybar.weatherLocation = "darmstadt";
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/nix2.png") ];
-      misc = {
+      misc = common.home.misc //{
         otherPrograms = common.home.misc.otherPrograms ++ [ "java" ];
         otherPackages._general = common.home.misc.otherPackages._general ++ [
           # System Verilog
