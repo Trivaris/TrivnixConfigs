@@ -52,6 +52,7 @@
           "moonlight-qt"
           "signal-desktop-bin"
           "vscode"
+          "yazi"
 
           # System Verilog
           "iverilog"
