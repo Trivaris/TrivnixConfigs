@@ -14,11 +14,11 @@
     ports = [ 23232 ];
   };
 
-  ipsecClient = {
-    enable = true;
-    domain = "vpn.trivaris.org";
-    id = "other";
-    cert = lib.mkStorePath "resources/ipsecCerts/other-cert.pem";
-    caCert = lib.mkStorePath "resources/ipsecCerts/ca-cert.pem";
-  };
+  # ipsecClient = {
+  #   enable = true;
+  #   domain = "vpn.trivaris.org";
+  #   id = "other";
+  #   cert = lib.mkStorePath "resources/ipsecCerts/other-cert.pem";
+  #   caCert = lib.mkStorePath "resources/ipsecCerts/ca-cert.pem";
+  # };
 }
