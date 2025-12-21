@@ -13,6 +13,12 @@
   language.keyMap = "de";
   openssh.enable = true;
 
+  openconnectClient = {
+    enable = true;
+    user = "tj93wefe";
+    gateway = "vpn.hrz.tu-darmstadt.de";
+  };
+
   ipsecClient = {
     enable = false;
     domain = "vpn.trivaris.org";
