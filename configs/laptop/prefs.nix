@@ -17,7 +17,7 @@
     enable = true;
     user = "tj93wefe";
     gateway = "vpn.hrz.tu-darmstadt.de";
-    cert = lib.mkStorePath "resources/openconnectCerts/rootcert-tuda.crt";
+    certificate = lib.mkStorePath "resources/openconnectCerts/rootcert-tuda.crt";
   };
 
   ipsecClient = {
