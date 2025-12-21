@@ -18,9 +18,9 @@
       prismlauncher.enable = true;
       email.enable = true;
       cli.enable = true;
-      hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
-      jetbrainsIDEs = [ "idea-ultimate" ];
       remmina.enable = true;
+      hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/miku_2.jpeg") ];
+      jetbrainsIDEs = [ "idea-ultimate" ];
     };
   };
 }

@@ -12,13 +12,14 @@
         terminalEmulator
         ;
 
-      desktopEnvironment = "hyprland";
       thunderbird.enable = true;
       prismlauncher.enable = true;
       email.enable = true;
       cli.enable = true;
+      wayvnc.enable = true;
+      desktopEnvironment = "hyprland";
       waybar.weatherLocation = "darmstadt";
-      hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/nix2.png") ];
+      hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/miku.jpeg") ];
       jetbrainsIDEs = [ "idea-ultimate" ];
     };
   };
