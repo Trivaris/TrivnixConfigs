@@ -9,6 +9,8 @@
   steam.enable = true;
   kdeConnect.enable = true;
 
+  remoteDesktop.enable = true;
+
   openssh = {
     enable = true;
     ports = [ 23232 ];

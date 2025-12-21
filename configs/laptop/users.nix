@@ -20,6 +20,7 @@
       cli.enable = true;
       hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/frieren.png") ];
       jetbrainsIDEs = [ "idea-ultimate" ];
+      remmina.enable = true;
     };
   };
 }
