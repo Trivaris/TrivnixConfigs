@@ -17,7 +17,7 @@
     enable = true;
     user = "tj93wefe";
     gateway = "vpn.hrz.tu-darmstadt.de";
-    certificate = lib.mkStorePath "resources/openconnectCerts/rootcert-tuda.crt";
+    cafile = lib.mkStorePath "resources/openconnectCerts/rootcert-tuda.crt";
     authgroup = "campus";
   };
 
