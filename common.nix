@@ -59,12 +59,12 @@
           "gtkwave"
           "yosys"
           "graphviz"
-          
+
           # Java
           "gradle_8"
           "glib"
           "google-java-format"
-          
+
           # Rust
           "cargo"
           "rustc"
