@@ -10,7 +10,6 @@
   printing.enable = true;
   steam.enable = true;
   kdeConnect.enable = true;
-  language.keyMap = "de";
   openssh.enable = true;
 
   openconnectClient = {
