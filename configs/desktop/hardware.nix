@@ -47,6 +47,7 @@
 
   hardware = {
     graphics.enable = true;
+    graphics.enable32Bit = true;
     uinput.enable = true;
     nvidia = {
       package = config.boot.kernelPackages.nvidiaPackages.stable;
