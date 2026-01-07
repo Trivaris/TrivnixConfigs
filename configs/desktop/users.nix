@@ -24,7 +24,7 @@
       desktopEnvironment = "hyprland";
       waybar.weatherLocation = "darmstadt";
       hyprland.wallpaper = lib.mkStorePath "resources/wallpapers/miku.jpeg";
-      jetbrainsIDEs = [ "idea-ultimate" ];
+      jetbrainsIDEs = [ "idea" ];
     };
   };
 }

@@ -24,7 +24,7 @@
       cli.enable = true;
       remmina.enable = true;
       hyprland.wallpaper = lib.mkStorePath "resources/wallpapers/miku_2.jpeg";
-      jetbrainsIDEs = [ "idea-ultimate" ];
+      jetbrainsIDEs = [ "idea" ];
     };
   };
 }
