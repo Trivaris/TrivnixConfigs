@@ -45,14 +45,11 @@
           "vlc"
           "wayland-utils"
           "wl-clipboard-rs"
-          "ksud"
           "bitwarden-desktop"
-          "chatgpt-cli"
           "lutris"
           "moonlight-qt"
           "signal-desktop-bin"
           "vscode"
-          "yazi"
 
           # System Verilog
           "iverilog"

@@ -19,7 +19,7 @@
       wayvnc.enable = true;
       desktopEnvironment = "hyprland";
       waybar.weatherLocation = "darmstadt";
-      hyprland.wallpapers = [ (lib.mkStorePath "resources/wallpapers/miku.jpeg") ];
+      hyprland.wallpaper = lib.mkStorePath "resources/wallpapers/miku.jpeg";
       jetbrainsIDEs = [ "idea-ultimate" ];
     };
   };
