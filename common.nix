@@ -37,7 +37,7 @@
           "android-tools"
           "rsclock"
           "pipes-rs"
-          "rmatrix"
+          "r-matrix"
           "rbonsai"
           "me3"
           "hardinfo2"
