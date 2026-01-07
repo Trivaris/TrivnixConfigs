@@ -1,4 +1,4 @@
-{ common, lib, ... }:
+{ common, ... }:
 {
   trivaris = {
     infos = {

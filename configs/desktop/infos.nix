@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
   name = "trivdesktop";
   configname = "desktop";
