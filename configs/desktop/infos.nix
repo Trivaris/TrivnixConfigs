@@ -8,9 +8,19 @@
   architecture = "x86_64-linux";
   hashedRootPassword = "$y$j9T$R.NIp2RpQQOwy48wQU19n1$wHb/Nub4Bt1yCtrMEWe3iLSBx1WvfnncRq95AqFBKh3";
 
-  monitor = [
-    "HDMI-A-1,1920x1080@60,0x840,1"
-    "DP-2,2560x1440@74.97,1920x480,1"
-    "DP-1,1920x1200@59.95,4480x0,1,transform,1"
-  ];
+  monitors = {
+    "HDMI-A-1" = {
+      resolution = "1920x1080";
+      refreshRate = "60";
+      position = "0x840";
+      wallpaper = lib.mkStorePath "resources/wallpapers/miku.jpeg";
+    };
+
+    "DP-2" = {
+      resolution = "2560x1440";
+      refreshRate = "74.97";
+      position = "1920x480";
+      wallpaper = lib.mkStorePath "resources/wallpapers/miku.jpeg";
+    };
+  };
 }
