@@ -3,7 +3,6 @@
   inherit (common.host) stylix;
   displayManager = "autologin";
   mainUser = "trivaris";
-  ignoreLidShut = true;
   enableFingerPrintAuth = true;
   bluetooth.enable = true;
   nmApplet.enable = true;
