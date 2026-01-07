@@ -1,6 +1,7 @@
 { ... }:
 {
   name = "trivserver";
+  configname = "server";
   stateVersion = "25.05";
   hardwareKey = false;
   ip = "188.34.182.1";

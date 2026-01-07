@@ -1,6 +1,7 @@
 { ... }:
 {
   name = "trivlaptop";
+  configname = "laptop";
   stateVersion = "25.05";
   hardwareKey = false;
   ip = "192.168.178.3";

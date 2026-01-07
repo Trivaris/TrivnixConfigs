@@ -29,10 +29,5 @@
     in
     {
       configs = builtins.mapAttrs (_: parts: importParts parts) configs;
-
-      commonInfos = {
-        homeWireguardInterface = "wg1";
-        homeGatewayMac = "e8:df:70:7f:01:f3";
-      };
     };
 }
