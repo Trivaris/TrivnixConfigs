@@ -50,6 +50,7 @@
           "moonlight-qt"
           "signal-desktop-bin"
           "vscode"
+          "localsend"
 
           # System Verilog
           "iverilog"
