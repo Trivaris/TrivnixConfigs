@@ -29,7 +29,7 @@
 
   udev = {
     enable = true;
-    extraRules = ''
+    rules = ''
       
     '';
   };
