@@ -1,6 +1,5 @@
 { common, lib, ... }:
 {
-  inherit (common.host) stylix;
   displayManager = "autologin";
   mainUser = "trivaris";
   bluetooth.enable = true;

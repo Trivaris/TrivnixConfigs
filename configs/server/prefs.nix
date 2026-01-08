@@ -1,6 +1,5 @@
 { common, lib, ... }:
 {
-  inherit (common.host) stylix;
   openssh.enable = true;
   autoUpgrade.enable = true;
   glances.enable = true;
