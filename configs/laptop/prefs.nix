@@ -26,4 +26,11 @@
     cert = lib.mkStorePath "resources/ipsecCerts/laptop-cert.pem";
     caCert = lib.mkStorePath "resources/ipsecCerts/ca-cert.pem";
   };
+
+  udev = {
+    enable = true;
+    extraRules = ''
+      
+    '';
+  };
 }
