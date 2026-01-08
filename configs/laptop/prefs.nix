@@ -30,7 +30,7 @@
   udev = {
     enable = true;
     rules = ''
-      SUBSYSTEM=="block", ATTRS{idProduct}=="a7e0", ATTRS{idVendor}=="11ec", SYMLINK+="switch"
+     
     '';
   };
 }
