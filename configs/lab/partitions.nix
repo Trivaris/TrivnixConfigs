@@ -1,6 +1,7 @@
 { ... }:
 { lib, ... }:
 {
+  disko.enableConfig = true;
   disko.devices.disk.nixos = {
     type = "disk";
     device = lib.mkDefault "/dev/disk/by-id/wwn-0x5001b44e1c3e8464";

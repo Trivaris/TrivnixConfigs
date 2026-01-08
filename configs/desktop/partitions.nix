@@ -1,6 +1,7 @@
 { ... }:
 { lib, ... }:
 {
+  disko.enableConfig = true;
   disko.devices.disk = {
     nixos = {
       type = "disk";

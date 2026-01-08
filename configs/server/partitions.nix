@@ -1,6 +1,7 @@
 { ... }:
 { lib, ... }:
 {
+  disko.enableConfig = true;
   disko.devices = {
     disk.nixos = {
       device = lib.mkDefault "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_102062030";

@@ -1,6 +1,7 @@
 { ... }:
 { lib, ... }:
 {
+  disko.enableConfig = true;
   disko.devices.disk.nixos = {
     type = "disk";
     device = lib.mkDefault "/dev/disk/by-id/nvme-eui.6479a7855a309eb2";
