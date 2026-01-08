@@ -29,8 +29,8 @@
 
   udev = {
     enable = true;
-    rules = ''
-     
+    rules = pkgs: ''
+      ACTION=="add", SUBSYSTEM=="block", ATTRS{idProduct}=="a7e0", ATTRS{idVendor}=="11ec", ATTR{partition}=="1", SYMLINK+="switch", RUN+="${pkgs.systemd}/bin/systemd-mount --no-block --automount=yes --collect -o gid=users,fmask=113,dmask=002 /dev/%k /mnt/switch"
     '';
   };
 }
