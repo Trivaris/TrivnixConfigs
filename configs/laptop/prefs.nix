@@ -10,6 +10,7 @@
   steam.enable = true;
   kdeConnect.enable = true;
   openssh.enable = true;
+  jtegranx.enable = true;
 
   openconnectClient = {
     enable = true;

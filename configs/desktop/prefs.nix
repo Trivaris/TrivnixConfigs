@@ -8,6 +8,7 @@
   printing.enable = true;
   steam.enable = true;
   kdeConnect.enable = true;
+  jtegranx.enable = true;
 
   openssh = {
     enable = true;
