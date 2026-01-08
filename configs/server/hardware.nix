@@ -33,7 +33,7 @@
     devices = [ "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_102062030" ];
   };
 
-  networking.hostName = hostInfos.name;
+  networking.hostName = config.hostInfos.name;
   networking.useDHCP = lib.mkDefault true;
   networking.useNetworkd = true;
   networking.networkmanager.enable = false;
