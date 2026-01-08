@@ -3,7 +3,6 @@
   config,
   lib,
   modulesPath,
-  hostInfos,
   ...
 }:
 {
@@ -41,6 +40,6 @@
 
   services.qemuGuest.enable = true;
 
-  nixpkgs.hostPlatform = lib.mkDefault hostInfos.architecture;
-  system.stateVersion = hostInfos.stateVersion;
+  nixpkgs.hostPlatform = lib.mkDefault config.hostInfos.architecture;
+  system.stateVersion = config.hostInfos.stateVersion;
 }

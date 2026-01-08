@@ -3,7 +3,6 @@
   config,
   lib,
   modulesPath,
-  hostInfos,
   pkgs,
   ...
 }:
@@ -11,8 +10,8 @@
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   environment.systemPackages = [ pkgs.ntfs3g ];
-  nixpkgs.hostPlatform = lib.mkDefault hostInfos.architecture;
-  system.stateVersion = hostInfos.stateVersion;
+  nixpkgs.hostPlatform = lib.mkDefault config.hostInfos.architecture;
+  system.stateVersion = config.hostInfos.stateVersion;
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
   boot = {
@@ -40,7 +39,7 @@
 
   networking = {
     useDHCP = lib.mkDefault true;
-    hostName = hostInfos.name;
+    hostName = config.hostInfos.name;
     networkmanager.enable = true;
     interfaces.eno1.wakeOnLan.enable = true;
   };
