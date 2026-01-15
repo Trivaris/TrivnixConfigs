@@ -9,6 +9,7 @@
   kdeConnect.enable = true;
   jtegranx.enable = true;
   mountSteamdeck = true;
+  sunshine.enable = true;
 
   openssh = {
     enable = true;
