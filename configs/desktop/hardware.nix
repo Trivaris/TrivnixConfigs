@@ -16,6 +16,7 @@
 
   boot = {
     kernelModules = [ "kvm-amd" ];
+    kernelParams = [ "nvidia-drm.modeset=1" ];
     extraModulePackages = [ ];
 
     loader = {
