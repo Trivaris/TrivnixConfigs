@@ -13,6 +13,7 @@
   nixpkgs.hostPlatform = lib.mkDefault config.hostInfos.architecture;
   system.stateVersion = config.hostInfos.stateVersion;
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.nvidia.nvidiaSettings = true;
 
   boot = {
     kernelModules = [ "kvm-amd" ];
