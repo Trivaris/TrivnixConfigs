@@ -9,10 +9,10 @@
   kdeConnect.enable = true;
   jtegranx.enable = true;
   mountSteamdeck = true;
-  sunshine.enable = true;
+  sunshine.enable = false;
 
   moondeck = {
-    enable = true;
+    enable = false;
     openFirewall = true;
   };
 
