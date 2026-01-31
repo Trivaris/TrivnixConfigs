@@ -3,6 +3,7 @@
   openssh.enable = true;
   autoUpgrade.enable = true;
   glances.enable = true;
+  headless = true;
 
   ipsecServer = {
     enable = true;

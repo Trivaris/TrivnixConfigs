@@ -121,12 +121,9 @@
 
   };
 
-  stylix = {
+  theming = {
     darkmode = true;
-    colorscheme = "catppuccin-frappe";
-    cursorPackage = "rose-pine-cursor";
-    cursorName = "BreezeX-RosePine-Linux";
-    nerdfont = "code-new-roman";
+    themeName = "catppuccin-frappe";
   };
 
   pkgsConfig = {

@@ -13,7 +13,6 @@
         git
         librewolf
         misc
-        terminalEmulator
         ;
 
       thunderbird.enable = true;
@@ -21,8 +20,6 @@
       email.enable = true;
       cli.enable = true;
       wayvnc.enable = true;
-      desktopEnvironment = "hyprland";
-      waybar.weatherLocation = "darmstadt";
       jetbrainsIDEs = [ "idea" ];
     };
   };

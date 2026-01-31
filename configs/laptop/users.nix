@@ -13,11 +13,8 @@
         git
         librewolf
         misc
-        terminalEmulator
         ;
 
-      desktopEnvironment = "hyprland";
-      waybar.weatherLocation = "darmstadt";
       thunderbird.enable = true;
       prismlauncher.enable = true;
       email.enable = true;
