@@ -13,7 +13,6 @@
         git
         librewolf
         misc
-        shell
         terminalEmulator
         ;
 

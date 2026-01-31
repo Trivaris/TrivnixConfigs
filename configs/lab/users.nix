@@ -8,7 +8,7 @@
     };
 
     prefs = {
-      inherit (common.home) shell git;
+      inherit (common.home) git;
       cli.enable = true;
     };
   };

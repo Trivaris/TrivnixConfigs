@@ -7,7 +7,7 @@
       uid = 1000;
     };
     prefs = {
-      inherit (common.home) git shell terminalEmulator;
+      inherit (common.home) git terminalEmulator;
       cli.enable = true;
     };
   };

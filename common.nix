@@ -1,7 +1,5 @@
 {
   home = {
-    terminalEmulator = "kitty";
-    shell = "fish";
     appLauncher = "rofi";
 
     adbAutoPlayer = {
