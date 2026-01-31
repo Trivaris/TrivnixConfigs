@@ -9,7 +9,6 @@
 
     prefs = {
       inherit (common.home)
-        appLauncher
         git
         librewolf
         misc

@@ -1,7 +1,5 @@
 {
   home = {
-    appLauncher = "rofi";
-
     adbAutoPlayer = {
       enable = true;
       settings = builtins.fromTOML (
