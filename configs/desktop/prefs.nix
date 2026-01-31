@@ -1,6 +1,5 @@
 { common, lib, ... }:
 {
-  displayManager = "autologin";
   mainUser = "trivaris";
   bluetooth.enable = true;
   nmApplet.enable = true;

@@ -1,6 +1,5 @@
 { common, lib, ... }:
 {
-  displayManager = "autologin";
   mainUser = "trivaris";
   enableFingerPrintAuth = true;
   bluetooth.enable = true;
