@@ -1,27 +1,8 @@
+{ ... }:
 {
-  home = {
-    adbAutoPlayer = {
-      enable = true;
-      settings = builtins.fromTOML (
-        builtins.readFile ./resources/externalConfigs/adbAutoPlayer/config.toml
-      );
-      games.afkJourney = builtins.fromTOML (
-        builtins.readFile ./resources/externalConfigs/adbAutoPlayer/AfkJourney.toml
-      );
-    };
-
-    git = {
-      email = "git@trivaris.org";
-      enableSigning = true;
-      urlAliases = {
-        "git@github.com:Trivaris/" = "triv:";
-        "git@github.com:" = "github:";
-      };
-    };
-
+  userPrefs = {
     misc = {
       otherPrograms = [
-        "spicetify"
         "btop"
         "spotify-player"
         "vesktop"
@@ -113,20 +94,5 @@
         "https://git.trivaris.org"
       ];
     };
-  };
-
-  host = {
-
-  };
-
-  theming = {
-    darkmode = true;
-    themeName = "catppuccin-frappe";
-  };
-
-  pkgsConfig = {
-    allowUnfree = true;
-    android_sdk.accept_license = true;
-    permittedInsecurePackages = [ "libsoup-2.74.3" ];
   };
 }

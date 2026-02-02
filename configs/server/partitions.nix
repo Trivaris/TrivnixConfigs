@@ -1,4 +1,3 @@
-{ ... }:
 { lib, ... }:
 {
   disko.enableConfig = true;

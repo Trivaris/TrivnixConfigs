@@ -1,6 +1,11 @@
-{ common, ... }:
+{ lib, ... }:
 {
-  openssh.enable = true;
-  autoUpgrade.enable = true;
-  headless = true;
+  imports = [
+    (toString ../../common/theming.nix)
+  ];
+
+  hostPrefs = {
+    openssh.enable = true;
+    headless = true;
+  };
 }
