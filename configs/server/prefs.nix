@@ -10,11 +10,11 @@
     headless = true;
 
     ipsecServer = {
-      enable = true;
+      enable = false;
       domain = "vpn.trivaris.org";
       cert = toString ../../resources/ipsecCerts/server-cert.pem;
       caCert = toString ../../resources/ipsecCerts/ca-cert.pem;
-      extraClientCerts.fritzbox = toString ../../resources/ipsecCerts/fritzbox-cert.pem;
+      clientCerts.fritzbox = toString ../../resources/ipsecCerts/fritzbox-cert.pem;
       fullchain = toString ../../resources/ipsecCerts/server.fullchain.pem;
     };
 
