@@ -1180,11 +1180,11 @@
         "spicetify-nix": "spicetify-nix"
       },
       "locked": {
-        "lastModified": 1770410539,
-        "narHash": "sha256-wLLo8FIhKGOxoXKFG9zTlqxf2QAEr80DPaGtsQQEuCQ=",
+        "lastModified": 1770412124,
+        "narHash": "sha256-ajsx4sK8i0GbRHAis/bWtsU75FO5uUeYR88Vo4kcsuU=",
         "ref": "refs/heads/main",
-        "rev": "350acc3423705a469954b80e3a2f14e9ddeeed09",
-        "revCount": 396,
+        "rev": "ce810bbf0150417ad3f0e2d5d4771638104ba9d9",
+        "revCount": 397,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/Trivnix"
       },
