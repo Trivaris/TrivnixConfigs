@@ -5,7 +5,7 @@
   inputs.trivnixLib.url = "git+ssh://git@github.com/Trivaris/Trivnixlib";
   inputs.trivnixPrivate.url = "git+ssh://git@github.com/Trivaris/TrivnixPrivate";
   inputs.trivnixOverlays.url = "git+ssh://git@github.com/Trivaris/TrivnixOverlays";
-  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+  inputs.nixpkgs.url = "github:trivaris/nixpkgs-millennium?ref=add-millennium-package";
   inputs.home-manager.url = "github:nix-community/home-manager";
   inputs.importTree.url = "github:vic/import-tree";
 
@@ -54,6 +54,7 @@
             
             config = {
               allowUnfree = true;
+              allowUnsupportedSystem = true;
               android_sdk.accept_license = true;
               permittedInsecurePackages = [ "libsoup-2.74.3" ];
             };

@@ -48,13 +48,6 @@
           "rust-analyzer"
           "gcc"
         ];
-
-        kdePackages = [
-          "kcalc"
-          "dolphin"
-          "ark"
-          "gwenview"
-        ];
       };
     };
 
