@@ -913,18 +913,18 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1770239071,
-        "narHash": "sha256-gGu4mJrMQxrloK74by6QuDAlu7g2OSIHbsOprIdSUwQ=",
-        "owner": "trivaris",
-        "repo": "nixpkgs-millennium",
-        "rev": "a3320e1a65dff95c37650719ebf62df26555a0b1",
-        "type": "github"
+        "lastModified": 1770568558,
+        "narHash": "sha256-TBhCyG5X3h2uGumghesgv7utletNWWoK6B96Wg/91V8=",
+        "ref": "add-millennium-package",
+        "rev": "518088f51e3d97585938c96109a96ffbaf59d400",
+        "revCount": 939869,
+        "type": "git",
+        "url": "ssh://git@github.com/Trivaris/nixpkgs-millennium"
       },
       "original": {
-        "owner": "trivaris",
         "ref": "add-millennium-package",
-        "repo": "nixpkgs-millennium",
-        "type": "github"
+        "type": "git",
+        "url": "ssh://git@github.com/Trivaris/nixpkgs-millennium"
       }
     },
     "nixpkgs_3": {
@@ -1252,11 +1252,11 @@
         "split-monitor-workspaces": "split-monitor-workspaces"
       },
       "locked": {
-        "lastModified": 1770413804,
-        "narHash": "sha256-+pHhiA8nLwAvmy5mQtbsH3DTbGp5hDZA2zPWPwmk8Y0=",
+        "lastModified": 1770646401,
+        "narHash": "sha256-Yo7o7h5R7Y0qvma1kTzj7Wye7mdhfG1G/1PdRZMlb7E=",
         "ref": "refs/heads/main",
-        "rev": "7a83af006af31d15aa23e5729d06f8f66ac8fd91",
-        "revCount": 398,
+        "rev": "665b9f7de50c2d260130e6fbf9278b512fd71ab7",
+        "revCount": 400,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/Trivnix"
       },
@@ -1267,11 +1267,11 @@
     },
     "trivnixLib": {
       "locked": {
-        "lastModified": 1770389770,
-        "narHash": "sha256-MVtyOTvWTo3eG/cPASmyRZM7DozI09IkGq4Mevle+64=",
+        "lastModified": 1770644216,
+        "narHash": "sha256-H90c0vb/gq67VHw0yPScdXm0/cgN+Gr9QBXp4887/m0=",
         "ref": "refs/heads/main",
-        "rev": "0a7989fbbcd4922ce8e382d86baa1cc23171ea39",
-        "revCount": 117,
+        "rev": "457313be4eca899a35d4f89842d525ac56d1edbc",
+        "revCount": 118,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/Trivnixlib"
       },

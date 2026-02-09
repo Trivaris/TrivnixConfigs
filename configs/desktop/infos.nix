@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ ... }:
 {
   hostInfos = {
     name = "trivdesktop";
@@ -14,6 +14,7 @@
         refreshRate = "60";
         position = "0x840";
         scaling = "1";
+        workspaceIndex = 1;
         wallpaper = toString ../../resources/wallpapers/cat_anime-skull.jpg;
       };
 
@@ -22,6 +23,7 @@
         refreshRate = "74.97";
         position = "1920x480";
         scaling = "1";
+        workspaceIndex = 0;
         wallpaper = toString ../../resources/wallpapers/cat_anime-skull.jpg;
       };
     };

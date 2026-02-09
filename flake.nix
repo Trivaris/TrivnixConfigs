@@ -5,7 +5,7 @@
   inputs.trivnixLib.url = "git+ssh://git@github.com/Trivaris/Trivnixlib";
   inputs.trivnixPrivate.url = "git+ssh://git@github.com/Trivaris/TrivnixPrivate";
   inputs.trivnixOverlays.url = "git+ssh://git@github.com/Trivaris/TrivnixOverlays";
-  inputs.nixpkgs.url = "git+ssh://git@github.com/Trivaris/nixpkgs-millennium";
+  inputs.nixpkgs.url = "git+ssh://git@github.com/Trivaris/nixpkgs-millennium?ref=add-millennium-package";
   inputs.home-manager.url = "github:nix-community/home-manager";
   inputs.importTree.url = "github:vic/import-tree";
 
