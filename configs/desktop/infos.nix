@@ -14,7 +14,7 @@
         refreshRate = "60";
         position = "0x840";
         scaling = "1";
-        wallpaper = toString ../../resources/wallpapers/miku_2.jpg;
+        wallpaper = toString ../../resources/wallpapers/cat_anime-skull.jpg;
       };
 
       "DP-2" = {
@@ -22,7 +22,7 @@
         refreshRate = "74.97";
         position = "1920x480";
         scaling = "1";
-        wallpaper = toString ../../resources/wallpapers/miku.jpg;
+        wallpaper = toString ../../resources/wallpapers/cat_anime-skull.jpg;
       };
     };
   };

@@ -28,6 +28,7 @@
           "signal-desktop-bin"
           "vscode"
           "localsend"
+          "tdf"
 
           # System Verilog
           "iverilog"
