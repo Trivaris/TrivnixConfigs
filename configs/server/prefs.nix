@@ -2,6 +2,7 @@
 {
   imports = [
     ../../common/theming.nix
+    # ./_homepage.nix
   ];
 
   hostPrefs = {
