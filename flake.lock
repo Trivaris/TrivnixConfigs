@@ -918,11 +918,13 @@
         "ref": "add-millennium-package",
         "rev": "518088f51e3d97585938c96109a96ffbaf59d400",
         "revCount": 939869,
+        "shallow": false,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/nixpkgs-millennium"
       },
       "original": {
         "ref": "add-millennium-package",
+        "shallow": false,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/nixpkgs-millennium"
       }
