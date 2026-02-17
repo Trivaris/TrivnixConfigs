@@ -14,7 +14,7 @@
         refreshRate = "60";
         position = "0x0";
         scaling = "1";
-        wallpaper = toString ../../resources/wallpapers/miku_2.jpeg;
+        wallpaper = ../../resources/wallpapers/cat_anime-skull.jpg;
       };
     };
   };

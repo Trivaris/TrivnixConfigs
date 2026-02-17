@@ -15,7 +15,10 @@
   hardware.nvidia.nvidiaSettings = true;
 
   boot = {
-    kernelModules = [ "kvm-amd" "uinput" ];
+    kernelModules = [
+      "kvm-amd"
+      "uinput"
+    ];
     kernelParams = [ "nvidia-drm.modeset=1" ];
     extraModulePackages = [ ];
 

@@ -1,7 +1,7 @@
 { lib, ... }:
 {
   imports = [
-    (toString ../../common/theming.nix)
+    ../../common/theming.nix
   ];
 
   hostPrefs = {
@@ -12,10 +12,10 @@
     ipsecServer = {
       enable = false;
       domain = "vpn.trivaris.org";
-      cert = toString ../../resources/ipsecCerts/server-cert.pem;
-      caCert = toString ../../resources/ipsecCerts/ca-cert.pem;
-      clientCerts.fritzbox = toString ../../resources/ipsecCerts/fritzbox-cert.pem;
-      fullchain = toString ../../resources/ipsecCerts/server.fullchain.pem;
+      cert = ../../resources/ipsecCerts/server-cert.pem;
+      caCert = ../../resources/ipsecCerts/ca-cert.pem;
+      clientCerts.fritzbox = ../../resources/ipsecCerts/fritzbox-cert.pem;
+      fullchain = ../../resources/ipsecCerts/server.fullchain.pem;
     };
 
     reverseProxy = {
@@ -76,7 +76,7 @@
       };
 
       settings = {
-        favicon = toString ../../resources/icons/nixowos.svg;
+        favicon = ../../resources/icons/nixowos.svg;
         color = "gray";
 
         layout = [
@@ -90,7 +90,7 @@
         ];
 
         background = {
-          image = toString ../../resources/wallpapers/nix3.png;
+          image = ../../resources/wallpapers/nix3.png;
           blur = "sm";
           saturate = 100;
           brightness = 100;

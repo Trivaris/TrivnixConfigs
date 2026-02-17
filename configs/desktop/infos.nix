@@ -15,7 +15,7 @@
         position = "0x840";
         scaling = "1";
         workspaceIndex = 1;
-        wallpaper = toString ../../resources/wallpapers/cat_anime-skull.jpg;
+        wallpaper = ../../resources/wallpapers/cat_anime-skull.jpg;
       };
 
       "DP-2" = {
@@ -24,7 +24,7 @@
         position = "1920x480";
         scaling = "1";
         workspaceIndex = 0;
-        wallpaper = toString ../../resources/wallpapers/cat_anime-skull.jpg;
+        wallpaper = ../../resources/wallpapers/cat_anime-skull.jpg;
       };
     };
   };

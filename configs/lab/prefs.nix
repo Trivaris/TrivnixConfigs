@@ -1,7 +1,7 @@
 { lib, ... }:
 {
   imports = [
-    (toString ../../common/theming.nix)
+    ../../common/theming.nix
   ];
 
   hostPrefs = {

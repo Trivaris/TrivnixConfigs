@@ -1,10 +1,17 @@
 { lib, ... }:
 {
   home-manager.sharedModules = [
-    (toString ../../common/git.nix)
-    (toString ../../common/home.nix)
+    (
+      { ... }:
+      {
+        imports = [
+          ../../common/git.nix
+          ../../common/home.nix
+        ];
+      }
+    )
   ];
-  
+
   home-manager.users.trivaris.config = {
     userInfos = {
       name = "trivaris";

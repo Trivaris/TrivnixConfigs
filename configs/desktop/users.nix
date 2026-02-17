@@ -1,8 +1,15 @@
 { lib, ... }:
 {
   home-manager.sharedModules = [
-    (toString ../../common/home.nix)
-    (toString ../../common/git.nix)
+    (
+      { ... }:
+      {
+        imports = [
+          ../../common/home.nix
+          ../../common/git.nix
+        ];
+      }
+    )
   ];
 
   home-manager.users.trivaris.config = {
@@ -11,7 +18,7 @@
       hashedPassword = "$y$j9T$ZYnirABSLjZi.mfiKE.Si0$Fe67Vw2MHKtZybsHVGf0rNqcnN67LgLdsCbM8q6ln/B";
       uid = 1000;
     };
-    
+
     userPrefs = {
       thunderbird.enable = true;
       prismlauncher.enable = true;

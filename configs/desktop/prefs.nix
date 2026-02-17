@@ -2,7 +2,7 @@
 {
 
   imports = [
-    (toString ../../common/theming.nix)
+    ../../common/theming.nix
   ];
 
   hostPrefs = {
@@ -16,6 +16,7 @@
     mountSteamdeck = true;
     sunshine.enable = false;
     spicetify.enable = true;
+    enableDevStuffs = true;
 
     moondeck = {
       enable = false;
@@ -31,8 +32,8 @@
       enable = false;
       domain = "vpn.trivaris.org";
       id = "other";
-      cert = toString ../../resources/ipsecCerts/other-cert.pem;
-      caCert = toString ../../resources/ipsecCerts/ca-cert.pem;
+      cert = ../../resources/ipsecCerts/other-cert.pem;
+      caCert = ../../resources/ipsecCerts/ca-cert.pem;
     };
   };
 }

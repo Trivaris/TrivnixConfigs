@@ -1,9 +1,9 @@
 { lib, ... }:
 {
   imports = [
-    (toString ../../common/theming.nix)
+    ../../common/theming.nix
   ];
-  
+
   hostPrefs = {
     mainUser = "trivaris";
     enableFingerPrintAuth = true;
@@ -15,12 +15,13 @@
     openssh.enable = true;
     jtegranx.enable = true;
     spicetify.enable = true;
+    enableDevStuffs = true;
 
     openconnectClient = {
       enable = true;
       user = "tj93wefe";
       gateway = "vpn.hrz.tu-darmstadt.de";
-      cafile = toString ../../resources/openconnectCerts/rootcert-tuda.crt;
+      cafile = ../../resources/openconnectCerts/rootcert-tuda.crt;
       authgroup = "campus";
     };
 
@@ -28,8 +29,8 @@
       enable = false;
       domain = "vpn.trivaris.org";
       id = "laptop";
-      cert = toString ../../resources/ipsecCerts/laptop-cert.pem;
-      caCert = toString ../../resources/ipsecCerts/ca-cert.pem;
+      cert = ../../resources/ipsecCerts/laptop-cert.pem;
+      caCert = ../../resources/ipsecCerts/ca-cert.pem;
     };
 
     udev = {

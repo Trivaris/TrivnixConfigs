@@ -1,9 +1,9 @@
 { lib, ... }:
 {
   home-manager.sharedModules = [
-    (toString ../../common/git.nix)
+    ../../common/git.nix
   ];
-  
+
   home-manager.users.trivaris.config = {
     userPrefs.cli.enable = true;
     userInfos = {
