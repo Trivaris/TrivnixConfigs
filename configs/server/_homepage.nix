@@ -22,7 +22,7 @@
       ];
 
       background = {
-        image = ../../resources/wallpapers/nix3.png;
+        image = ../../resources/wallpapers/nix3.jpg;
         blur = "sm";
         saturate = 100;
         brightness = 100;
