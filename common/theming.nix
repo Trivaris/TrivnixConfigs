@@ -1,5 +1,7 @@
 { pkgs, ... }:
 {
+  programs.dconf.enable = true;
+  
   themingPrefs = {
     darkmode = true;
     schemeName = "catppuccin-frappe";
