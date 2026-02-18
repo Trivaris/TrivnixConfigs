@@ -34,7 +34,6 @@
 
   networking.hostName = config.hostInfos.name;
   networking.useDHCP = lib.mkDefault true;
-  networking.useNetworkd = true;
   networking.networkmanager.enable = false;
 
   services.qemuGuest.enable = true;

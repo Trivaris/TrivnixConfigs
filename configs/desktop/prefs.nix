@@ -28,12 +28,10 @@
       ports = [ 23232 ];
     };
 
-    ipsecClient = {
-      enable = false;
-      domain = "vpn.trivaris.org";
-      id = "other";
-      cert = ../../resources/ipsecCerts/other-cert.pem;
-      caCert = ../../resources/ipsecCerts/ca-cert.pem;
+    wireguard.client = {
+      enable = true;
+      ip = "10.100.0.5";
+      serverAddress = "vpn.trivaris.org";
     };
   };
 }

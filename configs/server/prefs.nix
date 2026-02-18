@@ -2,22 +2,11 @@
 {
   imports = [
     ../../common/theming.nix
-    # ./_homepage.nix
   ];
 
   hostPrefs = {
     openssh.enable = true;
-    # glances.enable = true;
     headless = true;
-
-    # ipsecServer = {
-    #   enable = true;
-    #   domain = "vpn.trivaris.org";
-    #   cert = ../../resources/ipsecCerts/server-cert.pem;
-    #   caCert = ../../resources/ipsecCerts/ca-cert.pem;
-    #   clientCerts.fritzbox = ../../resources/ipsecCerts/fritzbox-cert.pem;
-    #   fullchain = ../../resources/ipsecCerts/server.fullchain.pem;
-    # };
 
     reverseProxy = {
       enable = true;
@@ -50,15 +39,6 @@
       };
     };
 
-    # forgejo = {
-    #   enable = true;
-    #   sendMails = true;
-    #   reverseProxy = {
-    #     enable = true;
-    #     domain = "git.trivaris.org";
-    #   };
-    # };
-
     vaultwarden = {
       enable = true;
       sendMails = true;
@@ -84,6 +64,11 @@
           "@trivaris.org"
         ];
       };
+    };
+
+    wireguard.server = {
+      enable = true;
+      domain = "vpn.trivaris.org";
     };
   };
 }

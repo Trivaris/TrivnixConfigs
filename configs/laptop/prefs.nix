@@ -25,12 +25,10 @@
       authgroup = "campus";
     };
 
-    ipsecClient = {
-      enable = false;
-      domain = "vpn.trivaris.org";
-      id = "laptop";
-      cert = ../../resources/ipsecCerts/laptop-cert.pem;
-      caCert = ../../resources/ipsecCerts/ca-cert.pem;
+    wireguard.client = {
+      enable = true;
+      ip = "10.100.0.7";
+      serverAddress = "vpn.trivaris.org";
     };
 
     udev = {
