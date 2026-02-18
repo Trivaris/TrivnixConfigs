@@ -1254,11 +1254,11 @@
         "split-monitor-workspaces": "split-monitor-workspaces"
       },
       "locked": {
-        "lastModified": 1771376990,
-        "narHash": "sha256-PQ90Ze0bP47/l1iqNB+xUAZN85/nKrSgZhxSy8RVYmw=",
+        "lastModified": 1771377493,
+        "narHash": "sha256-G8+TGaZkDtecqf2a1iDLGWWkBfDiYdiP6yrS0lHe4OQ=",
         "ref": "refs/heads/main",
-        "rev": "8e4446d2f2a0d3f69d1ef13282b904d0e7249151",
-        "revCount": 408,
+        "rev": "24df37a5eef0e5a13a599fef63538450ffcf21af",
+        "revCount": 409,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/Trivnix"
       },
