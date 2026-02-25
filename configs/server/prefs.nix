@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ ... }:
 {
   imports = [
     ../../common/theming.nix
@@ -36,6 +36,14 @@
       reverseProxy = {
         enable = true;
         domain = "collabora.trivaris.org";
+      };
+    };
+
+    matrix = {
+      enable = true;
+      reverseProxy = {
+        enable = true;
+        domain = "matrix.trivaris.org";
       };
     };
 

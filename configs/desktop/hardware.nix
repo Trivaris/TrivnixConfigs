@@ -11,8 +11,6 @@
   environment.systemPackages = [ pkgs.ntfs3g ];
   nixpkgs.hostPlatform = lib.mkDefault config.hostInfos.architecture;
   system.stateVersion = config.hostInfos.stateVersion;
-  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-  hardware.nvidia.nvidiaSettings = true;
 
   boot = {
     kernelModules = [
@@ -49,16 +47,18 @@
   };
 
   hardware = {
-    graphics.enable = true;
-    graphics.enable32Bit = true;
-    graphics.extraPackages = [
-      pkgs.nvidia-vaapi-driver
-    ];
     uinput.enable = true;
+    cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+      extraPackages = [ pkgs.nvidia-vaapi-driver ];
+    };
     nvidia = {
       package = config.boot.kernelPackages.nvidiaPackages.stable;
       modesetting.enable = true;
       open = true;
+      nvidiaSettings = true;
     };
   };
 
