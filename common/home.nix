@@ -11,7 +11,6 @@
 
       otherPackages = {
         _general = [
-          "android-tools"
           "rsclock"
           "pipes-rs"
           "r-matrix"
@@ -20,8 +19,6 @@
           "hardinfo2"
           "protonvpn-gui"
           "vlc"
-          "wayland-utils"
-          "wl-clipboard-rs"
           "bitwarden-desktop"
           "lutris"
           "moonlight-qt"
@@ -29,6 +26,11 @@
           "vscode"
           "localsend"
           "tdf"
+
+          # System and Other
+          "wayland-utils"
+          "wl-clipboard-rs"
+          "android-tools"
 
           # System Verilog
           "iverilog"

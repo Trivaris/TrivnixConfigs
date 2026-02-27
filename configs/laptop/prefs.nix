@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   imports = [
     ../../common/theming.nix
@@ -21,7 +21,10 @@
       enable = true;
       user = "tj93wefe";
       gateway = "vpn.hrz.tu-darmstadt.de";
-      cafile = ../../resources/openconnectCerts/rootcert-tuda.crt;
+      cafile = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/refs/heads/main/resources/openconnectCerts/rootcert-tuda.crt";
+        hash = "sha256-keL1eI1YEOunulhzfeFUio7KzQFFmLwLFD4EGxcFJVI=";
+      };
       authgroup = "campus";
     };
 

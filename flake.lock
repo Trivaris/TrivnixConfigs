@@ -1254,11 +1254,11 @@
         "split-monitor-workspaces": "split-monitor-workspaces"
       },
       "locked": {
-        "lastModified": 1772019860,
-        "narHash": "sha256-RAo1IwSmgFFAX6+yEK/PGBVVBYfsOfrUCA5C2Fgwr5Y=",
+        "lastModified": 1772118292,
+        "narHash": "sha256-2WvwQp6jSQuiEWIfgI0shy1wxSbyqv8tZIATRKtenAU=",
         "ref": "refs/heads/main",
-        "rev": "eac2638d88c4e7a3b1efd8b2f405a9f0bd1ead63",
-        "revCount": 415,
+        "rev": "e36470e32676d5aac65ba3db14ff9c3922223876",
+        "revCount": 416,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/Trivnix"
       },
@@ -1305,11 +1305,11 @@
         "nixpkgs": "nixpkgs_13"
       },
       "locked": {
-        "lastModified": 1771944143,
-        "narHash": "sha256-QuBC/hen5CWGeOLwDKpm8xuTYfLsE9QuTCVFfwPeshU=",
+        "lastModified": 1772118269,
+        "narHash": "sha256-LCBK9CuAyPZrKLqm4PoPTURlRFKD/hk9nNLqN3Dgc6Y=",
         "ref": "refs/heads/main",
-        "rev": "e0b47338b76788f3ca4d57f3303c2c721d5d2e83",
-        "revCount": 57,
+        "rev": "6219d1b918a23497861836bfe4f2a672ff4ce7fe",
+        "revCount": 58,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/TrivnixPrivate"
       },

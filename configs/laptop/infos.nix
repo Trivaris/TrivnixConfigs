@@ -1,4 +1,10 @@
-{ lib, ... }:
+{ pkgs, ... }:
+let 
+  wallpaper = pkgs.fetchurl {
+    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/refs/heads/main/resources/wallpapers/cat_anime-skull.jpg";
+    hash = "sha256-cy3EAN5RY65jvbKpje46bO2KmHS+Yb/R6sMNNrwjBD4=";
+  };
+in 
 {
   hostInfos = {
     name = "trivlaptop";
@@ -15,7 +21,7 @@
         position = "0x0";
         scaling = "1";
         workspaceIndex = 0;
-        wallpaper = ../../resources/wallpapers/cat_anime-skull.jpg;
+        wallpaper = wallpaper;
       };
       "DP-3" = {
         resolution = "1920x1080";
@@ -23,7 +29,7 @@
         position = "1920x0";
         scaling = "1";
         workspaceIndex = 1;
-        wallpaper = ../../resources/wallpapers/cat_anime-skull.jpg;
+        wallpaper = wallpaper;
       };
       "DP-4" = {
         resolution = "1920x1200";
@@ -31,7 +37,7 @@
         position = "3840x0";
         scaling = "1";
         workspaceIndex = 2;
-        wallpaper = ../../resources/wallpapers/cat_anime-skull.jpg;
+        wallpaper = wallpaper;
       };
     };
   };

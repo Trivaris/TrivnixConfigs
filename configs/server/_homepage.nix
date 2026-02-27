@@ -1,4 +1,14 @@
-{ ... }:
+{ pkgs, ... }:
+let
+  background = pkgs.fetchurl {
+    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/refs/heads/main/resources/wallpapers/nix3.jpg";
+    hash = "sha256-XHSB1HNqMlm5fJncw83tXNhDEZzQg0MAwdZ9mbtYu9k=";
+  };
+  favicon = pkgs.fetchurl {
+    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/refs/heads/main/icons/nixowos.svg";
+    hash = "sha256-7e5fX1QZy7s2GITJZIqB7qocgOWRtXuyVGlW+dYHjyU=";
+  };
+in
 {
   hostPrefs.homepage = {
     enable = true;
@@ -8,7 +18,7 @@
     };
 
     settings = {
-      favicon = ../../resources/icons/nixowos.svg;
+      favicon = favicon;
       color = "gray";
 
       layout = [
@@ -22,7 +32,7 @@
       ];
 
       background = {
-        image = ../../resources/wallpapers/nix3.jpg;
+        image = background;
         blur = "sm";
         saturate = 100;
         brightness = 100;
