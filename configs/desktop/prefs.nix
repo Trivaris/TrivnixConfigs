@@ -5,6 +5,8 @@
     ../../common/theming.nix
   ];
 
+  services.flatpak.enable = true;
+
   hostPrefs = {
     mainUser = "trivaris";
     bluetooth.enable = true;
@@ -13,7 +15,6 @@
     steam.enable = true;
     kdeConnect.enable = true;
     jtegranx.enable = true;
-    mountSteamdeck = true;
     sunshine.enable = false;
     spicetify.enable = true;
     enableDevStuffs = true;
