@@ -26,6 +26,7 @@
           "vscode"
           "localsend"
           "tdf"
+          "affine"
 
           # System and Other
           "wayland-utils"

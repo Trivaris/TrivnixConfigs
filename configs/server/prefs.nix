@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
   imports = [
     ../../common/theming.nix
@@ -47,6 +47,14 @@
       };
     };
 
+    affine = {
+      enable = true;
+      reverseProxy = {
+        enable = true;
+        domain = "affine.trivaris.org";
+      };
+    };
+
     vaultwarden = {
       enable = true;
       sendMails = true;
@@ -64,8 +72,7 @@
       baseDomain = "trivaris.org";
       domain = "mail.trivaris.org";
       providerName = "Trivaris Mail";
-      loginAccounts."mail@trivaris.org" = {
-        name = "mail@trivaris.org";
+      accounts."mail@trivaris.org" = {
         hashedPassword = "$2b$05$7p74qoLRa2R09CJwkkL8MeKqM3oOfC4rgb0R.K1jQlO2TWpj9E3Fe";
         aliases = [
           "@mail.trivaris.org"
