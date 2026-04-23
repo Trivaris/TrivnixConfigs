@@ -49,6 +49,7 @@
 
     affine = {
       enable = true;
+      sendMails = true;
       reverseProxy = {
         enable = true;
         domain = "affine.trivaris.org";
@@ -66,11 +67,8 @@
 
     mailserver = {
       enable = true;
-      enableIpV6 = true;
-      ipV6Address = "2a01:4f8:c012:5e87::1";
-      ipV6Interface = "enp1s0";
-      baseDomain = "trivaris.org";
-      domain = "mail.trivaris.org";
+      domain = "trivaris.org";
+      extraDomains = [ "mail" ];
       providerName = "Trivaris Mail";
       accounts."mail@trivaris.org" = {
         hashedPassword = "$2b$05$7p74qoLRa2R09CJwkkL8MeKqM3oOfC4rgb0R.K1jQlO2TWpj9E3Fe";

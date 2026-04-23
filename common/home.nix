@@ -1,95 +1,63 @@
-{ ... }:
+{ pkgs, ... }:
 {
-  userPrefs = {
-    misc = {
-      otherPrograms = [
-        "btop"
-        "spotify-player"
-        "vesktop"
-        "java"
-      ];
 
-      otherPackages = {
-        _general = [
-          "rsclock"
-          "pipes-rs"
-          "r-matrix"
-          "rbonsai"
-          "me3"
-          "hardinfo2"
-          "proton-vpn"
-          "vlc"
-          "bitwarden-desktop"
-          "lutris"
-          "moonlight-qt"
-          "signal-desktop"
-          "vscode"
-          "localsend"
-          "tdf"
-          "affine"
+  programs = {
+    btop.enable = true;
+    spotify-player.enable = true;
+    vesktop.enable = true;
+  };
 
-          # System and Other
-          "wayland-utils"
-          "wl-clipboard-rs"
-          "android-tools"
+  home.packages = [
+    pkgs.rsclock
+    pkgs.pipes-rs
+    pkgs.cmatrix
+    pkgs.bonsai
+    pkgs.hardinfo2
+    pkgs.proton-vpn
+    pkgs.bitwarden-desktop
+    pkgs.signal-desktop
+    pkgs.vscode
+    pkgs.localsend
+    pkgs.tdf
+    pkgs.affine
+    pkgs.wl-clipboard-rs
+    pkgs.android-tools
+  ];
 
-          # System Verilog
-          "iverilog"
-          "gtkwave"
-          "yosys"
-          "graphviz"
+  userPrefs.librewolf = {
+    enable = true;
+    allowedCookies = [
+      "https://www.instagram.com"
+      "https://chatgpt.com"
+      "https://www.notion.so"
+      "https://web.whatsapp.com"
+      "https://www.kenmei.co"
+      "https://mangadex.org"
+      "https://auth.mangadex.org"
+      "https://www.youtube.com"
+      "https://www.livechart.me"
+      "https://kenmei.pages.dev"
 
-          # Java
-          "gradle_8"
-          "glib"
-          "google-java-format"
+      "https://tucan.tu-darmstadt.de"
+      "https://www.tucan.tu-darmstadt.de"
+      "https://login.tu-darmstadt.de"
+      "https://moodle.tu-darmstadt.de"
+      "https://moodle.informatik.tu-darmstadt.de"
+      "https://tu-darmstadt.de"
+      "https://www.tu-darmstadt.de"
+      "https://idm.tu-darmstadt.de"
+      "https://login.hrz.tu-darmstadt.de"
 
-          # Rust
-          "cargo"
-          "rustc"
-          "rustfmt"
-          "clippy"
-          "rust-analyzer"
-          "gcc"
-        ];
-      };
-    };
+      "https://github.com"
+      "https://gitlab.com"
+      "https://asuracomic.net"
+      "https://www.reddit.com"
+      "https://www.google.com"
+      "https://accounts.google.com"
 
-    librewolf = {
-      enable = true;
-      allowedCookies = [
-        "https://www.instagram.com"
-        "https://chatgpt.com"
-        "https://www.notion.so"
-        "https://web.whatsapp.com"
-        "https://www.kenmei.co"
-        "https://mangadex.org"
-        "https://auth.mangadex.org"
-        "https://www.youtube.com"
-        "https://www.livechart.me"
-        "https://kenmei.pages.dev"
-
-        "https://tucan.tu-darmstadt.de"
-        "https://www.tucan.tu-darmstadt.de"
-        "https://login.tu-darmstadt.de"
-        "https://moodle.tu-darmstadt.de"
-        "https://moodle.informatik.tu-darmstadt.de"
-        "https://tu-darmstadt.de"
-        "https://www.tu-darmstadt.de"
-        "https://idm.tu-darmstadt.de"
-        "https://login.hrz.tu-darmstadt.de"
-
-        "https://github.com"
-        "https://gitlab.com"
-        "https://asuracomic.net"
-        "https://www.reddit.com"
-        "https://www.google.com"
-        "https://accounts.google.com"
-        "https://f95zone.to/"
-
-        "https://vault.trivaris.org"
-        "https://git.trivaris.org"
-      ];
-    };
+      "https://vault.trivaris.org"
+      "https://git.trivaris.org"
+      "https://affine.trivaris.org"
+    ];
   };
 }
