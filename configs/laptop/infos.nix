@@ -1,8 +1,8 @@
 { pkgs, ... }:
 let 
   wallpaper = pkgs.fetchurl {
-    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/refs/heads/main/resources/wallpapers/cat_anime-skull.jpg";
-    hash = "sha256-cy3EAN5RY65jvbKpje46bO2KmHS+Yb/R6sMNNrwjBD4=";
+    url = "https://raw.githubusercontent.com/zhichaoh/catppuccin-wallpapers/08659a2ed650b36d4565445eb9007398be7c9f80/landscapes/Cloudsday.jpg";
+    hash = "sha256-+EkcQlbWPGud6dvRNqB+yRe8T1UsNAenwrLgFLy3G2A=";
   };
 in 
 {
