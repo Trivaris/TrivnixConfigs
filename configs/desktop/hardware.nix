@@ -47,6 +47,8 @@ in
         "usbhid"
         "sd_mod"
         "btusb"
+        "tpm_tis" 
+        "tpm_crb" 
       ];
     };
     lanzaboote = {

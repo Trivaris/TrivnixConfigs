@@ -65,6 +65,14 @@
       };
     };
 
+    n8n = {
+      enable = true;
+      reverseProxy = {
+        enable = true;
+        domain = "n8n.trivaris.org";
+      };
+    };
+
     mailserver = {
       enable = true;
       domain = "trivaris.org";

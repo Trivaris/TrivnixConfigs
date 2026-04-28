@@ -17,7 +17,6 @@
     jtegranx.enable = true;
     sunshine.enable = false;
     spicetify.enable = true;
-    enableDevStuffs = true;
 
     moondeck = {
       enable = false;

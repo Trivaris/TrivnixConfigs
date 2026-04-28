@@ -15,7 +15,6 @@
     openssh.enable = true;
     jtegranx.enable = true;
     spicetify.enable = true;
-    enableDevStuffs = true;
 
     openconnectClient = {
       enable = true;

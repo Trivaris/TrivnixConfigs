@@ -24,7 +24,7 @@ in
         wallpaper = wallpaper;
       };
 
-      "DP-2" = {
+      "DP-1" = {
         resolution = "2560x1440";
         refreshRate = "74.97";
         position = "1920x480";
