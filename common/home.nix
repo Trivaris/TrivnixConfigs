@@ -22,10 +22,7 @@
     pkgs.wl-clipboard-rs
     pkgs.android-tools
     pkgs.obsidian
-<<<<<<< HEAD
-=======
     pkgs.jetbrains.idea
->>>>>>> 26f966f (feat: feet)
   ];
 
   userPrefs.librewolf = {
