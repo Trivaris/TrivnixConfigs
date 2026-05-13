@@ -22,6 +22,7 @@
     pkgs.affine
     pkgs.wl-clipboard-rs
     pkgs.android-tools
+    pkgs.obsidian
   ];
 
   userPrefs.librewolf = {
