@@ -65,11 +65,27 @@
       };
     };
 
-    n8n = {
+    # n8n = {
+    #   enable = true;
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "n8n.trivaris.org";
+    #   };
+    # };
+
+    # evolution = {
+    #   enable = true;
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "evolution.trivaris.org";
+    #   };
+    # };
+
+    syncthing = {
       enable = true;
       reverseProxy = {
         enable = true;
-        domain = "n8n.trivaris.org";
+        domain = "syncthing.trivaris.org";
       };
     };
 

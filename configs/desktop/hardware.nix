@@ -35,7 +35,6 @@ in
       systemd-boot.enable = lib.mkForce false;
       efi.canTouchEfiVariables = true;
     };
-
     initrd = {
       supportedFilesystems.ntfs = true;
       kernelModules = [ ];
@@ -65,6 +64,7 @@ in
   };
 
   hardware = {
+    enableAllFirmware = true;
     uinput.enable = true;
     cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
     graphics = {

@@ -1131,19 +1131,11 @@
         "spicetify-nix": "spicetify-nix"
       },
       "locked": {
-<<<<<<< HEAD
         "lastModified": 1778682590,
         "narHash": "sha256-TTnhMPWocncwVF0jCcKFciT5l+RwMkp+dgRwhTajNgM=",
         "ref": "refs/heads/main",
         "rev": "87a069e585906422a1fd378ff8b7a494c0c76d4e",
         "revCount": 443,
-=======
-        "lastModified": 1777627644,
-        "narHash": "sha256-w4m2vrm0wNDnwngOZQlr8RrVCMCIrJqIziELUhgEm2M=",
-        "ref": "refs/heads/main",
-        "rev": "5f2c9f0dceadf702ea642ba70d5a32eff026109e",
-        "revCount": 442,
->>>>>>> 26f966f (feat: feet)
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/Trivnix"
       },
@@ -1190,19 +1182,11 @@
         "nixpkgs": "nixpkgs_12"
       },
       "locked": {
-<<<<<<< HEAD
         "lastModified": 1778682604,
         "narHash": "sha256-w76CKByczWcx4Up7vV05E/mGxQBUapuv/oihdla3dIE=",
         "ref": "refs/heads/main",
         "rev": "bbae9ab4a94091cc3a1314f18f0fe86d43b71754",
         "revCount": 65,
-=======
-        "lastModified": 1777562710,
-        "narHash": "sha256-aW9sBWRO+iAojXVYa1cxHHzgqcgi0jIfnYmqa8Tbyg4=",
-        "ref": "refs/heads/main",
-        "rev": "884d817e3b228b661f340d9117834b243c6b82cd",
-        "revCount": 64,
->>>>>>> 26f966f (feat: feet)
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/TrivnixPrivate"
       },

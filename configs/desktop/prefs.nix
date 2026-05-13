@@ -23,6 +23,7 @@
       openFirewall = true;
     };
 
+
     openssh = {
       enable = true;
       ports = [ 23232 ];

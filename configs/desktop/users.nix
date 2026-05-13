@@ -25,7 +25,8 @@
       email.enable = true;
       cli.enable = true;
       wayvnc.enable = true;
-      jetbrainsIDEs = [ "idea" ];
+      syncthing.enable = true;
+      vscode.enable = true;
     };
   };
 }

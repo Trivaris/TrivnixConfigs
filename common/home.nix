@@ -16,13 +16,16 @@
     pkgs.proton-vpn
     pkgs.bitwarden-desktop
     pkgs.signal-desktop
-    pkgs.vscode
     pkgs.localsend
     pkgs.tdf
     pkgs.affine
     pkgs.wl-clipboard-rs
     pkgs.android-tools
     pkgs.obsidian
+<<<<<<< HEAD
+=======
+    pkgs.jetbrains.idea
+>>>>>>> 26f966f (feat: feet)
   ];
 
   userPrefs.librewolf = {
