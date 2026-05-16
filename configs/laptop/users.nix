@@ -31,7 +31,7 @@
       email.enable = true;
       cli.enable = true;
       remmina.enable = true;
-      jetbrainsIDEs = [ "idea" ];
+      vscode.enable = true;
     };
   };
 }

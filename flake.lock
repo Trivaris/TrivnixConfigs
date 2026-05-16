@@ -793,6 +793,22 @@
     },
     "nixpkgs_12": {
       "locked": {
+        "lastModified": 1778430510,
+        "narHash": "sha256-Ti+ZBvW6yrWWAg2szExVTwCd4qOJ3KlVr1tFHfyfi8Q=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "8fd9daa3db09ced9700431c5b7ad0e8ba199b575",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-25.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_13": {
+      "locked": {
         "lastModified": 1775710090,
         "narHash": "sha256-ar3rofg+awPB8QXDaFJhJ2jJhu+KqN/PRCXeyuXR76E=",
         "owner": "nixos",
@@ -807,7 +823,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_13": {
+    "nixpkgs_14": {
       "locked": {
         "lastModified": 1767364772,
         "narHash": "sha256-fFUnEYMla8b7UKjijLnMe+oVFOz6HjijGGNS1l7dYaQ=",
@@ -1148,11 +1164,11 @@
         "trivnixNvim": "trivnixNvim"
       },
       "locked": {
-        "lastModified": 1778682649,
-        "narHash": "sha256-e+JCk0auWUBMf7aA3lZMLlECeCUguugv8Bf0e+W2tf8=",
+        "lastModified": 1778959780,
+        "narHash": "sha256-GYBJBS8gxuV/Q6ro2yVLKVZSk7gBcCfq9Bs2Giyta5o=",
         "ref": "refs/heads/main",
-        "rev": "31c015cb609a9298ad453d96d27babf06edab7dd",
-        "revCount": 444,
+        "rev": "285407fdb2b0d88197a661811d8b1dfa2111575c",
+        "revCount": 445,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/Trivnix"
       },
@@ -1162,12 +1178,15 @@
       }
     },
     "trivnixLib": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_12"
+      },
       "locked": {
-        "lastModified": 1777562735,
-        "narHash": "sha256-qQsfe/nNV+AlnY32Q3cqBOnvKA+0rPjwhG1IRhn0YTE=",
+        "lastModified": 1778834428,
+        "narHash": "sha256-Lj7X0xfRxHwZHYPD3fruuGLWLmgvHhvl8We0w5rr368=",
         "ref": "refs/heads/main",
-        "rev": "cc893c71c32ff753b89826c37c130f491068ca9d",
-        "revCount": 125,
+        "rev": "5842a939da980f2d3a67debe77726b6c25a68895",
+        "revCount": 133,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/TrivnixLib"
       },
@@ -1196,7 +1215,7 @@
     },
     "trivnixOverlays": {
       "inputs": {
-        "nixpkgs": "nixpkgs_12"
+        "nixpkgs": "nixpkgs_13"
       },
       "locked": {
         "lastModified": 1777380840,
@@ -1214,7 +1233,7 @@
     },
     "trivnixPrivate": {
       "inputs": {
-        "nixpkgs": "nixpkgs_13"
+        "nixpkgs": "nixpkgs_14"
       },
       "locked": {
         "lastModified": 1778682604,
