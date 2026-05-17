@@ -14,7 +14,7 @@
     kdeConnect.enable = true;
     openssh.enable = true;
     jtegranx.enable = true;
-    spicetify.enable = true;
+    spotify.enable = true;
 
     openconnectClient = {
       enable = true;

@@ -23,6 +23,10 @@
     pkgs.android-tools
     pkgs.obsidian
     pkgs.jetbrains.idea
+<<<<<<< HEAD
+=======
+    pkgs.gradia
+>>>>>>> 76dcaea (feat: feet)
   ];
 
   userPrefs.librewolf = {
