@@ -24,6 +24,7 @@
     pkgs.obsidian
     pkgs.jetbrains.idea
     pkgs.gradia
+    pkgs.osu-lazer
   ];
 
   userPrefs.librewolf = {

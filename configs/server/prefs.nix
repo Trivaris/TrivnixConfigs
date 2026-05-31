@@ -1,4 +1,10 @@
-{ lib, ... }:
+{ pkgs, ... }:
+let 
+  publicKeyFile = pkgs.fetchurl {
+    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/44c7c084c770aa79dcdc614dcf6c0a3699004f50/resources/pubKeys/fritz.pub";
+    hash = "";
+  };
+in 
 {
   imports = [
     ../../common/theming.nix
@@ -103,9 +109,21 @@
       };
     };
 
-    wireguard.server = {
+    homeAssistant = {
       enable = true;
-      domain = "vpn.trivaris.org";
+      wireguard = {
+        enable = true;
+        publicKeyFile = publicKeyFile;
+      };
+      reverseProxy = {
+        enable = true;
+        domain = "home.trivaris.org";
+      };
     };
+
+    # wireguard.server = {
+    #   enable = true;
+    #   domain = "vpn.trivaris.org";
+    # };
   };
 }

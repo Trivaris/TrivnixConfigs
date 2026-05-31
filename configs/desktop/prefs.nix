@@ -28,10 +28,10 @@
       ports = [ 23232 ];
     };
 
-    wireguard.client = {
-      enable = true;
-      ip = "10.100.0.5";
-      serverAddress = "vpn.trivaris.org";
-    };
+    # wireguard.client = {
+    #   enable = true;
+    #   ip = "10.100.0.5";
+    #   serverAddress = "vpn.trivaris.org";
+    # };
   };
 }
