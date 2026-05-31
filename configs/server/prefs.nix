@@ -111,6 +111,12 @@ in
 
     homeAssistant = {
       enable = true;
+      extraComponents = [
+        "default_config"
+        "google_translate"
+        "mobile_app" 
+        "met"
+      ];
       wireguard = {
         enable = true;
         publicKeyFile = publicKeyFile;
