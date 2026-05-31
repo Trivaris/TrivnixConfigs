@@ -2,7 +2,7 @@
 let 
   publicKeyFile = pkgs.fetchurl {
     url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/44c7c084c770aa79dcdc614dcf6c0a3699004f50/resources/pubKeys/fritz.pub";
-    hash = "";
+    hash = "sha256-7UUt41La03HdNZjj1iv9E0x92VG0+a15isMutwtyQeo=";
   };
 in 
 {
