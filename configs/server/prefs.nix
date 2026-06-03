@@ -25,6 +25,7 @@ in
       reverseProxy = {
         enable = true;
         domain = "tandoor.trivaris.org";
+        port = 8099;
       };
     };
 
@@ -33,6 +34,7 @@ in
       reverseProxy = {
         enable = true;
         domain = "cfddns.trivaris.org";
+        port = 8892;
       };
     };
 
@@ -42,23 +44,7 @@ in
       reverseProxy = {
         enable = true;
         domain = "collabora.trivaris.org";
-      };
-    };
-
-    matrix = {
-      enable = true;
-      reverseProxy = {
-        enable = true;
-        domain = "matrix.trivaris.org";
-      };
-    };
-
-    affine = {
-      enable = true;
-      sendMails = true;
-      reverseProxy = {
-        enable = true;
-        domain = "affine.trivaris.org";
+        port = 9980;
       };
     };
 
@@ -68,30 +54,25 @@ in
       reverseProxy = {
         enable = true;
         domain = "vault.trivaris.org";
+        port = 8891;
       };
     };
 
-    # n8n = {
-    #   enable = true;
-    #   reverseProxy = {
-    #     enable = true;
-    #     domain = "n8n.trivaris.org";
-    #   };
-    # };
-
-    # evolution = {
-    #   enable = true;
-    #   reverseProxy = {
-    #     enable = true;
-    #     domain = "evolution.trivaris.org";
-    #   };
-    # };
+    paperless = {
+      enable = true;
+      reverseProxy = {
+        enable = true;
+        domain = "paperless.trivaris.org";
+        port = 28981;
+      };
+    };
 
     syncthing = {
       enable = true;
       reverseProxy = {
         enable = true;
         domain = "syncthing.trivaris.org";
+        port = 8384;
       };
     };
 
@@ -117,19 +98,59 @@ in
         "mobile_app" 
         "met"
       ];
+
       wireguard = {
         enable = true;
         publicKeyFile = publicKeyFile;
       };
+      
       reverseProxy = {
         enable = true;
         domain = "home.trivaris.org";
+        port = 8123;
       };
     };
 
     # wireguard.server = {
     #   enable = true;
     #   domain = "vpn.trivaris.org";
+    # };
+
+    # matrix = {
+    #   enable = true;
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "matrix.trivaris.org";
+    #     port = 6167;
+    #   };
+    # };
+
+    # affine = {
+    #   enable = true;
+    #   sendMails = true;
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "affine.trivaris.org";
+    #     port = 3010;
+    #   };
+    # };
+
+    # n8n = {
+    #   enable = true;
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "n8n.trivaris.org";
+    #     port = 5678;
+    #   };
+    # };
+
+    # evolution = {
+    #   enable = true;
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "evolution.trivaris.org";
+    #     port = 8079;
+    #   };
     # };
   };
 }

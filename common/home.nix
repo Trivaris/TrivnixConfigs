@@ -18,7 +18,6 @@
     pkgs.signal-desktop
     pkgs.localsend
     pkgs.tdf
-    pkgs.affine
     pkgs.wl-clipboard-rs
     pkgs.android-tools
     pkgs.obsidian
@@ -60,7 +59,6 @@
 
       "https://vault.trivaris.org"
       "https://git.trivaris.org"
-      "https://affine.trivaris.org"
     ];
   };
 }
