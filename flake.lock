@@ -1164,11 +1164,11 @@
         "trivnixNvim": "trivnixNvim"
       },
       "locked": {
-        "lastModified": 1780876297,
-        "narHash": "sha256-DYJP478dsMsaP0ztOIu96YOSgpe091h4TvUoSMz5d08=",
+        "lastModified": 1780876607,
+        "narHash": "sha256-J7XJnFMIr3AQcz/YGAwUG5d1HcaabfEO4AE5NbA6uSc=",
         "ref": "refs/heads/main",
-        "rev": "bba09e76691fe4bd0713298e6bb24104d85dc7ec",
-        "revCount": 463,
+        "rev": "d3aff868e66825cb9c186423c1c4d37959f70076",
+        "revCount": 464,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/Trivnix"
       },
