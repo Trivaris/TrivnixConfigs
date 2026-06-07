@@ -20,6 +20,11 @@ in
       zone = "trivaris.org";
     };
 
+    wireguard = {
+      enable = true;
+      publicKeyFile = publicKeyFile;
+    };
+
     tandoor = {
       enable = true;
       reverseProxy = {
@@ -76,6 +81,15 @@ in
       };
     };
 
+    piHole = {
+      enable = true;
+      reverseProxy = {
+        enable = true;
+        domain = "pihole.trivaris.org";
+        port = 8895;
+      };
+    };
+
     mailserver = {
       enable = true;
       domain = "trivaris.org";
@@ -98,11 +112,6 @@ in
         "mobile_app" 
         "met"
       ];
-
-      wireguard = {
-        enable = true;
-        publicKeyFile = publicKeyFile;
-      };
       
       reverseProxy = {
         enable = true;
@@ -110,11 +119,6 @@ in
         port = 8123;
       };
     };
-
-    # wireguard.server = {
-    #   enable = true;
-    #   domain = "vpn.trivaris.org";
-    # };
 
     # matrix = {
     #   enable = true;
