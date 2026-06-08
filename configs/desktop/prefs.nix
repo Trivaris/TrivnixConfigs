@@ -3,6 +3,7 @@
 
   imports = [
     ../../common/theming.nix
+    ../../common/dns.nix
   ];
 
   services.flatpak.enable = true;
