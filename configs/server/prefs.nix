@@ -87,7 +87,6 @@ in
         enable = true;
         domain = "pihole.trivaris.org";
         port = 8895;
-        externalPort = 443;
       };
       # lists = [
         # # porn-blocklist
