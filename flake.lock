@@ -1182,11 +1182,11 @@
         "nixpkgs": "nixpkgs_12"
       },
       "locked": {
-        "lastModified": 1780476031,
-        "narHash": "sha256-UVYW4qISDJDy8L5Be0DY9310rtRcONPIVLhGF29nM4E=",
+        "lastModified": 1780908271,
+        "narHash": "sha256-BRWBmrtaDC9M2K02vPg/BzwmGHoGN+Aq1VEIPqXAlFQ=",
         "ref": "refs/heads/main",
-        "rev": "602783c952e01ed7ebfee9c40b305dec81ff30fd",
-        "revCount": 134,
+        "rev": "bf0411808a80616ce5a8c68568b2f817792cead0",
+        "revCount": 135,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/TrivnixLib"
       },
