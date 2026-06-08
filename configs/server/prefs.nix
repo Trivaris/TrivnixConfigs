@@ -88,36 +88,39 @@ in
         domain = "pihole.trivaris.org";
         port = 8895;
       };
-      lists = {
-        porn-blocklist = {
+      lists = [
+        # porn-blocklist
+        {
           enabled = true;
           type = "block";
           url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt";
           description = "Main adult content blocklist";
-        };
+        }
 
-        bypass-blocklist = {
+        # bypass-blocklist
+        {
           enabled = true;
           type = "block";
           url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt";
           description = "Main bypass blocklist";
-        };
+        }
 
-        url-shortener = {
+        # url-shortener
+        {
           enabled = true;
           type = "block";
           url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/urlshortener.txt";
           description = "URL Shortener";
-        };
+        }
 
-
-        ad-blocker = {
+        # ad-blocker
+        {
           enabled = true;
           type = "block";
           url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt";
           description = "URL Shortener";
-        };
-      };
+        }
+      ];
     };
 
     mailserver = {
