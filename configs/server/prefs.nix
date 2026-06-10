@@ -89,37 +89,37 @@ in
         port = 8895;
       };
       # lists = [
-        # # porn-blocklist
-        # {
-        #   enabled = true;
-        #   type = "block";
-        #   url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt";
-        #   description = "Main adult content blocklist";
-        # }
-        # 
-        # # bypass-blocklist
-        # {
-        #   enabled = true;
-        #   type = "block";
-        #   url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt";
-        #   description = "Main bypass blocklist";
-        # }
-        # 
-        # # url-shortener
-        # {
-        #   enabled = true;
-        #   type = "block";
-        #   url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/urlshortener.txt";
-        #   description = "URL Shortener";
-        # }
-        # 
-        # # ad-blocker
-        # {
-        #   enabled = true;
-        #   type = "block";
-        #   url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt";
-        #   description = "URL Shortener";
-        # }
+      #   # porn-blocklist
+      #   {
+      #     enabled = true;
+      #     type = "block";
+      #     url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt";
+      #     description = "Main adult content blocklist";
+      #   }
+      # 
+      #   # bypass-blocklist
+      #   {
+      #     enabled = true;
+      #     type = "block";
+      #     url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt";
+      #     description = "Main bypass blocklist";
+      #   }
+      # 
+      #   # url-shortener
+      #   {
+      #     enabled = true;
+      #     type = "block";
+      #     url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/urlshortener.txt";
+      #     description = "URL Shortener";
+      #   }
+      # 
+      #   # ad-blocker
+      #   {
+      #     enabled = true;
+      #     type = "block";
+      #     url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt";
+      #     description = "URL Shortener";
+      #   }
       # ];
     };
 

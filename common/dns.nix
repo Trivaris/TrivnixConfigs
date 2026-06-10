@@ -6,7 +6,7 @@
     enable = true;
     settings = {
       Resolve = {
-        DNS = "188.34.182.1#pihole.trivaris.org";
+        DNS = "1.1.1.3#family.cloudflare-dns.com 1.0.0.3#family.cloudflare-dns.com";
         DNSOverTLS = "yes";
       };
     };
