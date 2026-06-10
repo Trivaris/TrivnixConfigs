@@ -15,7 +15,7 @@
   services = {
     thermald.enable = true;
     power-profiles-daemon.enable = false;
-    
+
     auto-cpufreq = {
       enable = true;
       settings = {
@@ -36,7 +36,7 @@
 
   boot = {
     kernelModules = [ "kvm-amd" ];
-    
+
     kernelParams = [
       "amd_pstate=active"
       "nvme.noacpi=1"
@@ -49,12 +49,21 @@
       options rtw89_core disable_ps_mode=n
     '';
 
-    blacklistedKernelModules = [ "nouveau" "nvidia" "nvidia_drm" "nvidia_modeset" ];
+    blacklistedKernelModules = [
+      "nouveau"
+      "nvidia"
+      "nvidia_drm"
+      "nvidia_modeset"
+    ];
 
     initrd.availableKernelModules = [
-      "nvme" "xhci_pci" "usb_storage" "sd_mod" "rtsx_pci_sdmmc"
+      "nvme"
+      "xhci_pci"
+      "usb_storage"
+      "sd_mod"
+      "rtsx_pci_sdmmc"
     ];
-    
+
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;

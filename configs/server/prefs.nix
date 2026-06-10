@@ -1,10 +1,10 @@
 { pkgs, ... }:
-let 
+let
   publicKeyFile = pkgs.fetchurl {
     url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/44c7c084c770aa79dcdc614dcf6c0a3699004f50/resources/pubKeys/fritz.pub";
     hash = "sha256-7UUt41La03HdNZjj1iv9E0x92VG0+a15isMutwtyQeo=";
   };
-in 
+in
 {
   imports = [
     ../../common/theming.nix
@@ -18,6 +18,15 @@ in
       enable = true;
       email = "cloudflare@tripple.lurdane.de";
       zone = "trivaris.org";
+      extraServices = [
+        {
+          name = "homeAssistant";
+          domain = "home.trivaris.org";
+          address = "10.0.0.2";
+          port = 8123;
+          enable = true;
+        }
+      ];
     };
 
     wireguard = {
@@ -96,7 +105,7 @@ in
       #     url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt";
       #     description = "Main adult content blocklist";
       #   }
-      # 
+      #
       #   # bypass-blocklist
       #   {
       #     enabled = true;
@@ -104,7 +113,7 @@ in
       #     url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt";
       #     description = "Main bypass blocklist";
       #   }
-      # 
+      #
       #   # url-shortener
       #   {
       #     enabled = true;
@@ -112,7 +121,7 @@ in
       #     url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/urlshortener.txt";
       #     description = "URL Shortener";
       #   }
-      # 
+      #
       #   # ad-blocker
       #   {
       #     enabled = true;
@@ -137,21 +146,21 @@ in
       };
     };
 
-    homeAssistant = {
-      enable = true;
-      extraComponents = [
-        "default_config"
-        "google_translate"
-        "mobile_app" 
-        "met"
-      ];
-      
-      reverseProxy = {
-        enable = true;
-        domain = "home.trivaris.org";
-        port = 8123;
-      };
-    };
+    # homeAssistant = {
+    #   enable = true;
+    #   extraComponents = [
+    #     "default_config"
+    #     "google_translate"
+    #     "mobile_app"
+    #     "met"
+    #   ];
+    # 
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "home.trivaris.org";
+    #     port = 8123;
+    #   };
+    # };
 
     # matrix = {
     #   enable = true;

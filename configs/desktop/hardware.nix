@@ -5,15 +5,18 @@
   pkgs,
   ...
 }:
-let 
+let
   prefs = config.hostPrefs;
   mainuser = config.users.users.${prefs.mainUser};
   mainuserGroup = config.users.groups.${mainuser.group};
-in 
+in
 {
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
-  environment.systemPackages = [ pkgs.ntfs3g pkgs.sshfs ];
+  environment.systemPackages = [
+    pkgs.ntfs3g
+    pkgs.sshfs
+  ];
   nixpkgs.hostPlatform = lib.mkDefault config.hostInfos.architecture;
   system.stateVersion = config.hostInfos.stateVersion;
 
@@ -26,7 +29,7 @@ in
       "nvidia-drm.modeset=1"
       "snd_hda_intel.power_save=0"
       "snd_hda_intel.power_save_controller=N"
-      "usbcore.autosuspend=-1" 
+      "usbcore.autosuspend=-1"
       "btusb.enable_autosuspend=n"
     ];
     extraModulePackages = [ ];
@@ -46,8 +49,8 @@ in
         "usbhid"
         "sd_mod"
         "btusb"
-        "tpm_tis" 
-        "tpm_crb" 
+        "tpm_tis"
+        "tpm_crb"
       ];
     };
     lanzaboote = {

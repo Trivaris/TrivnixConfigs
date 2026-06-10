@@ -99,7 +99,7 @@ in
         ];
       }
     ];
-    
+
     widgets = [
       {
         openmeteo = {

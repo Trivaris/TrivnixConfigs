@@ -1,10 +1,10 @@
 { pkgs, ... }:
-let 
+let
   wallpaper = pkgs.fetchurl {
     url = "https://raw.githubusercontent.com/zhichaoh/catppuccin-wallpapers/08659a2ed650b36d4565445eb9007398be7c9f80/landscapes/Cloudsday.jpg";
     hash = "sha256-+EkcQlbWPGud6dvRNqB+yRe8T1UsNAenwrLgFLy3G2A=";
   };
-in 
+in
 {
   hostInfos = {
     name = "trivlaptop";
