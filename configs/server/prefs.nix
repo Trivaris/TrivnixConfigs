@@ -33,7 +33,7 @@ in
       enable = true;
       peers = [
         {
-          publicKeyFile = lib.removeSuffix "\n" (builtins.readFile publicKeyFile);
+          publicKey = lib.removeSuffix "\n" (builtins.readFile publicKeyFile);
           allowedIPs = [
             "192.168.10.0/24"
           ];
