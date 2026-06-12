@@ -36,6 +36,7 @@ in
           publicKey = lib.removeSuffix "\n" (builtins.readFile publicKeyFile);
           allowedIPs = [
             "192.168.10.0/24"
+            "10.0.0.2/32"
           ];
         }
       ];
