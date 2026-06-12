@@ -34,7 +34,7 @@ in
       peers = [
         {
           publicKeyFile = lib.removeSuffix "\n" (builtins.readFile publicKeyFile);
-          allowedIps = [
+          allowedIPs = [
             "192.168.10.0/24"
           ];
         }
