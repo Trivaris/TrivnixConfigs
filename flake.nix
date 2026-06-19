@@ -36,7 +36,10 @@
               config = {
                 allowUnfree = true;
                 android_sdk.accept_license = true;
-                permittedInsecurePackages = [ "libsoup-2.74.3" ];
+                permittedInsecurePackages = [
+                  "librewolf-151.0.2-1"
+                  "librewolf-unwrapped-151.0.2-1"  
+                ];
               };
             }).lib;
 
@@ -76,7 +79,10 @@
                     allowUnfree = true;
                     allowUnsupportedSystem = true;
                     android_sdk.accept_license = true;
-                    permittedInsecurePackages = [ "libsoup-2.74.3" ];
+                    permittedInsecurePackages = [
+                      "librewolf-151.0.2-1"
+                      "librewolf-unwrapped-151.0.2-1"
+                    ];
                   };
                 };
               }

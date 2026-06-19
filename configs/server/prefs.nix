@@ -154,22 +154,6 @@ in
       };
     };
 
-    # homeAssistant = {
-    #   enable = true;
-    #   extraComponents = [
-    #     "default_config"
-    #     "google_translate"
-    #     "mobile_app"
-    #     "met"
-    #   ];
-    # 
-    #   reverseProxy = {
-    #     enable = true;
-    #     domain = "home.trivaris.org";
-    #     port = 8123;
-    #   };
-    # };
-
     # matrix = {
     #   enable = true;
     #   reverseProxy = {

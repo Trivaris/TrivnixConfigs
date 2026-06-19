@@ -24,6 +24,9 @@
     pkgs.jetbrains.idea
     pkgs.gradia
     pkgs.osu-lazer
+    pkgs.reaper
+    pkgs.x42-plugins
+    pkgs.lsp-plugins
   ];
 
   userPrefs.librewolf = {
