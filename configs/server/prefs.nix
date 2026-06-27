@@ -33,7 +33,7 @@ in
       enable = true;
       peers = [
         {
-          publicKeyFile = publicKeyFile;
+          publicKey = lib.removeSuffix "\n" (builtins.readFile publicKeyFile);
           allowedIPs = [
             "192.168.10.0/24"
             "10.0.0.2/32"
@@ -119,14 +119,15 @@ in
     #     domain = "pihole.trivaris.org";
     #     port = 8895;
     #   };
-    #   #   # ad-blocker
-    #   #   {
-    #   #     enabled = true;
-    #   #     type = "block";
-    #   #     url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt";
-    #   #     description = "URL Shortener";
-    #   #   }
-    #   # ];
+    #   lists = [
+    #     # ad-blocker
+    #     {
+    #       enabled = true;
+    #       type = "block";
+    #       url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt";
+    #       description = "URL Shortener";
+    #     }
+    #   ];
     # };
 
     # matrix = {
