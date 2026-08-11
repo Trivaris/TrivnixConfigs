@@ -37,8 +37,6 @@
                 allowUnfree = true;
                 android_sdk.accept_license = true;
                 permittedInsecurePackages = [
-                  "librewolf-151.0.2-1"
-                  "librewolf-unwrapped-151.0.2-1"  
                 ];
               };
             }).lib;
@@ -80,8 +78,8 @@
                     allowUnsupportedSystem = true;
                     android_sdk.accept_license = true;
                     permittedInsecurePackages = [
-                      "librewolf-151.0.2-1"
-                      "librewolf-unwrapped-151.0.2-1"
+                      "librewolf-bin-151.0.1-2"
+                      "librewolf-bin-unwrapped-151.0.1-2"
                       "electron-39.8.10"
                     ];
                   };
