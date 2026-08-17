@@ -1,8 +1,8 @@
 { pkgs, ... }:
 let
   wallpaper = pkgs.fetchurl {
-    url = "https://raw.githubusercontent.com/zhichaoh/catppuccin-wallpapers/08659a2ed650b36d4565445eb9007398be7c9f80/landscapes/Cloudsday.jpg";
-    hash = "sha256-+EkcQlbWPGud6dvRNqB+yRe8T1UsNAenwrLgFLy3G2A=";
+    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/e7383738eaf25f7350ebdcd97bac6e3e5bb234f3/resources/wallpapers/miles-morales-leap.jpg";
+    hash = "sha256-+kbzasa2cuxVZ90lpgQ3SCaAuv2+0ufovKBAlEBp9Vw=";
   };
 in
 {

@@ -17,7 +17,10 @@
     kdeConnect.enable = true;
     jtegranx.enable = true;
     sunshine.enable = false;
-    spotify.enable = true;
+    spotify = {
+      enable = true;
+      spicetify.enable = true;
+    };
 
     moondeck = {
       enable = false;
