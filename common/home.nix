@@ -27,6 +27,8 @@
     pkgs.reaper
     pkgs.x42-plugins
     pkgs.lsp-plugins
+    pkgs.ffmpeg
+    pkgs.parted
   ];
 
   userPrefs.librewolf = {
