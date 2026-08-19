@@ -1,8 +1,8 @@
 { pkgs, lib, ... }:
 let
   publicKeyFile = pkgs.fetchurl {
-    url = "";
-    hash = "";
+    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/d6ee656deae3495cd99a51fbca41e5e1e3f0aa77/resources/pubKeys/ha_public.key";
+    hash = "sha256-uutGYxTXyjrfEQnFEFzlA0irHA9CLGAFYbCWhU++dHY=";
   };
 in
 {
