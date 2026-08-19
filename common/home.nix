@@ -7,6 +7,8 @@
     vesktop.enable = true;
   };
 
+  services.arrpc.enable = true;
+
   home.packages = [
     pkgs.rsclock
     pkgs.pipes-rs
