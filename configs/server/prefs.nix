@@ -23,7 +23,7 @@ in
           name = "homeAssistant";
           domain = "home.trivaris.org";
           address = "10.0.0.2";
-          port = 8123;
+          port = 80;
           enable = true;
         }
       ];
