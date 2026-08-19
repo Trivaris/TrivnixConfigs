@@ -31,10 +31,5 @@
       enable = true;
       ports = [ 23232 ];
     };
-
-    homeAssistant = {
-      enable = true;
-    };
-
   };
 }
