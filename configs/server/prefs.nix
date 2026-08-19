@@ -31,6 +31,7 @@ in
           domain = "proxmox.trivaris.org";
           address = "192.168.10.46";
           port = 8006;
+          https = true;
           enable = true;
         }
       ];
