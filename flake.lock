@@ -1147,11 +1147,11 @@
         "nixpkgs": "nixpkgs_14"
       },
       "locked": {
-        "lastModified": 1781869583,
-        "narHash": "sha256-VOMaMTG1OUFAFrEztuTzm8kH/r/yIP0TmlSIPPGSidU=",
+        "lastModified": 1787098661,
+        "narHash": "sha256-3F3h+8TkYL+xO8XlJl6ls5wAz2o3MfEf2Nf6GXeP6J8=",
         "ref": "refs/heads/main",
-        "rev": "63394acae8dc107a48a58f8d4e111f57b25faf15",
-        "revCount": 70,
+        "rev": "168b72ea355c381e9c469a2f636a574fb6c5ca1c",
+        "revCount": 71,
         "type": "git",
         "url": "ssh://git@github.com/Trivaris/TrivnixPrivate"
       },
