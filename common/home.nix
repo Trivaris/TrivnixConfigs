@@ -4,10 +4,11 @@
   programs = {
     btop.enable = true;
     spotify-player.enable = true;
-    vesktop.enable = true;
+    vesktop = {
+      enable = true;
+      settings.arRPC = true;
+    };
   };
-
-  services.arrpc.enable = true;
 
   home.packages = [
     pkgs.rsclock
