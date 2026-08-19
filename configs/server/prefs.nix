@@ -22,7 +22,7 @@ in
         {
           name = "homeAssistant";
           domain = "home.trivaris.org";
-          address = "10.0.0.2";
+          address = "192.168.10.47";
           port = 80;
           enable = true;
         }
@@ -36,6 +36,7 @@ in
           publicKey = lib.removeSuffix "\n" (builtins.readFile publicKeyFile);
           allowedIPs = [
             "10.0.0.2/32"
+            "192.168.10.47/32"
           ];
         }
       ];
