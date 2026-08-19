@@ -26,6 +26,13 @@ in
           port = 80;
           enable = true;
         }
+        {
+          name = "proxmox";
+          domain = "proxmox.trivaris.org";
+          address = "192.168.10.46";
+          port = 8006;
+          enable = true;
+        }
       ];
     };
 
@@ -37,6 +44,7 @@ in
           allowedIPs = [
             "10.0.0.2/32"
             "192.168.10.47/32"
+            "192.168.10.46/32"
           ];
         }
       ];
