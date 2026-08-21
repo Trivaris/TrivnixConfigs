@@ -121,6 +121,11 @@ in
       };
     };
 
+    minecraftServer = {
+      enable = true;
+      package = pkgs.minecraft-server-fabric;
+    };
+
     # piHole = {
     #   enable = true;
     #   reverseProxy = {
