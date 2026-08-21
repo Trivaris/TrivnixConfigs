@@ -10,6 +10,13 @@ in
     ../../common/theming.nix
   ];
 
+  services.minecraft-server = {
+    enable = true;
+    package = pkgs.minecraft-server-fabric;
+    eula = true;
+    openFirewall = true;
+  };
+
   hostPrefs = {
     openssh.enable = true;
     headless = true;
@@ -119,11 +126,6 @@ in
           "@trivaris.org"
         ];
       };
-    };
-
-    minecraftServer = {
-      enable = true;
-      package = pkgs.minecraft-server-fabric;
     };
 
     # piHole = {

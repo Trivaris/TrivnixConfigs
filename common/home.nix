@@ -32,6 +32,7 @@
     pkgs.lsp-plugins
     pkgs.ffmpeg
     pkgs.parted
+    pkgs.openjdk25
   ];
 
   userPrefs.librewolf = {
