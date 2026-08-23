@@ -2,7 +2,7 @@
 {
   imports = [
     ../../common/theming.nix
-    ../../common/dns.nix
+    # ../../common/dns.nix
   ];
 
   hostPrefs = {
@@ -16,7 +16,8 @@
     openssh.enable = true;
     jtegranx.enable = true;
     spotify.enable = true;
-
+    docker.enable = true;
+    
     openconnectClient = {
       enable = true;
       user = "tj93wefe";

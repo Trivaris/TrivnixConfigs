@@ -3,7 +3,7 @@
 
   imports = [
     ../../common/theming.nix
-    ../../common/dns.nix
+    # ../../common/dns.nix
   ];
 
   services.flatpak.enable = true;
@@ -17,6 +17,7 @@
     kdeConnect.enable = true;
     jtegranx.enable = true;
     sunshine.enable = false;
+    docker.enable = true;
     spotify = {
       enable = true;
       spicetify.enable = true;
