@@ -29,7 +29,7 @@ in
         {
           name = "homeAssistant";
           domain = "home.trivaris.org";
-          address = "192.168.10.47";
+          address = "192.168.10.23";
           port = 80;
           enable = true;
         }
