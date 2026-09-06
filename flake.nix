@@ -3,8 +3,12 @@
 
   inputs.trivnix.url = "git+ssh://git@github.com/Trivaris/Trivnix";
   inputs.trivnixLib.url = "git+ssh://git@github.com/Trivaris/TrivnixLib";
+  inputs.trivnixLib.inputs.nixpkgs.follows = "nixpkgs";
   inputs.trivnixPrivate.url = "git+ssh://git@github.com/Trivaris/TrivnixPrivate";
+  inputs.trivnixPrivate.inputs.nixpkgs.follows = "nixpkgs";
   inputs.trivnixOverlays.url = "git+ssh://git@github.com/Trivaris/TrivnixOverlays";
+  inputs.trivnixOverlays.inputs.nixpkgs.follows = "nixpkgs";
+  
   inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   inputs.home-manager.url = "github:nix-community/home-manager";
   inputs.importTree.url = "github:vic/import-tree";
@@ -36,8 +40,7 @@
               config = {
                 allowUnfree = true;
                 android_sdk.accept_license = true;
-                permittedInsecurePackages = [
-                ];
+                permittedInsecurePackages = [ ];
               };
             }).lib;
 
