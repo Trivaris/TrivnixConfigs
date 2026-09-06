@@ -28,7 +28,6 @@ in
       extraServices = [
         {
           name = "homeAssistant";
-          enableAnubis = true;
           domain = "home.trivaris.org";
           address = "192.168.10.23";
           port = 80;
@@ -62,7 +61,6 @@ in
       enable = true;
       reverseProxy = {
         enable = true;
-        enableAnubis = true;
         domain = "tandoor.trivaris.org";
         port = 8099;
       };
@@ -101,7 +99,6 @@ in
       enable = true;
       reverseProxy = {
         enable = true;
-        enableAnubis = true;
         domain = "paperless.trivaris.org";
         port = 28981;
       };
