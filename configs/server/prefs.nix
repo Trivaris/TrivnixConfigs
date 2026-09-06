@@ -33,6 +33,13 @@ in
           port = 80;
           enable = true;
         }
+        {
+          name = "jellyfin";
+          domain = "jelly.trivaris.org";
+          address = "192.168.10.23";
+          port = 8096;
+          enable = true;
+        }
         # {
         #   name = "proxmox";
         #   domain = "proxmox.trivaris.org";
