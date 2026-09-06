@@ -7,7 +7,7 @@ let
 in
 {
   hostInfos = {
-    name = "trivdesktop";
+    name = "leyndell";
     configname = "desktop";
     stateVersion = "26.05";
     ip = "192.168.178.2";

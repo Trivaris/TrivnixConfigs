@@ -1,7 +1,7 @@
 { ... }:
 {
   hostInfos = {
-    name = "trivserver";
+    name = "caelid";
     configname = "server";
     stateVersion = "26.05";
     ip = "188.34.182.1";
