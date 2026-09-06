@@ -23,6 +23,7 @@ in
 
     reverseProxy = {
       enable = true;
+      anubisAuthDomain = "auth.trivaris.org";
       email = "cloudflare@tripple.lurdane.de";
       zone = "trivaris.org";
       extraServices = [
