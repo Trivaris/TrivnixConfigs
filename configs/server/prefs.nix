@@ -23,7 +23,6 @@ in
 
     reverseProxy = {
       enable = true;
-      anubisAuthDomain = "auth.trivaris.org";
       email = "cloudflare@tripple.lurdane.de";
       zone = "trivaris.org";
       extraServices = [
@@ -93,7 +92,6 @@ in
       sendMails = true;
       reverseProxy = {
         enable = true;
-        enableAnubis = true;
         domain = "vault.trivaris.org";
         port = 8891;
       };
