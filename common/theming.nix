@@ -36,6 +36,9 @@
       package = pkgs.nerd-fonts.adwaita-mono;
       monoName = "AdwaitaMono Nerd Font Mono";
       propoName = "AdwaitaMono Nerd Font Propo";
+      extraFonts = [
+        pkgs.noto-fonts
+      ];
     };
   };
 }

@@ -33,6 +33,8 @@
     pkgs.ffmpeg
     pkgs.parted
     pkgs.openjdk25
+    pkgs.jellyfin-desktop
+    pkgs.feishin
   ];
 
   userPrefs.librewolf = {

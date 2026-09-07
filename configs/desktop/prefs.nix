@@ -23,10 +23,10 @@
       spicetify.enable = true;
     };
 
-    moondeck = {
-      enable = false;
-      openFirewall = true;
-    };
+    # moondeck = {
+    #   enable = false;
+    #   openFirewall = true;
+    # };
 
     openssh = {
       enable = true;

@@ -17,6 +17,22 @@ in
     openFirewall = true;
   };
 
+  networking.firewall.allowedTCPPorts = [ 50300 ];
+  networking.nat = {
+    enable = true;
+    internalInterfaces = [ "wg0" ]; 
+    externalInterface = "enp1s0"; 
+    
+    # Forward Traffic for slskd
+    forwardPorts = [
+      {
+        sourcePort = 50300;
+        proto = "tcp";
+        destination = "192.168.10.23:50300";
+      }
+    ];
+  };
+
   hostPrefs = {
     openssh.enable = true;
     headless = true;
@@ -38,6 +54,13 @@ in
           domain = "jelly.trivaris.org";
           address = "192.168.10.23";
           port = 8096;
+          enable = true;
+        }
+        {
+          name = "slskd";
+          domain = "slskd.trivaris.org";
+          address = "192.168.10.23";
+          port = 5030;
           enable = true;
         }
         # {
