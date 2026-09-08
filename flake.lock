@@ -959,17 +959,17 @@
         "trivnixNvim": "trivnixNvim"
       },
       "locked": {
-        "lastModified": 1788896764,
-        "narHash": "sha256-TM1tDOec1STHvHf2bHHIJetOX8lktfO+FN12cHRiy+Q=",
+        "lastModified": 1788900665,
+        "narHash": "sha256-+gN/xTwp8im5jTeTznVE3kHo4L+MTkzh9jcknxLrtCo=",
         "ref": "refs/heads/main",
-        "rev": "57afa07d7dab636968386186b6baff2d21f71f92",
-        "revCount": 523,
+        "rev": "c577b035c3a1333eda1b52ac28b58ad42126ad5f",
+        "revCount": 524,
         "type": "git",
-        "url": "ssh://git@github.com/Trivaris/Trivnix"
+        "url": "ssh://git@git.trivaris.org/Trivaris/Trivnix"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@github.com/Trivaris/Trivnix"
+        "url": "ssh://git@git.trivaris.org/Trivaris/Trivnix"
       }
     },
     "trivnixLib": {
@@ -985,11 +985,11 @@
         "rev": "7db690c235581e44950d1c532b02b8ebe8c2058c",
         "revCount": 144,
         "type": "git",
-        "url": "ssh://git@github.com/Trivaris/TrivnixLib"
+        "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixLib"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@github.com/Trivaris/TrivnixLib"
+        "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixLib"
       }
     },
     "trivnixNvim": {
@@ -999,15 +999,15 @@
       "locked": {
         "lastModified": 1777661779,
         "narHash": "sha256-N0LZBmeEBA68gkLaxFdmYPcakRBLMpScAxRd++WVfog=",
-        "owner": "Trivaris",
-        "repo": "TrivnixNvim",
+        "ref": "refs/heads/main",
         "rev": "90f20f15d942d4a57b777212dd22fb7bf3088810",
-        "type": "github"
+        "revCount": 8,
+        "type": "git",
+        "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixNvim"
       },
       "original": {
-        "owner": "Trivaris",
-        "repo": "TrivnixNvim",
-        "type": "github"
+        "type": "git",
+        "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixNvim"
       }
     },
     "trivnixOverlays": {
@@ -1023,11 +1023,11 @@
         "rev": "aae3673b96b15440ee1c178857ce4df1434e6b91",
         "revCount": 42,
         "type": "git",
-        "url": "ssh://git@github.com/Trivaris/TrivnixOverlays"
+        "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixOverlays"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@github.com/Trivaris/TrivnixOverlays"
+        "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixOverlays"
       }
     },
     "trivnixPrivate": {
@@ -1043,11 +1043,11 @@
         "rev": "ac1c20711927f345048a771120db540e91e964f9",
         "revCount": 73,
         "type": "git",
-        "url": "ssh://git@github.com/Trivaris/TrivnixPrivate"
+        "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixPrivate"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@github.com/Trivaris/TrivnixPrivate"
+        "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixPrivate"
       }
     },
     "xdph": {
