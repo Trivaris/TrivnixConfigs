@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
 
   programs = {
@@ -7,6 +7,11 @@
     vesktop = {
       enable = true;
       settings.arRPC = true;
+    };
+    ssh.matchBlocks."git.trivaris.org" = {
+      port = 222;
+      user = "git";
+      identityFile = config.sops.secrets.ssh-private-key.path;
     };
   };
 
