@@ -27,12 +27,22 @@ in
       zone = "trivaris.org";
       dumbPipes = {
         enable = true;
-        upstreams.homelab.address = "10.0.0.2";
+        upstreams = {
+          homelab.address = "10.0.0.2";
+          git-homelab = {
+            port = 22;
+            address = "10.0.0.2";
+          };
+        };
         pipes = {
           "home.trivaris.org" = "homelab";
           "jelly.trivaris.org" = "homelab";
           "slskd.trivaris.org" = "homelab";
           "git.trivaris.org" = "homelab";
+        };
+        tcpForwards.forgejo-ssh = {
+          listenPort = 222;
+          upstream = "git-homelab";
         };
       };
     };
