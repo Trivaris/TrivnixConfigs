@@ -30,7 +30,7 @@ in
         upstreams = {
           homelab.address = "10.0.0.2";
           git-homelab = {
-            port = 22;
+            port = 222;
             address = "10.0.0.2";
           };
         };
