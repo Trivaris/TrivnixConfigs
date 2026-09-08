@@ -79,7 +79,7 @@ in
 
     vaultwarden = {
       enable = true;
-      sendMails = true;
+      # sendMails = true;
       reverseProxy = {
         enable = true;
         domain = "vault.trivaris.org";
@@ -105,19 +105,19 @@ in
       };
     };
 
-    mailserver = {
-      enable = true;
-      domain = "trivaris.org";
-      extraDomains = [ "mail" ];
-      providerName = "Trivaris Mail";
-      accounts."mail@trivaris.org" = {
-        hashedPassword = "$2b$05$7p74qoLRa2R09CJwkkL8MeKqM3oOfC4rgb0R.K1jQlO2TWpj9E3Fe";
-        aliases = [
-          "@mail.trivaris.org"
-          "@trivaris.org"
-        ];
-      };
-    };
+    # mailserver = {
+    #   enable = true;
+    #   domain = "trivaris.org";
+    #   extraDomains = [ "mail" ];
+    #   providerName = "Trivaris Mail";
+    #   accounts."mail@trivaris.org" = {
+    #     hashedPassword = "$2b$05$7p74qoLRa2R09CJwkkL8MeKqM3oOfC4rgb0R.K1jQlO2TWpj9E3Fe";
+    #     aliases = [
+    #       "@mail.trivaris.org"
+    #       "@trivaris.org"
+    #     ];
+    #   };
+    # };
 
     # piHole = {
     #   enable = true;
