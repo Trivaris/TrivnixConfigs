@@ -80,8 +80,10 @@
 
   networking = {
     hostName = config.hostInfos.name;
-    networkmanager.enable = true;
-    useDHCP = lib.mkDefault true;
+    networkmanager ={
+      enable = true;
+      dns = "default";
+    };
   };
 
   nixpkgs.hostPlatform = lib.mkDefault config.hostInfos.architecture;

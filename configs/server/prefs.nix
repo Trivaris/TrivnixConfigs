@@ -25,47 +25,25 @@ in
       enable = true;
       email = "cloudflare@tripple.lurdane.de";
       zone = "trivaris.org";
-      extraServices = [
-        {
-          name = "homeAssistant";
-          domain = "home.trivaris.org";
-          address = "192.168.10.23";
-          port = 8123;
-          enable = true;
-        }
-        {
-          name = "jellyfin";
-          domain = "jelly.trivaris.org";
-          address = "192.168.10.23";
-          port = 8096;
-          enable = true;
-        }
-        {
-          name = "slskd";
-          domain = "slskd.trivaris.org";
-          address = "192.168.10.23";
-          port = 5030;
-          enable = true;
-        }
-        # {
-        #   name = "proxmox";
-        #   domain = "proxmox.trivaris.org";
-        #   address = "192.168.10.46";
-        #   port = 8006;
-        #   https = true;
-        #   enable = true;
-        # }
-      ];
+      dumbPipes = {
+        enable = true;
+        upstreams.homelab.address = "10.0.0.2";
+        pipes = {
+          "home.trivaris.org" = "homelab";
+          "jelly.trivaris.org" = "homelab";
+          "slskd.trivaris.org" = "homelab";
+        };
+      };
     };
 
     wireguard = {
       enable = true;
+      address = "10.0.0.1/24";
       peers = [
         {
           publicKey = lib.removeSuffix "\n" (builtins.readFile publicKeyFile);
           allowedIPs = [
             "10.0.0.2/32"
-            "192.168.10.23/32"
           ];
         }
       ];

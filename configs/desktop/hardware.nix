@@ -60,10 +60,12 @@ in
   };
 
   networking = {
-    useDHCP = lib.mkDefault true;
     hostName = config.hostInfos.name;
-    networkmanager.enable = true;
     interfaces.eno1.wakeOnLan.enable = true;
+    networkmanager = {
+      enable = true;
+      dns = "default";
+    };
   };
 
   hardware = {

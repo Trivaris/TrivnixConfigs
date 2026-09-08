@@ -15,7 +15,7 @@
     kdeConnect.enable = true;
     openssh.enable = true;
     jtegranx.enable = true;
-    spotify.enable = true;
+    # spotify.enable = true;
     docker.enable = true;
     
     openconnectClient = {

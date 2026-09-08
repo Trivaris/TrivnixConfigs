@@ -18,10 +18,10 @@
     jtegranx.enable = true;
     sunshine.enable = false;
     docker.enable = true;
-    spotify = {
-      enable = true;
-      spicetify.enable = true;
-    };
+    # spotify = {
+    #   enable = true;
+    #   spicetify.enable = true;
+    # };
 
     # moondeck = {
     #   enable = false;
