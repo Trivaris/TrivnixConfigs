@@ -1,0 +1,10 @@
+name: Test Runner
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Verify Execution
+        run: echo "Runner successfully picked up the job!"
