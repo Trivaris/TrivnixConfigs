@@ -7,6 +7,16 @@
         imports = [ ../../common/git.nix ];
       }
     )
+    (
+      { config, ... }:
+      {
+        programs.ssh.matchBlocks."git.trivaris.org" = {
+          port = 222;
+          user = "git";
+          identityFile = config.sops.secrets.ssh-private-key.path;
+        };
+      }
+    )
   ];
 
   home-manager.users.trivaris.config = {
