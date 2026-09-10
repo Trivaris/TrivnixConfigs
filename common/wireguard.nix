@@ -11,6 +11,7 @@ in
     peers = lib.mapAttrsToList (name: peer: {
       publicKey = lib.removeSuffix "\n" (builtins.readFile peer.key);
       allowedIPs = [ "10.0.0.${toString peer.id}/32" ];
+      endpoint = peer.endpoint;
     }) otherPeers;
   };
 }

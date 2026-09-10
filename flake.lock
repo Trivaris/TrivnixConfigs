@@ -959,11 +959,11 @@
         "trivnixNvim": "trivnixNvim"
       },
       "locked": {
-        "lastModified": 1788900665,
-        "narHash": "sha256-+gN/xTwp8im5jTeTznVE3kHo4L+MTkzh9jcknxLrtCo=",
+        "lastModified": 1789064846,
+        "narHash": "sha256-+vL4yMN29/yXeJTWPpjT+sTAWW9Fo6qzk2sRTdh6XLQ=",
         "ref": "refs/heads/main",
-        "rev": "c577b035c3a1333eda1b52ac28b58ad42126ad5f",
-        "revCount": 524,
+        "rev": "9a239be60f3a774f8e0e0f2793192435ad41f07d",
+        "revCount": 525,
         "type": "git",
         "url": "ssh://git@git.trivaris.org/Trivaris/Trivnix"
       },
@@ -979,11 +979,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789045105,
-        "narHash": "sha256-ndr6IF0RujKFNQxalPUvcOvZNc4KXnq7vA5JOCehBUQ=",
+        "lastModified": 1789064857,
+        "narHash": "sha256-k198ebqETd257hZdnR43QK/jvQ5JwVF8f3tW0t0mFt4=",
         "ref": "refs/heads/main",
-        "rev": "0b6dec4d0668266fa46b97242d6812d743d49650",
-        "revCount": 146,
+        "rev": "5e084e0069f7e65fee71bd66f5ca691a462905de",
+        "revCount": 147,
         "type": "git",
         "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixLib"
       },
@@ -1037,11 +1037,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789045339,
-        "narHash": "sha256-o1qCBBaVSieP8lcaEDiX0iHDofzxjuMSYIXueJK/IEE=",
+        "lastModified": 1789066239,
+        "narHash": "sha256-kzboBd+rwU09r1WqRStTuPkSVHvg06wEWZ6ni5bGfd8=",
         "ref": "refs/heads/main",
-        "rev": "5b7d3189059a97978cc230bd246497dfc4e9e13d",
-        "revCount": 77,
+        "rev": "37818c148b283ed69e56d38bb589cacfaca656d2",
+        "revCount": 84,
         "type": "git",
         "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixPrivate"
       },
