@@ -2,6 +2,7 @@
 {
   imports = [
     ../../common/theming.nix
+    ../../common/wireguard.nix
     # ../../common/dns.nix
   ];
 
@@ -28,12 +29,6 @@
       };
       authgroup = "campus";
     };
-
-    # wireguard.client = {
-    #   enable = true;
-    #   ip = "10.100.0.7";
-    #   serverAddress = "vpn.trivaris.org";
-    # };
 
     udev = {
       enable = true;
