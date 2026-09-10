@@ -1,8 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, lib, config, ... }:
 {
   imports = [
     ../../common/theming.nix
-    ../../common/wireguard.nix
   ];
 
   services.minecraft-server = {
@@ -16,6 +15,22 @@
     openssh.enable = true;
     headless = true;
 
+    wireguard =
+    let
+      allPeers = config.private.wgPeers.hosts // config.private.wgPeers.guests;
+      localPeer = allPeers.${config.hostInfos.configname};
+      otherPeers = lib.filterAttrs (name: _: name != config.hostInfos.configname) allPeers;
+    in
+    {
+      enable = true;
+      address = "10.0.0.${toString localPeer.id}/32";
+      peers = lib.mapAttrsToList (name: peer: {
+        publicKey = lib.removeSuffix "\n" (builtins.readFile peer.key);
+        allowedIPs = [ "10.0.0.${toString peer.id}/32" ];
+        endpoint = peer.endpoint;
+      }) otherPeers;
+    };
+
     reverseProxy = {
       enable = true;
       email = "cloudflare@tripple.lurdane.de";
@@ -23,10 +38,10 @@
       dumbPipes = {
         enable = true;
         upstreams = {
-          homelab.address = "10.0.0.2";
+          homelab.address = "10.0.0.10";
           git-homelab = {
             port = 222;
-            address = "10.0.0.2";
+            address = "10.0.0.10";
           };
         };
         pipes = {
