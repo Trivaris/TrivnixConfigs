@@ -1,13 +1,8 @@
-{ pkgs, lib, ... }:
-let
-  publicKeyFile = pkgs.fetchurl {
-    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/d6ee656deae3495cd99a51fbca41e5e1e3f0aa77/resources/pubKeys/ha_public.key";
-    hash = "sha256-uutGYxTXyjrfEQnFEFzlA0irHA9CLGAFYbCWhU++dHY=";
-  };
-in
+{ pkgs, ... }:
 {
   imports = [
     ../../common/theming.nix
+    ../../common/wireguard.nix
   ];
 
   services.minecraft-server = {
@@ -46,19 +41,6 @@ in
           upstream = "git-homelab";
         };
       };
-    };
-
-    wireguard = {
-      enable = true;
-      address = "10.0.0.1/24";
-      peers = [
-        {
-          publicKey = lib.removeSuffix "\n" (builtins.readFile publicKeyFile);
-          allowedIPs = [
-            "10.0.0.2/32"
-          ];
-        }
-      ];
     };
 
     tandoor = {

@@ -1,8 +1,8 @@
 { ... }:
 {
-
   imports = [
     ../../common/theming.nix
+    ../../common/wireguard.nix
     # ../../common/dns.nix
   ];
 
