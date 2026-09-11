@@ -50,6 +50,7 @@
           "slskd.trivaris.org" = "homelab";
           "git.trivaris.org" = "homelab";
           "navi.trivaris.org" = "homelab";
+          "jellyapi.trivaris.org" = "homelab";
         };
         tcpForwards.forgejo-ssh = {
           listenPort = 222;
