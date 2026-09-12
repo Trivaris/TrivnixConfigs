@@ -40,6 +40,7 @@
     pkgs.openjdk25
     pkgs.jellyfin-desktop
     pkgs.feishin
+    pkgs.rclone
   ];
 
   userPrefs.librewolf = {
