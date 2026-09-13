@@ -61,7 +61,7 @@
           "vault.trivaris.org" = "homelab";
           "sync.trivaris.org" = "homelab";
         };
-        tcpForwards = {
+        portForwards = {
           forgejo-ssh = {
             listenPort = 222;
             upstream = "git-homelab";
