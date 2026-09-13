@@ -123,14 +123,14 @@
       };
     };
 
-    syncthing = {
-      enable = true;
-      reverseProxy = {
-        enable = true;
-        domain = "syncthing.trivaris.org";
-        port = 8384;
-      };
-    };
+    # syncthing = {
+    #   enable = true;
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "syncthing.trivaris.org";
+    #     port = 8384;
+    #   };
+    # };
 
     # mailserver = {
     #   enable = true;
