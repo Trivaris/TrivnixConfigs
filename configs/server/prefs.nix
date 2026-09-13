@@ -59,6 +59,7 @@
           "seerr.trivaris.org" = "homelab";
           "immich.trivaris.org" = "homelab";
           "vault.trivaris.org" = "homelab";
+          "sync.trivaris.org" = "homelab";
         };
         tcpForwards = {
           forgejo-ssh = {
