@@ -43,6 +43,10 @@
             port = 222;
             address = "10.0.0.10";
           };
+          syncthing-homelab = {
+            port = 22000;
+            address = "10.0.0.10";
+          };
         };
         pipes = {
           "home.trivaris.org" = "homelab";
@@ -56,9 +60,18 @@
           "immich.trivaris.org" = "homelab";
           "vault.trivaris.org" = "homelab";
         };
-        tcpForwards.forgejo-ssh = {
-          listenPort = 222;
-          upstream = "git-homelab";
+        tcpForwards = {
+          forgejo-ssh = {
+            listenPort = 222;
+            upstream = "git-homelab";
+            enableTCP = true;
+          };
+          syncthing-sync = {
+            listenPort = 22000;
+            upstream = "syncthing-homelab";
+            enableTCP = true;
+            enableUDP = true;
+          };
         };
       };
     };
