@@ -60,6 +60,8 @@
           "immich.trivaris.org" = "homelab";
           "vault.trivaris.org" = "homelab";
           "sync.trivaris.org" = "homelab";
+          "coolify.trivaris.org" = "homelab";
+          "soketi.trivaris.org" = "homelab";
         };
         portForwards = {
           forgejo-ssh = {
