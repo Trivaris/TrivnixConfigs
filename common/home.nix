@@ -8,11 +8,12 @@
       enable = true;
       settings.arRPC = true;
     };
-    ssh.matchBlocks."git.trivaris.org" = {
-      port = 222;
-      user = "git";
-      identityFile = config.sops.secrets.ssh-private-key.path;
-    };
+    ssh.extraConfig = ''
+      Host git.trivaris.org
+        Port 222
+        User git
+        identityFile = ${config.sops.secrets.ssh-private-key.path};
+    '';
   };
 
   home.packages = [
