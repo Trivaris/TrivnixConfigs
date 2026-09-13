@@ -54,6 +54,7 @@
           "beszel.trivaris.org" = "homelab";
           "seerr.trivaris.org" = "homelab";
           "immich.trivaris.org" = "homelab";
+          "vault.trivaris.org" = "homelab";
         };
         tcpForwards.forgejo-ssh = {
           listenPort = 222;
@@ -90,15 +91,15 @@
       };
     };
 
-    vaultwarden = {
-      enable = true;
-      # sendMails = true;
-      reverseProxy = {
-        enable = true;
-        domain = "vault.trivaris.org";
-        port = 8891;
-      };
-    };
+    # vaultwarden = {
+    #   enable = true;
+    #   # sendMails = true;
+    #   reverseProxy = {
+    #     enable = true;
+    #     domain = "vault.trivaris.org";
+    #     port = 8891;
+    #   };
+    # };
 
     paperless = {
       enable = true;
