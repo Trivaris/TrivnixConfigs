@@ -9,8 +9,9 @@ in
     address = "10.0.0.${toString localPeer.id}/32";
     peers = [{
       publicKey = lib.removeSuffix "\n" (builtins.readFile serverPeer.key);
-      allowedIPs = [ "10.0.0.${toString serverPeer.id}/32" ];
+      allowedIPs = [ "10.0.0.0/24" ]; # Send all VPN traffic to the server
       endpoint = serverPeer.endpoint;
+      persistentKeepalive = 25;
     }];
   };
 }

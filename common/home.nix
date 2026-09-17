@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, ... }:
 {
 
   programs = {
@@ -8,12 +8,6 @@
       enable = true;
       settings.arRPC = true;
     };
-    ssh.extraConfig = ''
-      Host git.trivaris.org
-        Port 222
-        User git
-        identityFile = ${config.sops.secrets.ssh-private-key.path};
-    '';
   };
 
   home.packages = [
