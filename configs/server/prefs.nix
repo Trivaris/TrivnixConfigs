@@ -40,7 +40,7 @@
         upstreams = {
           homelab.address = "10.0.0.10";
           git-homelab = {
-            port = 222;
+            port = 22;
             address = "10.0.0.10";
           };
           syncthing-homelab = {
@@ -65,7 +65,7 @@
         };
         portForwards = {
           forgejo-ssh = {
-            listenPort = 222;
+            listenPort = 22;
             upstream = "git-homelab";
             enableTCP = true;
           };
