@@ -1,9 +1,13 @@
 { pkgs, ... }:
 let
   wallpaper = pkgs.fetchurl {
-    url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/e7383738eaf25f7350ebdcd97bac6e3e5bb234f3/resources/wallpapers/miles-morales-leap.jpg";
-    hash = "sha256-+kbzasa2cuxVZ90lpgQ3SCaAuv2+0ufovKBAlEBp9Vw=";
+    url = "https://w.wallhaven.cc/full/qr/wallhaven-qroy2d.png";
+    hash = "sha256-EG2VpqzkAPrA/MFkB79s6MFqQ0L9/PVYlCfw39RqRO0=";
   };
+  # wallpaper = pkgs.fetchurl {
+  #   url = "https://raw.githubusercontent.com/Trivaris/TrivnixConfigs/e7383738eaf25f7350ebdcd97bac6e3e5bb234f3/resources/wallpapers/miles-morales-leap.jpg";
+  #   hash = "sha256-+kbzasa2cuxVZ90lpgQ3SCaAuv2+0ufovKBAlEBp9Vw=";
+  # };
 in
 {
   hostInfos = {
