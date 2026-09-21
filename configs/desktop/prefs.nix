@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   imports = [
     ../../common/theming.nix
@@ -7,26 +7,14 @@
   ];
 
   services.flatpak.enable = true;
+  environment.systemPackages = [ pkgs.mpv pkgs.qml-language-server ];
 
   hostPrefs = {
     mainUser = "trivaris";
     bluetooth.enable = true;
     nmApplet.enable = true;
-    printing.enable = true;
     steam.enable = true;
-    kdeConnect.enable = true;
     jtegranx.enable = true;
-    sunshine.enable = false;
-    docker.enable = true;
-    # spotify = {
-    #   enable = true;
-    #   spicetify.enable = true;
-    # };
-
-    # moondeck = {
-    #   enable = false;
-    #   openFirewall = true;
-    # };
 
     openssh = {
       enable = true;

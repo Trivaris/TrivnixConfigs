@@ -3,7 +3,6 @@
 
   programs = {
     btop.enable = true;
-    # spotify-player.enable = true;
     vesktop = {
       enable = true;
       settings.arRPC = true;

@@ -1,12 +1,13 @@
 {
   description = "Trivnix Prefs and Configurations";
 
-  inputs.trivnix.url = "git+ssh://git@github.com/Trivaris/Trivnix";
-  inputs.trivnixLib.url = "git+ssh://git@github.com/Trivaris/TrivnixLib";
+  inputs.trivnix.url = "git+ssh://git@git.trivaris.org/Trivaris/Trivnix";
+  inputs.trivnixLib.url = "git+ssh://git@git.trivaris.org/Trivaris/TrivnixLib";
+  inputs.trivnixPrivate.url = "git+ssh://git@git.trivaris.org/Trivaris/TrivnixPrivate";
+  inputs.trivnixOverlays.url = "git+ssh://git@git.trivaris.org/Trivaris/TrivnixOverlays";
+  
   inputs.trivnixLib.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.trivnixPrivate.url = "git+ssh://git@github.com/Trivaris/TrivnixPrivate";
   inputs.trivnixPrivate.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.trivnixOverlays.url = "git+ssh://git@github.com/Trivaris/TrivnixOverlays";
   inputs.trivnixOverlays.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";

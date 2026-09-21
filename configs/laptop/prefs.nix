@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   imports = [
     ../../common/theming.nix
@@ -11,13 +11,9 @@
     enableFingerPrintAuth = true;
     bluetooth.enable = true;
     nmApplet.enable = true;
-    printing.enable = true;
     steam.enable = true;
-    kdeConnect.enable = true;
     openssh.enable = true;
     jtegranx.enable = true;
-    # spotify.enable = true;
-    docker.enable = true;
     
     # openconnectClient = {
     #   enable = true;
@@ -29,12 +25,5 @@
     #   };
     #   authgroup = "campus";
     # };
-
-    udev = {
-      enable = true;
-      rules = pkgs: ''
-        ACTION=="add", SUBSYSTEM=="block", ATTRS{idProduct}=="a7e0", ATTRS{idVendor}=="11ec", ATTR{partition}=="1", SYMLINK+="switch", RUN+="${pkgs.systemd}/bin/systemd-mount --no-block --automount=yes --collect -o gid=users,fmask=113,dmask=002 /dev/%k /mnt/switch"
-      '';
-    };
   };
 }
