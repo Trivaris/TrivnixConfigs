@@ -3,17 +3,14 @@
   imports = [
     ../../common/theming.nix
     ../../common/wireguard.nix
-    # ../../common/dns.nix
   ];
 
   hostPrefs = {
     mainUser = "trivaris";
     enableFingerPrintAuth = true;
-    bluetooth.enable = true;
     nmApplet.enable = true;
     steam.enable = true;
     openssh.enable = true;
-    jtegranx.enable = true;
     
     # openconnectClient = {
     #   enable = true;

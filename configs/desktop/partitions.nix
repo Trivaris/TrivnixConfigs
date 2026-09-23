@@ -23,15 +23,6 @@
           };
         };
 
-        swap = {
-          size = "16G";
-          content = {
-            type = "swap";
-            randomEncryption = true;
-            priority = 100;
-          };
-        };
-
         root = {
           size = "100%";
           content = {
@@ -43,4 +34,9 @@
       };
     };
   };
+
+  swapDevices = [ {
+    device = "/var/lib/swapfile";
+    size = 16 * 1024;
+  } ];
 }

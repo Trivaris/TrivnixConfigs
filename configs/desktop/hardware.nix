@@ -13,86 +13,60 @@ in
 {
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
-  environment.systemPackages = [
-    pkgs.ntfs3g
-    pkgs.sshfs
-  ];
+  environment.systemPackages = [ pkgs.ntfs3g pkgs.sshfs ];
   nixpkgs.hostPlatform = lib.mkDefault config.hostInfos.architecture;
   system.stateVersion = config.hostInfos.stateVersion;
+  
+  powerManagement.cpuFreqGovernor = "performance";
 
-  boot = {
-    kernelModules = [
-      "kvm-amd"
-      "uinput"
+  networking.hostName = config.hostInfos.name;
+  networking.interfaces.eno1.wakeOnLan.enable = true;
+  networking.networkmanager.enable = true;
+
+  services.xserver.videoDrivers = [ "nvidia" ];
+  services.fstrim.enable = true;
+  services.fwupd.enable = true;
+
+  boot.kernelModules = [ "kvm-amd" "uinput" ];
+  boot.loader.systemd-boot.enable = lib.mkForce false;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.lanzaboote = {
+    enable = true;
+    pkiBundle = "/var/lib/sbctl";
+  };
+  boot.initrd = {
+    supportedFilesystems.ntfs = true;
+    kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
+    availableKernelModules = [
+      "nvme"
+      "xhci_pci"
+      "ahci"
+      "usb_storage"
+      "usbhid"
+      "sd_mod"
+      "btusb"
+      "tpm_tis"
+      "tpm_crb"
     ];
-    kernelParams = [
-      "nvidia-drm.modeset=1"
-      "snd_hda_intel.power_save=0"
-      "snd_hda_intel.power_save_controller=N"
-      "usbcore.autosuspend=-1"
-      "btusb.enable_autosuspend=n"
-    ];
-    extraModulePackages = [ ];
-
-    loader = {
-      systemd-boot.enable = lib.mkForce false;
-      efi.canTouchEfiVariables = true;
-    };
-    initrd = {
-      supportedFilesystems.ntfs = true;
-      kernelModules = [ ];
-      availableKernelModules = [
-        "nvme"
-        "xhci_pci"
-        "ahci"
-        "usb_storage"
-        "usbhid"
-        "sd_mod"
-        "btusb"
-        "tpm_tis"
-        "tpm_crb"
-      ];
-    };
-    lanzaboote = {
-      enable = true;
-      pkiBundle = "/var/lib/sbctl";
-    };
   };
 
-  networking = {
-    hostName = config.hostInfos.name;
-    interfaces.eno1.wakeOnLan.enable = true;
-    networkmanager = {
-      enable = true;
-      dns = "default";
-    };
+  hardware.enableAllFirmware = true;
+  hardware.uinput.enable = true;
+  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.nvidia.powerManagement.enable = true;
+  hardware.nvidia.modesetting.enable = true;
+  hardware.nvidia.open = true;
+  hardware.graphics = {
+    enable = true;
+    extraPackages = [ pkgs.nvidia-vaapi-driver ];
   };
-
-  hardware = {
-    enableAllFirmware = true;
-    uinput.enable = true;
-    cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-    graphics = {
-      enable = true;
-      enable32Bit = true;
-      extraPackages = [ pkgs.nvidia-vaapi-driver ];
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    settings.General = {
+      Experimental = true;
+      FastConnectable = true;
     };
-    nvidia = {
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
-      modesetting.enable = true;
-      open = true;
-      nvidiaSettings = true;
-    };
-  };
-
-  services = {
-    xserver.videoDrivers = [ "nvidia" ];
-
-    udev.extraRules = ''
-      KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
-      KERNEL=="event*", SUBSYSTEM=="input", GROUP="input", MODE="0660"
-      ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0a12", ATTR{idProduct}=="0001", ATTR{authorized}="0", ATTR{authorized}="1"
-    '';
   };
 
   fileSystems."/mnt/windows" = {

@@ -35,6 +35,7 @@
     pkgs.jellyfin-desktop
     pkgs.feishin
     pkgs.rclone
+    pkgs.overskride 
   ];
 
   userPrefs.librewolf = {
