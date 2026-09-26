@@ -10,7 +10,6 @@
 
   hostPrefs = {
     mainUser = "trivaris";
-    nmApplet.enable = true;
     steam.enable = true;
 
     openssh = {

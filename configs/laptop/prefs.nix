@@ -8,7 +8,6 @@
   hostPrefs = {
     mainUser = "trivaris";
     enableFingerPrintAuth = true;
-    nmApplet.enable = true;
     steam.enable = true;
     openssh.enable = true;
     

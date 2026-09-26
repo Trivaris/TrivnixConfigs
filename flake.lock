@@ -1071,11 +1071,11 @@
         "sops-nix": "sops-nix"
       },
       "locked": {
-        "lastModified": 1790198165,
-        "narHash": "sha256-XcL8Gdn5nJzzVV1qxKhlII3lF1M1byhaxZtr4BuLZZk=",
+        "lastModified": 1790453458,
+        "narHash": "sha256-CErl6FI/KQu0GQrC3bvStV0SvSeqtRCa3LR5Xryqfuc=",
         "ref": "refs/heads/main",
-        "rev": "a0456a7950469bc97bdfa715d8a7431353cc6dd3",
-        "revCount": 544,
+        "rev": "9fe2fc4363229d1cb871fca7e6c3a09e1fa101b1",
+        "revCount": 545,
         "type": "git",
         "url": "ssh://git@git.trivaris.org/Trivaris/Trivnix"
       },
