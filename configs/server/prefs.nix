@@ -12,8 +12,11 @@
   };
 
   hostPrefs = {
-    openssh.enable = true;
     headless = true;
+    openssh = {
+      enable = true;
+      ports = [ 222 ];
+    };
 
     wireguard =
     let
