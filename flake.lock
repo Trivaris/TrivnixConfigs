@@ -1071,11 +1071,11 @@
         "sops-nix": "sops-nix"
       },
       "locked": {
-        "lastModified": 1790453458,
-        "narHash": "sha256-CErl6FI/KQu0GQrC3bvStV0SvSeqtRCa3LR5Xryqfuc=",
+        "lastModified": 1790457207,
+        "narHash": "sha256-cQCyIbz0H1FG31E5ZI7ZWz8X61KjEImTbmAq7Z8U5Sc=",
         "ref": "refs/heads/main",
-        "rev": "9fe2fc4363229d1cb871fca7e6c3a09e1fa101b1",
-        "revCount": 545,
+        "rev": "4ccdc63789d4546648efff2268faa6e479078bc2",
+        "revCount": 549,
         "type": "git",
         "url": "ssh://git@git.trivaris.org/Trivaris/Trivnix"
       },
@@ -1091,11 +1091,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789064857,
-        "narHash": "sha256-k198ebqETd257hZdnR43QK/jvQ5JwVF8f3tW0t0mFt4=",
+        "lastModified": 1790455616,
+        "narHash": "sha256-NyHsxRtQ5g34a4FWtM26YUImz0HCT7vGmRlETBjEjwg=",
         "ref": "refs/heads/main",
-        "rev": "5e084e0069f7e65fee71bd66f5ca691a462905de",
-        "revCount": 147,
+        "rev": "4903600c216db31ab65173d420839940c7523321",
+        "revCount": 148,
         "type": "git",
         "url": "ssh://git@git.trivaris.org/Trivaris/TrivnixLib"
       },
