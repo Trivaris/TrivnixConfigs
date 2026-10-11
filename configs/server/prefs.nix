@@ -12,8 +12,8 @@
   };
 
   networking.wireguard.interfaces.wg0 = {
-    postUp = "iptables -A FORWARD -i wg0 -o wg0 -j ACCEPT";
-    postDown = "iptables -D FORWARD -i wg0 -o wg0 -j ACCEPT";
+    postSetup = "iptables -A FORWARD -i wg0 -o wg0 -j ACCEPT";
+    postShutdown = "iptables -D FORWARD -i wg0 -o wg0 -j ACCEPT";
   };
 
   hostPrefs = {
