@@ -22,7 +22,6 @@
   services.fwupd.enable = true;
   services.auto-cpufreq = {
     enable = true;
-    system76-scheduler.settings.cfsProfiles.enable = true;
     settings = {
       battery = {
         governor = "powersave";

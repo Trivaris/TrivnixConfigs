@@ -26,12 +26,17 @@
     in
     {
       enable = true;
+      interfaceName = "wg0";
       address = "10.0.0.${toString localPeer.id}/32";
       peers = lib.mapAttrsToList (name: peer: {
         publicKey = lib.removeSuffix "\n" (builtins.readFile peer.key);
         allowedIPs = [ "10.0.0.${toString peer.id}/32" ];
         endpoint = peer.endpoint;
       }) otherPeers;
+    };
+    networking.wireguard.interfaces.wg0 = {
+      postUp = "iptables -A FORWARD -i wg0 -o wg0 -j ACCEPT";
+      postDown = "iptables -D FORWARD -i wg0 -o wg0 -j ACCEPT";
     };
 
     reverseProxy = {
