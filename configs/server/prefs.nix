@@ -11,6 +11,11 @@
     openFirewall = true;
   };
 
+  networking.wireguard.interfaces.wg0 = {
+    postUp = "iptables -A FORWARD -i wg0 -o wg0 -j ACCEPT";
+    postDown = "iptables -D FORWARD -i wg0 -o wg0 -j ACCEPT";
+  };
+
   hostPrefs = {
     headless = true;
     openssh = {
@@ -33,10 +38,6 @@
         allowedIPs = [ "10.0.0.${toString peer.id}/32" ];
         endpoint = peer.endpoint;
       }) otherPeers;
-    };
-    networking.wireguard.interfaces.wg0 = {
-      postUp = "iptables -A FORWARD -i wg0 -o wg0 -j ACCEPT";
-      postDown = "iptables -D FORWARD -i wg0 -o wg0 -j ACCEPT";
     };
 
     reverseProxy = {
