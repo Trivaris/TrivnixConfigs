@@ -33,9 +33,9 @@
     pkgs.parted
     pkgs.openjdk25
     pkgs.jellyfin-desktop
-    pkgs.feishin
+    pkgs.spotify
     pkgs.rclone
-    pkgs.overskride 
+    pkgs.overskride
   ];
 
   userPrefs.librewolf = {

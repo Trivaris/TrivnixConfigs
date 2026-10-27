@@ -7,6 +7,7 @@
 
   services.flatpak.enable = true;
   environment.systemPackages = [ pkgs.mpv pkgs.qml-language-server ];
+  programs.epic-games-launcher.enable = true;
 
   hostPrefs = {
     mainUser = "trivaris";
