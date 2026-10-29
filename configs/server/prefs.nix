@@ -11,7 +11,6 @@
     openFirewall = true;
   };
 
-  boot.kernel.sysctl."net.ipv4.ip_forward" = 1;
   networking.firewall.checkReversePath = "loose";
   networking.firewall.trustedInterfaces = [ "wg0" ];
 
