@@ -11,10 +11,9 @@
     openFirewall = true;
   };
 
-  networking.wireguard.interfaces.wg0 = {
-    postSetup = "iptables -A FORWARD -i wg0 -o wg0 -j ACCEPT";
-    postShutdown = "iptables -D FORWARD -i wg0 -o wg0 -j ACCEPT";
-  };
+  boot.kernel.sysctl."net.ipv4.ip_forward" = 1;
+  networking.firewall.checkReversePath = "loose";
+  networking.firewall.trustedInterfaces = [ "wg0" ];
 
   hostPrefs = {
     headless = true;
