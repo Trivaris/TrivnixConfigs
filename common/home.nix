@@ -36,6 +36,7 @@
     pkgs.spotify
     pkgs.rclone
     pkgs.overskride
+    pkgs.libreoffice
   ];
 
   userPrefs.librewolf = {
